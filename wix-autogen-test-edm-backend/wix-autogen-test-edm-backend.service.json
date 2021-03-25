@@ -1,7 +1,6 @@
 { "name": "wix-autogen-test-edm-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -43,8 +42,7 @@
           {  } } ],
   "operations":
     [ { "name": "echo",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -84,8 +82,7 @@
         "extra":
           {  } },
       { "name": "filterByQuery",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -125,8 +122,7 @@
         "extra":
           {  } },
       { "name": "getDoubleValuesList",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "getDoubleValuesListRequest",
@@ -169,8 +165,7 @@
         "extra":
           {  } },
       { "name": "getList",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "getListRequest",
@@ -213,8 +208,7 @@
         "extra":
           {  } },
       { "name": "myEcho",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -254,8 +248,7 @@
         "extra":
           {  } },
       { "name": "queryCursorIntegers",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "queryCursorIntegersRequest",
@@ -316,8 +309,7 @@
         "extra":
           {  } },
       { "name": "queryIntegers",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -697,8 +689,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "QueryV2_25356650774",
         "locations":
           [ { "lineno": 49,

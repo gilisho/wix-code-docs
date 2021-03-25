@@ -13,9 +13,52 @@
         {  } },
   "properties": [],
   "operations":
-    [ { "name": "someAlias",
+    [ { "name": "getHeaderValue",
         "labels":
-          [ "changed" ],
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "getHeaderValueRequest",
+              "type": "wix-autogen-test-edm-backend.api.GetHeaderValueRequest_2680985050" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-autogen-test-edm-backend.api.GetHeaderValueResult_1665932224" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 13,
+              "filename": "com_wixpress_cloud_edm_autogen_SomeInternalAlphaTestService_GetHeaderValue_getHeaderValue.js" } ],
+        "docs":
+          { "summary": "to test passed headers from our client",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import { api } from \"wix-autogen-test-edm-backend\";",
+                      "",
+                      "export function getHeaderValue() {",
+                      "  const getHeaderValueRequest = {",
+                      "    headerName: \"a string\"",
+                      "  };",
+                      "",
+                      "  return api",
+                      "    .getHeaderValue(getHeaderValueRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "someAlias",
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "someRequest",
@@ -146,8 +189,7 @@
         "extra":
           {  } },
       { "name": "somePublicGaMethod123",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "someRequest",
@@ -218,6 +260,38 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "GetHeaderValueRequest_2680985050",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_cloud_edm_autogen_SomeInternalAlphaTestService_GetHeaderValue_getHeaderValue.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "headerName",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "GetHeaderValueResult_1665932224",
+        "locations":
+          [ { "lineno": 7,
+              "filename": "com_wixpress_cloud_edm_autogen_SomeInternalAlphaTestService_GetHeaderValue_getHeaderValue.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "value",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Options_936495653",
         "locations":
           [ { "lineno": 11,
@@ -235,8 +309,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "SomeObject",
         "locations":
           [ { "lineno": 1,

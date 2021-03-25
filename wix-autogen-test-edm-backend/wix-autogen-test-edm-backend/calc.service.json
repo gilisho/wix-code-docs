@@ -1,8 +1,7 @@
 { "name": "calc",
   "memberOf": "wix-autogen-test-edm-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -14,8 +13,7 @@
   "properties": [],
   "operations":
     [ { "name": "addNumbers",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "number1",
@@ -61,8 +59,7 @@
         "extra":
           {  } },
       { "name": "divide",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "divideRequest",
@@ -106,8 +103,7 @@
         "extra":
           {  } },
       { "name": "multiply",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "multiplyRequest",
@@ -151,8 +147,7 @@
         "extra":
           {  } },
       { "name": "subtract",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "subtractRequest",
