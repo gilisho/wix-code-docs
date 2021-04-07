@@ -14,8 +14,7 @@
   "properties": [],
   "operations":
     [ { "name": "bookExistingSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -1058,8 +1057,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1166,8 +1164,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "confirmBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1265,8 +1262,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "declineBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1363,8 +1359,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "queryBookings",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -1481,8 +1476,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rescheduleBookingWithExistingSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1547,8 +1541,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rescheduleBookingWithNewSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1762,7 +1755,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "setAttendance",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1778,7 +1772,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_348148577543" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_333231330327" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 9,
@@ -1858,7 +1852,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "setBookingAsPaid",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1871,7 +1866,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_348148577543" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_333231330327" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 1,
@@ -1948,7 +1943,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateCustomerInfo",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1964,7 +1960,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_348148577543" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_333231330327" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 42,
@@ -2249,8 +2245,7 @@
                     [ "bySessionId",
                       "createSession",
                       "scheduleId" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "BookedEntity_83705225470",
         "locations":
           [ { "lineno": 1,
@@ -2301,6 +2296,54 @@
                     [ "setOfSessions",
                       "singleSession" ] } ] },
         "labels": [] },
+      { "name": "Booking_226816542711",
+        "locations":
+          [ { "lineno": 17,
+              "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The booking ID." },
+            { "name": "bookedResources",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.BookedResource_4406140954" ] },
+              "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
+            { "name": "status",
+              "type": "string",
+              "doc": "<!--ONLY:VELO\nOne of:\n - `PENDING_CHECKOUT` The booking is waiting to be checked out.\n - `CONFIRMED` The booking has beed approved by the owner.\n - `CANCELED` The booking has been cancelled.\n - `PENDING` The booking has been created.\n - `PENDING_APPROVAL` The booking is waiting for the owner to approve or decline.\n - `DECLINED` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+            { "name": "_createdDate",
+              "type": "Date" },
+            { "name": "attendanceInfo",
+              "type": "wix-bookings-rc-v2-backend.AttendanceInfo_1947544006",
+              "doc": "Attendance information." },
+            { "name": "externalUserId",
+              "type": "string",
+              "doc": "External ID provided by the client app on creation." },
+            { "name": "bookingSource",
+              "type": "wix-bookings-rc-v2-backend.BookingSource_16669276013",
+              "doc": "An object describing the platform and application that made the booking." },
+            { "name": "bookedEntity",
+              "type": "wix-bookings-rc-v2-backend.bookings.BookedEntity_83705225470",
+              "doc": "An object describing the entity that was booked." },
+            { "name": "paymentDetails",
+              "type": "wix-bookings-rc-v2-backend.PaymentDetails_78509831866",
+              "doc": "Payment Details.",
+              "optional": true },
+            { "name": "formInfo",
+              "type": "wix-bookings-rc-v2-backend.FormInfo_71193244452",
+              "doc": "Form information submitted when booking. FormInfo contains contact details, participants, and other form fields, set up by the owner for the service.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Booking_241733789927",
         "locations":
           [ { "lineno": 17,
@@ -2348,7 +2391,8 @@
         "extra":
           {  },
         "labels":
-          [ "changed" ] },
+          [ "changed",
+            "removed" ] },
       { "name": "CancelBookingRequest_6810012872",
         "locations":
           [ { "lineno": 1,
@@ -2377,8 +2421,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CancelBookingRequest_7292439677",
         "locations":
           [ { "lineno": 1,
@@ -2459,8 +2502,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ConfirmBookingRequest_6686585008",
         "locations":
           [ { "lineno": 1,
@@ -2545,8 +2587,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "DeclineBookingRequest_4803545850",
         "locations":
           [ { "lineno": 1,
