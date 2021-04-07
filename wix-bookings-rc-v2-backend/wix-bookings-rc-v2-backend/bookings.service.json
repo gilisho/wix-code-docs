@@ -2,7 +2,7 @@
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -1385,7 +1385,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "queryBookings",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params": [],
         "ret":
@@ -1470,7 +1471,8 @@
                 "> + A member can only see their own bookings unless `suppressAuth` is set to `true` in the queryOptions for the",
                 "[`find()`](wix-bookings-backend/bookings/bookingsquerybuilder/find) function.",
                 "> + When using the queryBookings() function immediately following a change to your bookings, the data retrieved may not contain your most recent changes.",
-                "See [Wix-data and Eventual Consistency](reference/wix-data/introduction#wix-data_introduction_wix-data-and-eventual-consistency) for more information. To solve this problem, you can use the [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#setTimeout) function to delay querying for a number of seconds, following any changes to your bookings data." ],
+                "See [Wix-data and Eventual Consistency](reference/wix-data/introduction#wix-data_introduction_wix-data-and-eventual-consistency) for more information. To solve this problem, you can use the [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#setTimeout) function to delay querying for a number of seconds, following any changes to your bookings data.",
+                "<!--END:ONLY:VELO-->" ],
             "links": [],
             "examples":
               [ { "title": "basic usage",

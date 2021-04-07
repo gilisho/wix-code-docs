@@ -1,8 +1,7 @@
 { "name": "BookingsRcV2QueryResult_350238028899",
   "memberOf": "wix-bookings-rc-v2-backend.sessions",
   "mixes": [],
-  "labels":
-    [ "new" ],
+  "labels": [],
   "location":
     { "lineno": 999,
       "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" },

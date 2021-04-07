@@ -2,7 +2,7 @@
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -643,7 +643,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "deleteSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -678,7 +679,8 @@
                 "> **Permissions**",
                 "> This endpoint requires the Manage Bookings permissions scope",
                 "<!--END:ONLY:REST-->",
-                "<!--ONLY:REST-->" ],
+                "<!--ONLY:REST-->",
+                "<!--END:ONLY:REST-->" ],
             "links": [],
             "examples":
               [ { "title": "basic usage",

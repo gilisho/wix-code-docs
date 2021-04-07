@@ -1,8 +1,7 @@
 { "name": "checkout",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "new" ],
+  "labels": [],
   "location":
     { "lineno": 29,
       "filename": "index.js" },
