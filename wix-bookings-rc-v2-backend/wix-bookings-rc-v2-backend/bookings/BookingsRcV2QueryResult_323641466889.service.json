@@ -3,7 +3,7 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "lineno": 1058,
+    { "lineno": 1061,
       "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" },
   "docs":
     { "summary": "The results of a bookingsRcV2 query, containing the retrieved items.",
@@ -23,7 +23,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1158,
+          [ { "lineno": 1161,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Returns the index of the current results page number.",
@@ -51,7 +51,7 @@
             "typeParams":
               [ "wix-bookings-rc-v2-backend.bookings.Booking_241733789927" ] },
         "locations":
-          [ { "lineno": 1068,
+          [ { "lineno": 1071,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Returns the items that match the query.",
@@ -75,7 +75,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1083,
+          [ { "lineno": 1086,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Returns the number of items in the current results page.",
@@ -96,7 +96,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1134,
+          [ { "lineno": 1137,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Returns the query page size.",
@@ -117,7 +117,7 @@
         "set": false,
         "type": "wix-bookings-rc-v2-backend.bookings.BookingsRcV2QueryBuilder_56496348945",
         "locations":
-          [ { "lineno": 1105,
+          [ { "lineno": 1108,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Contains functionality for refining a bookingsRcV2 query.",
@@ -155,7 +155,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1095,
+          [ { "lineno": 1098,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Returns the total number of items that match the query.",
@@ -174,7 +174,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1146,
+          [ { "lineno": 1149,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Returns the total number of pages the query produced.",
@@ -201,7 +201,7 @@
                   [ "wix-bookings-rc-v2-backend.bookings.BookingsRcV2QueryResult_323641466889" ] },
             "doc": "Fulfilled - The results of a bookingsRcV2 query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-bookings-rc-v2-backend.BookingsRcV2QueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `BookingsRcV2QueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
-          [ { "lineno": 1174,
+          [ { "lineno": 1177,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Retrieves the next page of query results.",
@@ -232,7 +232,7 @@
                   [ "wix-bookings-rc-v2-backend.bookings.BookingsRcV2QueryResult_323641466889" ] },
             "doc": "Fulfilled - The results of a bookingsRcV2 query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-bookings-rc-v2-backend.BookingsRcV2QueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `BookingsRcV2QueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
-          [ { "lineno": 1195,
+          [ { "lineno": 1198,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "Retrieves the previous page of query results.",

@@ -50,12 +50,7 @@
                 "1. If the resource has its own schedule, create recurring sessions of type `\"WORING_HOURS\"` using `createSession()` with the `scheduleId` returned from `createResource()`.",
                 "<!--END:ONLY:VELO-->",
                 ">**Note:** A resource can only have one schedule.",
-                "<!--ONLY:VELO",
-                "<!--END:ONLY:VELO-->",
-                "<!-- Todo:",
-                "Check if we need to list the minimum for fields for the sessionInfo.",
-                "schedule info object should only include wht is needed",
-                "-->" ],
+                "<!--ONLY:VELO" ],
             "links": [],
             "examples":
               [ { "title": "basic usage",

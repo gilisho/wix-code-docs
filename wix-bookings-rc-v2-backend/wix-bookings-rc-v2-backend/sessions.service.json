@@ -679,8 +679,7 @@
                 "> **Permissions**",
                 "> This endpoint requires the Manage Bookings permissions scope",
                 "<!--END:ONLY:REST-->",
-                "<!--ONLY:REST-->",
-                "<!--END:ONLY:REST-->" ],
+                "<!--ONLY:REST-->" ],
             "links": [],
             "examples":
               [ { "title": "basic usage",

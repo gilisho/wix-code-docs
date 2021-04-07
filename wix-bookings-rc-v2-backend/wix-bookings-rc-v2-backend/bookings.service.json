@@ -14,7 +14,8 @@
   "properties": [],
   "operations":
     [ { "name": "bookExistingSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -23,11 +24,8 @@
             { "name": "formInfo",
               "type": "wix-bookings-rc-v2-backend.FormInfo_88791957024",
               "doc": "Form filled information. Mandatory. contains contact details, participants, other form fields specified by the owner for the chosen service.\n Contact information. Mandatory. contains contact details, participants, other form fields specified by the owner for the choosen service." },
-            { "name": "bookingOptions",
-              "type": "wix-bookings-rc-v2-backend.BookRequest_274786552891" },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.bookings.BookRequest_274304126086" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -35,7 +33,7 @@
                   [ "wix-bookings-rc-v2-backend.Booking_371474855211" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 1,
+          [ { "lineno": 21,
               "filename": "com_wix_bookings_api_v1_Bookings_Book_bookExistingSession.js" } ],
         "docs":
           { "summary": "Book a service.",
@@ -119,7 +117,7 @@
                       "      }",
                       "    ]",
                       "  };",
-                      "  const bookingOptions = {",
+                      "  const options = {",
                       "    schedule: {",
                       "      createSession: {",
                       "        scheduleId: \"a string\",",
@@ -291,14 +289,12 @@
                       "      ignoreBookingWindow: true,",
                       "      skipAvailabilityValidation: true,",
                       "      skipBusinessConfirmation: true",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .bookExistingSession(sessionId, formInfo, bookingOptions, options)",
+                      "    .bookExistingSession(sessionId, formInfo, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1062,17 +1058,15 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
               "type": "string",
               "doc": "The ID of the booking to be cancelled." },
-            { "name": "cancelBookingOptions",
-              "type": "wix-bookings-rc-v2-backend.bookings.CancelBookingRequest_7292439677" },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.bookings.CancelBookingRequest_6810012872" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -1080,7 +1074,7 @@
                   [ "wix-bookings-rc-v2-backend.bookings.CancelBookingResult_4386307776" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 37,
               "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
         "docs":
           { "summary": "Cancels an existing booking.",
@@ -1113,7 +1107,7 @@
                       "",
                       "export function cancelBooking() {",
                       "  const bookingId = \"a string\";",
-                      "  const cancelBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
@@ -1121,14 +1115,12 @@
                       "    authorizationToken: \"a string\",",
                       "    flowControlSettings: {",
                       "      ignoreCancellationPolicy: true",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .cancelBooking(bookingId, cancelBookingOptions, options)",
+                      "    .cancelBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1145,7 +1137,7 @@
                       "",
                       "export function cancelBooking() {",
                       "  const bookingId = \"a string\";",
-                      "  const cancelBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
@@ -1153,14 +1145,12 @@
                       "    authorizationToken: \"a string\",",
                       "    flowControlSettings: {",
                       "      ignoreCancellationPolicy: true",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .cancelBooking(bookingId, cancelBookingOptions, options)",
+                      "    .cancelBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1176,17 +1166,15 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "confirmBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
               "type": "string",
               "doc": "ID of the booking to be confirmed." },
-            { "name": "confirmBookingOptions",
-              "type": "wix-bookings-rc-v2-backend.bookings.ConfirmBookingRequest_6686585008" },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.bookings.ConfirmBookingRequest_6204158203" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -1194,7 +1182,7 @@
                   [ "string" ] },
             "doc": "Fulfilled - ID of the confirmed booking." },
         "locations":
-          [ { "lineno": 7,
+          [ { "lineno": 8,
               "filename": "com_wix_bookings_api_v1_Bookings_Confirm_confirmBooking.js" } ],
         "docs":
           { "summary": "Confirms a booking request.",
@@ -1226,18 +1214,16 @@
                       "",
                       "export function confirmBooking() {",
                       "  const bookingId = \"a string\";",
-                      "  const confirmBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .confirmBooking(bookingId, confirmBookingOptions, options)",
+                      "    .confirmBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1254,18 +1240,16 @@
                       "",
                       "export function confirmBooking() {",
                       "  const bookingId = \"a string\";",
-                      "  const confirmBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .confirmBooking(bookingId, confirmBookingOptions, options)",
+                      "    .confirmBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1281,17 +1265,15 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "declineBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
               "type": "string",
               "doc": "ID of the booking to be declined." },
-            { "name": "declineBookingOptions",
-              "type": "wix-bookings-rc-v2-backend.bookings.DeclineBookingRequest_4803545850" },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.bookings.DeclineBookingRequest_4321119045" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -1299,7 +1281,7 @@
                   [ "wix-bookings-rc-v2-backend.bookings.DeclineBookingResult_3917947580" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 13,
+          [ { "lineno": 14,
               "filename": "com_wix_bookings_api_v1_Bookings_Decline_declineBooking.js" } ],
         "docs":
           { "summary": "Declines a pending booking request.",
@@ -1330,18 +1312,16 @@
                       "",
                       "export function declineBooking() {",
                       "  const bookingId = \"a string\";",
-                      "  const declineBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .declineBooking(bookingId, declineBookingOptions, options)",
+                      "    .declineBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1358,18 +1338,16 @@
                       "",
                       "export function declineBooking() {",
                       "  const bookingId = \"a string\";",
-                      "  const declineBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .declineBooking(bookingId, declineBookingOptions, options)",
+                      "    .declineBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1393,7 +1371,7 @@
           { "type": "wix-bookings-rc-v2-backend.bookings.BookingsRcV2QueryBuilder_56496348945",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 1238,
+          [ { "lineno": 1241,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "<!--ONLY:REST-->",
@@ -1471,8 +1449,7 @@
                 "> + A member can only see their own bookings unless `suppressAuth` is set to `true` in the queryOptions for the",
                 "[`find()`](wix-bookings-backend/bookings/bookingsquerybuilder/find) function.",
                 "> + When using the queryBookings() function immediately following a change to your bookings, the data retrieved may not contain your most recent changes.",
-                "See [Wix-data and Eventual Consistency](reference/wix-data/introduction#wix-data_introduction_wix-data-and-eventual-consistency) for more information. To solve this problem, you can use the [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#setTimeout) function to delay querying for a number of seconds, following any changes to your bookings data.",
-                "<!--END:ONLY:VELO-->" ],
+                "See [Wix-data and Eventual Consistency](reference/wix-data/introduction#wix-data_introduction_wix-data-and-eventual-consistency) for more information. To solve this problem, you can use the [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#setTimeout) function to delay querying for a number of seconds, following any changes to your bookings data." ],
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -1504,7 +1481,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rescheduleBookingWithExistingSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1513,11 +1491,8 @@
             { "name": "sessionId",
               "type": "string",
               "doc": "The requested session id to book." },
-            { "name": "rescheduleBookingOptions",
-              "type": "wix-bookings-rc-v2-backend.RescheduleRequest_6918542709" },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.RescheduleRequest_6436115904" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -1544,21 +1519,19 @@
                       "export function rescheduleBookingWithExistingSession() {",
                       "  const bookingId = \"a string\";",
                       "  const sessionId = \"a string\";",
-                      "  const rescheduleBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
                       "    },",
                       "    ignoreReschedulePolicy: {",
                       "      ignoreReschedulePolicy: true",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .rescheduleBookingWithExistingSession(bookingId, sessionId, rescheduleBookingOptions, options)",
+                      "    .rescheduleBookingWithExistingSession(bookingId, sessionId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1574,7 +1547,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rescheduleBookingWithNewSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1582,11 +1556,8 @@
               "doc": "Id of the booking to be updated." },
             { "name": "sessionInfo",
               "type": "wix-bookings-rc-v2-backend.Session_225620643475" },
-            { "name": "rescheduleBookingOptions",
-              "type": "wix-bookings-rc-v2-backend.RescheduleRequest_6918542709" },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.RescheduleRequest_6436115904" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -1763,21 +1734,19 @@
                       "    },",
                       "    recurrence: \"a string\"",
                       "  };",
-                      "  const rescheduleBookingOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
                       "    },",
                       "    ignoreReschedulePolicy: {",
                       "      ignoreReschedulePolicy: true",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return bookings",
-                      "    .rescheduleBookingWithNewSession(bookingId, sessionInfo, rescheduleBookingOptions, options)",
+                      "    .rescheduleBookingWithNewSession(bookingId, sessionInfo, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -2223,6 +2192,65 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "BookRequest_274304126086",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_api_v1_Bookings_Book_bookExistingSession.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "createSession",
+              "type": "wix-bookings-rc-v2-backend.Session_225620643475",
+              "optional": true },
+            { "name": "scheduleId",
+              "type": "string",
+              "optional": true },
+            { "name": "bySessionId",
+              "type": "wix-bookings-rc-v2-backend.BySessionId_3461046880",
+              "optional": true },
+            { "name": "couponCode",
+              "type": "string",
+              "doc": "Coupon code to apply for this booking",
+              "optional": true },
+            { "name": "planSelection",
+              "type": "wix-bookings-rc-v2-backend.PaidPlan_11584964510",
+              "doc": "Describes the selected paid plan to use for this booking.",
+              "optional": true },
+            { "name": "notifyParticipants",
+              "type": "boolean",
+              "optional": true },
+            { "name": "sendSmsReminder",
+              "type": "boolean",
+              "doc": "When value is set to True, an SMS reminder would be sent to the phone number specified in the ContactDetails, 24 hours before the session starts.",
+              "optional": true },
+            { "name": "externalUserId",
+              "type": "string",
+              "doc": "A user identifier of an external application user that initiated the book request.\n Allows an external application to later identify its own bookings and correlate to its own internal users",
+              "optional": true },
+            { "name": "bookingSource",
+              "type": "wix-bookings-rc-v2-backend.BookingSource_11223060951",
+              "doc": "Identifies the source (platform, actor and app) that created this booking.\n This property of the booking can not be changed. It will be published in the BookingNotification callback for every update of this booking.\n The app_def_id and app_name will be resolved automatically.",
+              "optional": true },
+            { "name": "flowControlSettings",
+              "type": "wix-bookings-rc-v2-backend.BookRequest_FlowControlSettings_1821316675",
+              "doc": "Sets the book flow behavior, some behaviors required permissions.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "schedule",
+                  "members":
+                    [ "bySessionId",
+                      "createSession",
+                      "scheduleId" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "BookedEntity_83705225470",
         "locations":
           [ { "lineno": 1,
@@ -2294,7 +2322,7 @@
               "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
             { "name": "status",
               "type": "string",
-              "doc": "+ `PENDING_CHECKOUT` The booking is waiting to be checked out.\n + `CONFIRMED` The booking has beed approved by the owner.\n + `CANCELED` The booking has been cancelled.\n + `PENDING` The booking has been created.\n + `PENDING_APPROVAL` The booking is waiting for the owner to approve or decline.\n + `DECLINED` The booking was declined by the owner.\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+              "doc": "<!--ONLY:VELO\nOne of:\n - `PENDING_CHECKOUT` The booking is waiting to be checked out.\n - `CONFIRMED` The booking has beed approved by the owner.\n - `CANCELED` The booking has been cancelled.\n - `PENDING` The booking has been created.\n - `PENDING_APPROVAL` The booking is waiting for the owner to approve or decline.\n - `DECLINED` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
             { "name": "_createdDate",
               "type": "Date" },
             { "name": "attendanceInfo",
@@ -2319,7 +2347,38 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "CancelBookingRequest_6810012872",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "participantNotification",
+              "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
+              "doc": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
+              "optional": true },
+            { "name": "authorizationToken",
+              "type": "string",
+              "doc": "<!--ONLY:REST-->\n An optional token that will be used to authorize the request\n\n\n If null, authorization will be determined based on the request context\n\n\n Token can be retrieved by calling GenerateAuthorizationToken\n<!--END:ONLY:REST-->",
+              "optional": true },
+            { "name": "flowControlSettings",
+              "type": "wix-bookings-rc-v2-backend.bookings.CancelBookingRequest_FlowControlSettings_806682439",
+              "doc": "Sets the cancel booking flow behavior.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CancelBookingRequest_7292439677",
         "locations":
           [ { "lineno": 1,
@@ -2344,10 +2403,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "CancelBookingRequest_FlowControlSettings_806682439",
         "locations":
-          [ { "lineno": 17,
+          [ { "lineno": 18,
               "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
         "docs":
           { "summary": "Sets the cancel booking flow behavior.",
@@ -2365,7 +2425,7 @@
         "labels": [] },
       { "name": "CancelBookingResult_4386307776",
         "locations":
-          [ { "lineno": 30,
+          [ { "lineno": 31,
               "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
         "docs":
           { "links": [],
@@ -2379,6 +2439,28 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "ConfirmBookingRequest_6204158203",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_api_v1_Bookings_Confirm_confirmBooking.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "participantNotification",
+              "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
+              "doc": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ConfirmBookingRequest_6686585008",
         "locations":
           [ { "lineno": 1,
@@ -2395,7 +2477,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ContactDetails_55432031444",
         "locations":
           [ { "lineno": 1,
@@ -2442,6 +2525,28 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "DeclineBookingRequest_4321119045",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_api_v1_Bookings_Decline_declineBooking.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "participantNotification",
+              "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
+              "doc": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "DeclineBookingRequest_4803545850",
         "locations":
           [ { "lineno": 1,
@@ -2458,10 +2563,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "DeclineBookingResult_3917947580",
         "locations":
-          [ { "lineno": 7,
+          [ { "lineno": 8,
               "filename": "com_wix_bookings_api_v1_Bookings_Decline_declineBooking.js" } ],
         "docs":
           { "links": [],
@@ -2513,7 +2619,7 @@
         "labels": [] },
       { "name": "Location_36724221108",
         "locations":
-          [ { "lineno": 45,
+          [ { "lineno": 48,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "The location of the session.",
@@ -2533,7 +2639,7 @@
         "labels": [] },
       { "name": "QueryOptions_583539044",
         "locations":
-          [ { "lineno": 1230,
+          [ { "lineno": 1233,
               "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
         "docs":
           { "summary": "The `options` parameter is an optional parameter that can be used when calling the query [`find()`](#find) function.",
