@@ -1,7 +1,8 @@
 { "name": "ConsentPolicy",
   "memberOf": "wix-window",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1374,
       "filename": "window.es6" },
@@ -10,7 +11,7 @@
       "description":
         [ "The consent policy helps you comply with [GDPR](https://support.wix.com/en/article/preparing-your-wix-site-for-the-gdpr) and [CCPA](https://support.wix.com/en/article/preparing-your-wix-site-for-ccpa) regulations and lets your users",
           "control their information. The site owner sets up the site consent policy and cookie consent banners in",
-          "the site's [Privacy Center](https://www.wix.com/my-account/site-selector/?buttonText=Open%20Privacy%20Center&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fcookie-consent-settings-app?referralInfo=corvid-docs).",
+          "the site's [Privacy Center](https://www.wix.com/my-account/site-selector/?buttonText=Open%20Privacy%20Center&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fcookie-consent-settings-app?referralInfo=velo-docs).",
           "",
           " To use the ConsentPolicy API, import `wixWindow` from the `wix-window` module:",
           "",
