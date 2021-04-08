@@ -1,7 +1,8 @@
 { "name": "sessions",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -437,7 +438,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
@@ -456,7 +458,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Session_255663383937" ] },
+                  [ "wix-bookings-rc-v2-backend.Session_96580610885" ] },
             "doc": "Fulfilled - Session." },
         "locations":
           [ { "lineno": 73,
@@ -1874,7 +1876,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -1883,20 +1886,17 @@
             { "name": "sessionInfo",
               "type": "wix-bookings-rc-v2-backend.Session_225620643475",
               "doc": "Session." },
-            { "name": "updateSessionOptions",
-              "type": "wix-bookings-rc-v2-backend.sessions.FieldMask_8457178585",
-              "doc": "List of fields that do not inherit values from the schedule when they are empty. Not supported for recurring sessions." },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.sessions.FieldMask_7974751780",
+              "doc": "List of fields that do not inherit values from the schedule when they are empty. Not supported for recurring sessions." } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Session_255663383937" ] },
+                  [ "wix-bookings-rc-v2-backend.Session_96580610885" ] },
             "doc": "Fulfilled - Session." },
         "locations":
-          [ { "lineno": 9,
+          [ { "lineno": 10,
               "filename": "com_wix_bookings_schedules_api_v1_Schedules_UpdateSession_updateSession.js" } ],
         "docs":
           { "summary": "Updates a session.",
@@ -2071,19 +2071,17 @@
                       "    },",
                       "    recurrence: \"a string\"",
                       "  };",
-                      "  const updateSessionOptions = {",
+                      "  const options = {",
                       "    clearInheritedFields: [\"a string\"],",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return sessions",
-                      "    .updateSession(sessionId, sessionInfo, updateSessionOptions, options)",
+                      "    .updateSession(sessionId, sessionInfo, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -2438,6 +2436,36 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "FieldMask_7974751780",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_UpdateSession_updateSession.js" } ],
+        "docs":
+          { "summary": "List of fields that do not inherit values from the schedule when they are empty. Not supported for recurring sessions.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "clearInheritedFields",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "The set of field mask paths.",
+              "optional": true },
+            { "name": "participantNotification",
+              "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
+              "doc": "Whether to notify participants about the change, and an optional custom message.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "FieldMask_8457178585",
         "locations":
           [ { "lineno": 1,
@@ -2462,7 +2490,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetScheduleRequest_308712754",
         "locations":
           [ { "lineno": 1,
