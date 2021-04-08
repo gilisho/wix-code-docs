@@ -438,8 +438,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
@@ -644,17 +643,15 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "deleteSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
               "type": "string",
               "doc": "Session ID. Required." },
-            { "name": "deleteSessionOptions",
-              "type": "wix-bookings-rc-v2-backend.sessions.DeleteSessionRequest_5772496212" },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.Options_936495653",
-              "doc": "Authorization options." } ],
+              "type": "wix-bookings-rc-v2-backend.sessions.DeleteSessionRequest_5290069407" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -662,7 +659,7 @@
                   [ "string" ] },
             "doc": "Fulfilled - Session ID." },
         "locations":
-          [ { "lineno": 7,
+          [ { "lineno": 8,
               "filename": "com_wix_bookings_schedules_api_v1_Schedules_DeleteSession_deleteSession.js" } ],
         "docs":
           { "summary": "Deletes a session from a schedule.",
@@ -688,18 +685,16 @@
                       "",
                       "export function deleteSession() {",
                       "  const sessionId = \"a string\";",
-                      "  const deleteSessionOptions = {",
+                      "  const options = {",
                       "    participantNotification: {",
                       "      notifyParticipants: true,",
                       "      message: \"a string\"",
-                      "    }",
-                      "  };",
-                      "  const options = {",
+                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return sessions",
-                      "    .deleteSession(sessionId, deleteSessionOptions, options)",
+                      "    .deleteSession(sessionId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1876,8 +1871,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -2382,6 +2376,28 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "DeleteSessionRequest_5290069407",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_DeleteSession_deleteSession.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "participantNotification",
+              "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
+              "doc": "Whether to notify participants about the change, and an optional custom message.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "DeleteSessionRequest_5772496212",
         "locations":
           [ { "lineno": 1,
@@ -2398,7 +2414,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "DeleteSessionRequest_6604909881",
         "locations":
           [ { "lineno": 15,
@@ -2464,8 +2481,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "FieldMask_8457178585",
         "locations":
           [ { "lineno": 1,
