@@ -1,7 +1,6 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -851,8 +850,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Booking_348148577543",
         "locations":
           [ { "lineno": 90,
@@ -946,8 +944,7 @@
               "doc": "An object describing the platform and application that made the booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "BusinessSchedule_46474402208",
         "locations":
           [ { "lineno": 1492,
@@ -1084,8 +1081,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CalendarConference_23255260278",
         "locations":
           [ { "lineno": 770,
@@ -1128,8 +1124,7 @@
               "doc": "Account owner id in vc service" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CalendarDateTime_2270289792",
         "locations":
           [ { "lineno": 795,
@@ -1763,8 +1758,7 @@
               "doc": "Owner ID, of the linked schedule." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LinkedSchedule_7939545343",
         "locations":
           [ { "lineno": 841,
@@ -1785,8 +1779,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LocalDateTime_493702712",
         "locations":
           [ { "lineno": 887,
@@ -1933,8 +1926,7 @@
               "doc": "Location type.\n<!--ONLY:VELO\n One of:\n + `OWNER_BUSINESS` The business address as set in the site’s general settings.\n + `OWNER_CUSTOM` The address as set when creating the service.\n + `CUSTOM` The address set for the individual session.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"OWNER_BUSINESS\"`\n + `\"OWNER_CUSTOM\"`\n + `\"CUSTOM\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location_147848441914",
         "locations":
           [ { "lineno": 603,
@@ -1963,8 +1955,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location_156608614652",
         "locations":
           [ { "lineno": 629,
@@ -1987,8 +1978,7 @@
               "doc": "Not supported yet.\n Valid only when location_type is `OWNER_BUSINESS`.\n If the location_type is `OWNER_BUSINESS`, then the default value is the default business location.\n `business_location.id` is required.\n Supported read-only fields: name, description, time zone, email, phone, address." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location_99881894064",
         "locations":
           [ { "lineno": 1431,
@@ -2329,8 +2319,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Participant_14950462006",
         "locations":
           [ { "lineno": 945,
@@ -2371,8 +2360,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Participant_16742085086",
         "locations":
           [ { "lineno": 921,
@@ -2409,8 +2397,7 @@
               "doc": "Whether the participant was inherited from the schedule, as opposed to being booked directly to the session." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PaymentDetails_78509831866",
         "locations":
           [ { "lineno": 375,
@@ -3044,8 +3031,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_255663383937",
         "locations":
           [ { "lineno": 1093,
@@ -3145,8 +3131,7 @@
               "doc": "An object containing the session and schedule versions." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_96580610885",
         "locations":
           [ { "lineno": 1129,

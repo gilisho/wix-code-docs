@@ -1,8 +1,7 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -2339,8 +2338,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Booking_241733789927",
         "locations":
           [ { "lineno": 17,
@@ -2674,8 +2672,7 @@
               "doc": "Location type.\n<!--ONLY:VELO\n One of:\n + `OWNER_BUSINESS` The business address as set in the site’s general settings.\n + `OWNER_CUSTOM` The address as set when creating the service.\n + `CUSTOM` The address set for the individual session.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"OWNER_BUSINESS\"`\n + `\"OWNER_CUSTOM\"`\n + `\"CUSTOM\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "QueryOptions_583539044",
         "locations":
           [ { "lineno": 1238,
