@@ -1,7 +1,8 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -2313,7 +2314,7 @@
               "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
             { "name": "status",
               "type": "string",
-              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `PENDING_CHECKOUT` The booking is waiting to be checked out.\n - `CONFIRMED` The booking has beed approved by the owner.\n - `CANCELED` The booking has been cancelled.\n - `PENDING` The booking has been created.\n - `PENDING_APPROVAL` The booking is waiting for the owner to approve or decline.\n - `DECLINED` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been cancelled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
             { "name": "_createdDate",
               "type": "Date" },
             { "name": "attendanceInfo",
@@ -2338,7 +2339,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Booking_241733789927",
         "locations":
           [ { "lineno": 17,
@@ -2669,10 +2671,11 @@
               "doc": "Custom [address](https://www.wix.com/velo/reference/$w/addressinput/value), used when location_type is `\"OWNER_CUSTOM\"`." },
             { "name": "locationType",
               "type": "string",
-              "doc": "Location type.\n<!--ONLY:VELO\n One of:\n + `OWNER_BUSINESS` The business address as set in the site’s general settings.\n + `OWNER_CUSTOM` The address as set when creating the service.\n + `CUSTOM` The address set for the individual session.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"OWNER_BUSINESS\"`\n + `\"OWNER_CUSTOM\"`\n + `\"CUSTOM\"`" } ],
+              "doc": "Location type.\n<!--ONLY:VELO\n One of:\n - `\"OWNER_BUSINESS\"` The business address as set in the site’s general settings.\n - `\"OWNER_CUSTOM\"` The address as set when creating the service.\n - `\"CUSTOM\"` The address set for the individual session.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"OWNER_BUSINESS\"`\n + `\"OWNER_CUSTOM\"`\n + `\"CUSTOM\"`" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "QueryOptions_583539044",
         "locations":
           [ { "lineno": 1238,
