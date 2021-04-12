@@ -1,7 +1,8 @@
 { "name": "resources",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 41,
       "filename": "index.js" },
@@ -413,7 +414,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateResourceSchedule",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "resourceId",
@@ -432,10 +434,10 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Schedule_252114210686" ] },
-            "doc": "Fulfilled - The updated schedule." },
+                  [ "wix-bookings-rc-v2-backend.resources.UpdateScheduleResult_13037961516" ] },
+            "doc": "" },
         "locations":
-          [ { "lineno": 19,
+          [ { "lineno": 37,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
         "docs":
           { "summary": "Updates a resource's schedule",
@@ -484,7 +486,33 @@
               [ { "id": "maturity-beta" } ] } } ],
   "callbacks": [],
   "messages":
-    [ { "name": "Availability_9690361649",
+    [ { "name": "Availability_12303707576",
+        "locations":
+          [ { "lineno": 10,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
+        "docs":
+          { "summary": "An object describing how to calculate the schedule's availability.",
+            "description":
+              [ "An empty object indicates that the schedule is not available for booking." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "start",
+              "type": "Date",
+              "doc": "Date and time the schedule starts to be available for booking. For example, a schedule can become available at a future date." },
+            { "name": "linkedSchedules",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.LinkedSchedule_10367513828" ] },
+              "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "Availability_9690361649",
         "locations":
           [ { "lineno": 1,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
@@ -741,7 +769,7 @@
         "labels": [] },
       { "name": "Schedule_11557805088",
         "locations":
-          [ { "lineno": 10,
+          [ { "lineno": 19,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
         "docs":
           { "summary": "The schedule to update",
@@ -783,6 +811,29 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "UpdateScheduleResult_13037961516",
+        "locations":
+          [ { "lineno": 28,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Schedule ID." },
+            { "name": "scheduleOwnerId",
+              "type": "string",
+              "doc": "ID of the schedule's owner entity. This may be a resource ID, a session ID, or a service ID." },
+            { "name": "availability",
+              "type": "wix-bookings-rc-v2-backend.resources.Availability_12303707576",
+              "doc": "An object describing how to calculate the schedule's availability.\nAn empty object indicates that the schedule is not available for booking." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Value_11948408011",
         "locations":
           [ { "lineno": 14,

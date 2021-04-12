@@ -1,7 +1,8 @@
 { "name": "sessions",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -437,18 +438,13 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
               "type": "wix-bookings-rc-v2-backend.sessions.Session_17152158814",
               "doc": "Session." },
-            { "name": "clearInheritedFields",
-              "type":
-                { "name": "Array",
-                  "typeParams":
-                    [ "string" ] },
-              "doc": "The set of field mask paths." },
             { "name": "options",
               "type": "wix-bookings-rc-v2-backend.Options_936495653",
               "doc": "Authorization options." } ],
@@ -498,13 +494,12 @@
                       "    type: \"UNDEFINED\",",
                       "    recurrence: \"a string\"",
                       "  };",
-                      "  const clearInheritedFields = [\"a string\"];",
                       "  const options = {",
                       "    suppressAuth: true",
                       "  };",
                       "",
                       "  return sessions",
-                      "    .createSession(sessionInfo, clearInheritedFields, options)",
+                      "    .createSession(sessionInfo, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -797,11 +792,12 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listSlots",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "listSlotsRequest",
-              "type": "wix-bookings-rc-v2-backend.sessions.ListSlotsRequest_27967346597" } ],
+              "type": "wix-bookings-rc-v2-backend.sessions.ListSlotsRequest_23531210904" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -809,7 +805,7 @@
                   [ "wix-bookings-rc-v2-backend.sessions.ListSlotsResult_263978911646" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 27,
+          [ { "lineno": 14,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSlots_listSlots.js" } ],
         "docs":
           { "summary": "Returns the schedule slots, calculated by the schedule's availability specification.",
@@ -864,10 +860,6 @@
                       "          offset: 42",
                       "        }",
                       "      }",
-                      "    },",
-                      "    limitPerDay: {",
-                      "      limit: 42,",
-                      "      timezone: \"a string\"",
                       "    }",
                       "  };",
                       "",
@@ -1753,7 +1745,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -1763,8 +1756,8 @@
               "type": "wix-bookings-rc-v2-backend.sessions.Session_13364701673",
               "doc": "Session." },
             { "name": "options",
-              "type": "wix-bookings-rc-v2-backend.sessions.FieldMask_7974751780",
-              "doc": "List of fields that do not inherit values from the schedule when they are empty. Not supported for recurring sessions." } ],
+              "type": "wix-bookings-rc-v2-backend.Options_936495653",
+              "doc": "Authorization options." } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -1772,7 +1765,7 @@
                   [ "wix-bookings-rc-v2-backend.sessions.UpdateSessionResult_29051221615" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 141,
+          [ { "lineno": 132,
               "filename": "com_wix_bookings_schedules_api_v1_Schedules_UpdateSession_updateSession.js" } ],
         "docs":
           { "summary": "Updates a session.",
@@ -1827,11 +1820,6 @@
                       "    recurrence: \"a string\"",
                       "  };",
                       "  const options = {",
-                      "    clearInheritedFields: [\"a string\"],",
-                      "    participantNotification: {",
-                      "      notifyParticipants: true,",
-                      "      message: \"a string\"",
-                      "    },",
                       "    suppressAuth: true",
                       "  };",
                       "",
@@ -2337,7 +2325,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "FieldMask_8457178585",
         "locations":
           [ { "lineno": 1,
@@ -2506,7 +2495,7 @@
         "extra":
           {  },
         "labels":
-          [ "removed" ] },
+          [ "new" ] },
       { "name": "ListSlotsRequest_27967346597",
         "locations":
           [ { "lineno": 1,
@@ -2526,7 +2515,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListSlotsRequest_LimitPerDay_4567179699",
         "locations":
           [ { "lineno": 10,
@@ -2551,10 +2541,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListSlotsResult_263978911646",
         "locations":
-          [ { "lineno": 20,
+          [ { "lineno": 7,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSlots_listSlots.js" } ],
         "docs":
           { "links": [],
