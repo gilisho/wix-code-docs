@@ -1,7 +1,6 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -851,8 +850,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Booking_348148577543",
         "locations":
           [ { "lineno": 90,
@@ -946,8 +944,7 @@
               "doc": "An object describing the platform and application that made the booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "BusinessSchedule_46474402208",
         "locations":
           [ { "lineno": 1495,
@@ -1929,8 +1926,7 @@
               "doc": "Location type.\n<!--ONLY:VELO\n One of:\n - `\"OWNER_BUSINESS\"` The business address as set in the site’s general settings.\n - `\"OWNER_CUSTOM\"` The address as set when creating the service.\n - `\"CUSTOM\"` The address set for the individual session.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"OWNER_BUSINESS\"`\n + `\"OWNER_CUSTOM\"`\n + `\"CUSTOM\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location_147848441914",
         "locations":
           [ { "lineno": 603,
@@ -1959,8 +1955,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location_156608614652",
         "locations":
           [ { "lineno": 629,
@@ -1983,8 +1978,7 @@
               "doc": "Not supported yet.\n Valid only when location_type is `OWNER_BUSINESS`.\n If the location_type is `OWNER_BUSINESS`, then the default value is the default business location.\n `business_location.id` is required.\n Supported read-only fields: name, description, time zone, email, phone, address." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location_99881894064",
         "locations":
           [ { "lineno": 1434,
@@ -2325,8 +2319,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Participant_14950462006",
         "locations":
           [ { "lineno": 947,
@@ -2367,8 +2360,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Participant_16742085086",
         "locations":
           [ { "lineno": 922,
@@ -2405,8 +2397,7 @@
               "doc": "Whether the participant was inherited from the schedule, as opposed to being booked directly to the session." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PaymentDetails_78509831866",
         "locations":
           [ { "lineno": 375,
@@ -2441,8 +2432,7 @@
               "doc": "Pricing plan details, if a pricing plan was used to pay for the booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PaymentDetails_93106850965",
         "locations":
           [ { "lineno": 412,
@@ -2483,8 +2473,7 @@
               "doc": "The invoice details of the booking. Not supported yet." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PaymentDetails_93427079082",
         "locations":
           [ { "lineno": 373,
@@ -3626,7 +3615,6 @@
               "doc": "Payment vendor name." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }
