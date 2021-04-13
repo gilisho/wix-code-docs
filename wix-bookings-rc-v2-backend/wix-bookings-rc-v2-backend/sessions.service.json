@@ -438,8 +438,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
@@ -792,8 +791,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listSlots",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "listSlotsRequest",
@@ -1750,8 +1748,8 @@
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
-              "type": "wix-bookings-rc-v2-backend.sessions.Session_448208966",
-              "doc": "Session." },
+              "type": "string",
+              "doc": "Session ID." },
             { "name": "sessionInfo",
               "type": "wix-bookings-rc-v2-backend.sessions.Session_13364701673",
               "doc": "Session." },
@@ -1765,7 +1763,7 @@
                   [ "wix-bookings-rc-v2-backend.sessions.UpdateSessionResult_29051221615" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 132,
+          [ { "lineno": 125,
               "filename": "com_wix_bookings_schedules_api_v1_Schedules_UpdateSession_updateSession.js" } ],
         "docs":
           { "summary": "Updates a session.",
@@ -1788,9 +1786,7 @@
                     [ "import { sessions } from \"wix-bookings-rc-v2-backend\";",
                       "",
                       "export function updateSession() {",
-                      "  const sessionId = {",
-                      "    _id: \"a string\"",
-                      "  };",
+                      "  const sessionId = \"a string\";",
                       "  const sessionInfo = {",
                       "    start: {",
                       "      timestamp: new Date(),",
@@ -2494,8 +2490,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListSlotsRequest_27967346597",
         "locations":
           [ { "lineno": 1,
@@ -2793,7 +2788,7 @@
         "labels": [] },
       { "name": "Session_13364701673",
         "locations":
-          [ { "lineno": 8,
+          [ { "lineno": 1,
               "filename": "com_wix_bookings_schedules_api_v1_Schedules_UpdateSession_updateSession.js" } ],
         "docs":
           { "summary": "Session.",
@@ -3115,7 +3110,8 @@
               "doc": "Session ID." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "SplitRecurringSessionRequest_3004348263",
         "locations":
           [ { "lineno": 1,
@@ -3332,7 +3328,7 @@
         "labels": [] },
       { "name": "UpdateSessionResult_29051221615",
         "locations":
-          [ { "lineno": 62,
+          [ { "lineno": 55,
               "filename": "com_wix_bookings_schedules_api_v1_Schedules_UpdateSession_updateSession.js" } ],
         "docs":
           { "links": [],

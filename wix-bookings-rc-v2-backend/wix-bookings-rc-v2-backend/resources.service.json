@@ -1,8 +1,7 @@
 { "name": "resources",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 41,
       "filename": "index.js" },
@@ -414,8 +413,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateResourceSchedule",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "resourceId",
@@ -510,8 +508,7 @@
               "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Availability_9690361649",
         "locations":
           [ { "lineno": 1,
@@ -832,8 +829,7 @@
               "doc": "An object describing how to calculate the schedule's availability.\nAn empty object indicates that the schedule is not available for booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Value_11948408011",
         "locations":
           [ { "lineno": 14,
