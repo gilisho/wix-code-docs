@@ -1,8 +1,7 @@
 { "name": "MediaManager",
   "memberOf": "wix-media-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 13,
       "filename": "index.js" },
@@ -334,8 +333,7 @@
         "extra":
           {  } },
       { "name": "importFile",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "path",
@@ -420,8 +418,7 @@
         "extra":
           {  } },
       { "name": "listFiles",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "filterOptions",
@@ -499,8 +496,7 @@
         "extra":
           {  } },
       { "name": "listFolders",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "filterOptions",
@@ -563,8 +559,7 @@
         "extra":
           {  } },
       { "name": "upload",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "path",
