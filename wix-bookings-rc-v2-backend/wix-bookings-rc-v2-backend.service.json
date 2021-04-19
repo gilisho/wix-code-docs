@@ -1,6 +1,7 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -75,7 +76,7 @@
   "messages":
     [ { "name": "AddressLocation_3558750251",
         "locations":
-          [ { "lineno": 1276,
+          [ { "lineno": 1350,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -97,7 +98,7 @@
         "labels": [] },
       { "name": "AddressLocation_3744127693",
         "locations":
-          [ { "lineno": 1268,
+          [ { "lineno": 1342,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -117,7 +118,7 @@
         "labels": [] },
       { "name": "AddressLocation_5466057688",
         "locations":
-          [ { "lineno": 1388,
+          [ { "lineno": 1468,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -139,7 +140,7 @@
         "labels": [] },
       { "name": "AddressLocation_5651435130",
         "locations":
-          [ { "lineno": 1380,
+          [ { "lineno": 1460,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -159,7 +160,7 @@
         "labels": [] },
       { "name": "Address_30702269075",
         "locations":
-          [ { "lineno": 1366,
+          [ { "lineno": 1446,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -205,7 +206,7 @@
         "labels": [] },
       { "name": "Address_31907222448",
         "locations":
-          [ { "lineno": 1352,
+          [ { "lineno": 1432,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -243,7 +244,7 @@
         "labels": [] },
       { "name": "Address_35751567552",
         "locations":
-          [ { "lineno": 1214,
+          [ { "lineno": 1288,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom [address](https://www.wix.com/velo/reference/$w/addressinput/value), used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -290,7 +291,7 @@
         "labels": [] },
       { "name": "Address_47367399060",
         "locations":
-          [ { "lineno": 1230,
+          [ { "lineno": 1304,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -359,7 +360,7 @@
         "labels": [] },
       { "name": "Address_49221173480",
         "locations":
-          [ { "lineno": 1249,
+          [ { "lineno": 1323,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -947,7 +948,7 @@
         "labels": [] },
       { "name": "BusinessSchedule_46474402208",
         "locations":
-          [ { "lineno": 1495,
+          [ { "lineno": 1575,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -978,7 +979,7 @@
         "labels": [] },
       { "name": "BusinessSchedule_47401289418",
         "locations":
-          [ { "lineno": 1484,
+          [ { "lineno": 1564,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1132,7 +1133,7 @@
         "docs":
           { "summary": "An object specifying the start date and time of the session.",
             "description":
-              [ "If the session is a recurring session, `start` must contain a local date/time." ],
+              [ "If the session is a recurring session, `start` must contain a `localDateTime`." ],
             "links": [],
             "examples": [],
             "extra":
@@ -1152,7 +1153,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CalendarDateTime_3011799560",
         "locations":
           [ { "lineno": 808,
@@ -1160,7 +1162,7 @@
         "docs":
           { "summary": "An object specifying the start date and time of the session.",
             "description":
-              [ "If the session is a recurring session, `start` must contain a local date/time." ],
+              [ "If the session is a recurring session, `start` must contain a `localDateTime`." ],
             "links": [],
             "examples": [],
             "extra":
@@ -1177,7 +1179,8 @@
               "doc": "The time zone." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CheckoutOptionsRequest_246746251605",
         "locations":
           [ { "lineno": 536,
@@ -1390,7 +1393,7 @@
         "labels": [] },
       { "name": "CursorPaging_3235073023",
         "locations":
-          [ { "lineno": 1593,
+          [ { "lineno": 1673,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursor pointing to page of results. Can't be used together with 'paging'. 'cursorPaging.cursor' can not be used together with 'filter' or 'sort'",
@@ -1412,7 +1415,7 @@
         "labels": [] },
       { "name": "Cursors_3337235656",
         "locations":
-          [ { "lineno": 1601,
+          [ { "lineno": 1681,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursors to navigate through result pages. Returned if cursor paging was used",
@@ -1480,7 +1483,7 @@
         "labels": [] },
       { "name": "FieldMask_4228111159",
         "locations":
-          [ { "lineno": 1586,
+          [ { "lineno": 1666,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Field mask of fields to update.",
@@ -1650,7 +1653,7 @@
         "labels": [] },
       { "name": "Image_3626650051",
         "locations":
-          [ { "lineno": 1609,
+          [ { "lineno": 1689,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1679,7 +1682,7 @@
         "labels": [] },
       { "name": "Image_7707870310",
         "locations":
-          [ { "lineno": 1618,
+          [ { "lineno": 1698,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1845,7 +1848,7 @@
         "labels": [] },
       { "name": "Location_106510226219",
         "locations":
-          [ { "lineno": 1396,
+          [ { "lineno": 1476,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -1981,7 +1984,7 @@
         "labels": [] },
       { "name": "Location_99881894064",
         "locations":
-          [ { "lineno": 1434,
+          [ { "lineno": 1514,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2070,7 +2073,7 @@
         "labels": [] },
       { "name": "Options_936495653",
         "locations":
-          [ { "lineno": 1345,
+          [ { "lineno": 1425,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Authorization options.",
@@ -2088,7 +2091,7 @@
         "labels": [] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
-          [ { "lineno": 1637,
+          [ { "lineno": 1717,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2116,7 +2119,7 @@
         "labels": [] },
       { "name": "Paging_1617727965",
         "locations":
-          [ { "lineno": 1629,
+          [ { "lineno": 1709,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Pointer to page of results using offset. Can not be used together with 'cursorPaging'",
@@ -2519,7 +2522,7 @@
             "removed" ] },
       { "name": "PaymentOptions_3423756451",
         "locations":
-          [ { "lineno": 1336,
+          [ { "lineno": 1416,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2653,7 +2656,7 @@
         "labels": [] },
       { "name": "QueryV2_25356650774",
         "locations":
-          [ { "lineno": 1647,
+          [ { "lineno": 1727,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2812,7 +2815,7 @@
         "labels": [] },
       { "name": "Resource_23420910898",
         "locations":
-          [ { "lineno": 1316,
+          [ { "lineno": 1390,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Resource details.",
@@ -2856,10 +2859,11 @@
               "doc": "List of the schedule IDs that are owned by this resource." },
             { "name": "status",
               "type": "string",
-              "doc": "Resource status. Default is `CREATED`.\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" } ],
+              "doc": "Resource status.\n//<!--ONLY:VELO\n One Of:\n - `\"CREATED\"` Default status.\n - `\"DELETED\"` The resource has been deleted.\n - `\"UPDATED\"` The resource has been updated.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Schedule_252114210686",
         "locations":
           [ { "lineno": 980,
@@ -2962,11 +2966,11 @@
               "optional": true },
             { "name": "start",
               "type": "wix-bookings-rc-v2-backend.CalendarDateTime_2270289792",
-              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a local date/time.",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`.",
               "optional": true },
             { "name": "end",
               "type": "wix-bookings-rc-v2-backend.CalendarDateTime_2270289792",
-              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a local date/time.",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`.",
               "optional": true },
             { "name": "affectedSchedules",
               "type":
@@ -3031,7 +3035,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Session_255663383937",
         "locations":
           [ { "lineno": 1096,
@@ -3056,10 +3061,10 @@
               "doc": "Original start date and time of the session in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format." },
             { "name": "start",
               "type": "wix-bookings-rc-v2-backend.CalendarDateTime_3011799560",
-              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a local date/time." },
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
             { "name": "end",
               "type": "wix-bookings-rc-v2-backend.CalendarDateTime_3011799560",
-              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a local date/time." },
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
             { "name": "affectedSchedules",
               "type":
                 { "name": "Array",
@@ -3131,7 +3136,62 @@
               "doc": "An object containing the session and schedule versions." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "Session_30367305333",
+        "locations":
+          [ { "lineno": 1196,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Session.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Session ID." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "Schedule ID that the session belongs to." },
+            { "name": "scheduleOwnerId",
+              "type": "string",
+              "doc": "Owner ID of the schedule that the session belongs to." },
+            { "name": "start",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_3011799560",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "end",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_3011799560",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tags for the session. Optional. Defaults to the schedule's tags.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
+            { "name": "notes",
+              "type": "string",
+              "doc": "Additional information about the session.\nIf the session is a recurring session, this field must be empty." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` \n    - The session was generated from a recurring session and then deleted.\n    - The session was created as a single session and then deleted.\n    - The session is a recurring session and was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
+            { "name": "recurringSessionId",
+              "type": "string",
+              "doc": "Recurring session ID, if the session is a recurring session." },
+            { "name": "type",
+              "type": "string",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` The session creates an event on the calendar for the owner of the schedule that the session belongs to.\n - `\"WORKING_HOURS\"` The session represents a resource's available working hours.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
+            { "name": "recurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Days of the week when the event should recur. Required.|`MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" },
+            { "name": "instanceOfRecurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nIs empty when the session defines the recurrence pattern (in which case, `recurrence` field is non-empty) and if the session is not part of any recurrence pattern.\nIf the session is a recurring session, the recurrence property will be contain the recurrence rule and this property will be empty." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Session_96580610885",
         "locations":
           [ { "lineno": 1129,
@@ -3232,7 +3292,7 @@
           [ "removed" ] },
       { "name": "Session_Version_1635489576",
         "locations":
-          [ { "lineno": 1196,
+          [ { "lineno": 1270,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the session and schedule versions.",
@@ -3294,7 +3354,7 @@
         "labels": [] },
       { "name": "Sorting_7874645153",
         "locations":
-          [ { "lineno": 1659,
+          [ { "lineno": 1739,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3315,7 +3375,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8149530360",
         "locations":
-          [ { "lineno": 1516,
+          [ { "lineno": 1596,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3343,7 +3403,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8520285244",
         "locations":
-          [ { "lineno": 1506,
+          [ { "lineno": 1586,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3367,7 +3427,7 @@
         "labels": [] },
       { "name": "SplitInterval_425847646",
         "locations":
-          [ { "lineno": 1204,
+          [ { "lineno": 1278,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object defining the time between available slots' start times.  For example, a slot with slots_split_interval=5 can start every 5 minutes. The default is the slot duration.",
@@ -3387,7 +3447,7 @@
         "labels": [] },
       { "name": "StreetAddress_5109983780",
         "locations":
-          [ { "lineno": 1293,
+          [ { "lineno": 1367,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3413,7 +3473,7 @@
         "labels": [] },
       { "name": "StreetAddress_5388049943",
         "locations":
-          [ { "lineno": 1284,
+          [ { "lineno": 1358,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3436,7 +3496,7 @@
         "labels": [] },
       { "name": "StreetAddress_7212524817",
         "locations":
-          [ { "lineno": 1475,
+          [ { "lineno": 1555,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -3462,7 +3522,7 @@
         "labels": [] },
       { "name": "StreetAddress_7490590980",
         "locations":
-          [ { "lineno": 1466,
+          [ { "lineno": 1546,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -3485,7 +3545,7 @@
         "labels": [] },
       { "name": "Subdivision_4453086255",
         "locations":
-          [ { "lineno": 1302,
+          [ { "lineno": 1376,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3506,7 +3566,7 @@
         "labels": [] },
       { "name": "Subdivision_4638463697",
         "locations":
-          [ { "lineno": 1309,
+          [ { "lineno": 1383,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3525,7 +3585,7 @@
         "labels": [] },
       { "name": "TimePeriod_38785543152",
         "locations":
-          [ { "lineno": 1556,
+          [ { "lineno": 1636,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -3558,7 +3618,7 @@
         "labels": [] },
       { "name": "TimePeriod_39156298036",
         "locations":
-          [ { "lineno": 1526,
+          [ { "lineno": 1606,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
