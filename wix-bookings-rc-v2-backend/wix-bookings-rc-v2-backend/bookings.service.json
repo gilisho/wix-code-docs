@@ -1,8 +1,7 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -1057,8 +1056,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1141,8 +1139,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "confirmBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1238,8 +1235,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "declineBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1730,8 +1726,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "setAttendance",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1818,8 +1813,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "setBookingAsPaid",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -2477,8 +2471,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ContactDetails_55432031444",
         "locations":
           [ { "lineno": 1,
@@ -2563,8 +2556,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "DeclineBookingResult_3917947580",
         "locations":
           [ { "lineno": 7,
