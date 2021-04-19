@@ -1,7 +1,6 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -1153,8 +1152,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CalendarDateTime_3011799560",
         "locations":
           [ { "lineno": 808,
@@ -1179,8 +1177,7 @@
               "doc": "The time zone." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CheckoutOptionsRequest_246746251605",
         "locations":
           [ { "lineno": 536,
@@ -2862,8 +2859,7 @@
               "doc": "Resource status.\n//<!--ONLY:VELO\n One Of:\n - `\"CREATED\"` Default status.\n - `\"DELETED\"` The resource has been deleted.\n - `\"UPDATED\"` The resource has been updated.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Schedule_252114210686",
         "locations":
           [ { "lineno": 980,
@@ -3035,8 +3031,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_255663383937",
         "locations":
           [ { "lineno": 1096,
@@ -3136,8 +3131,7 @@
               "doc": "An object containing the session and schedule versions." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_30367305333",
         "locations":
           [ { "lineno": 1196,
@@ -3190,8 +3184,7 @@
               "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nIs empty when the session defines the recurrence pattern (in which case, `recurrence` field is non-empty) and if the session is not part of any recurrence pattern.\nIf the session is a recurring session, the recurrence property will be contain the recurrence rule and this property will be empty." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Session_96580610885",
         "locations":
           [ { "lineno": 1129,
