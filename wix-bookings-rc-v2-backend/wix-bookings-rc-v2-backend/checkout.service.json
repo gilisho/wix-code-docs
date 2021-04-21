@@ -1,8 +1,7 @@
 { "name": "checkout",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 29,
       "filename": "index.js" },
@@ -14,8 +13,7 @@
   "properties": [],
   "operations":
     [ { "name": "getExistingSessionCheckoutOptions",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -229,8 +227,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "getNewSessionCheckoutOptions",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
@@ -592,8 +589,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "getScheduleCheckoutOptions",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "scheduleId",

@@ -1,7 +1,6 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -527,8 +526,7 @@
               "doc": "Not supported yet.\n Whether the schedule's slots are only available at the schedule's default location, as set in `schedule.location`. If set to `false`, the `locations` array is used to set the possible locations of the schedule's sessions.\n Default is `true`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Balance_8239195008",
         "locations":
           [ { "lineno": 9,
@@ -602,8 +600,7 @@
                     [ "bySessionId",
                       "createSession",
                       "scheduleId" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "BookRequest_274786552891",
         "locations":
           [ { "lineno": 17,
@@ -1204,8 +1201,7 @@
               "doc": "An object containing the local date and time, with no time zone." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CalendarDateTime_1787767738",
         "locations":
           [ { "lineno": 795,
@@ -1229,8 +1225,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CalendarDateTime_2270289792",
         "locations":
           [ { "lineno": 795,
@@ -1327,8 +1322,7 @@
                     [ "createSession",
                       "scheduleId",
                       "sessionId" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CheckoutOptionsRequest_246746251605",
         "locations":
           [ { "lineno": 536,
@@ -1910,8 +1904,7 @@
               "doc": "Owner ID, of the linked schedule." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LinkedSchedule_7939545343",
         "locations":
           [ { "lineno": 841,
@@ -1932,8 +1925,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LocalDateTime_493702712",
         "locations":
           [ { "lineno": 887,
@@ -3013,8 +3005,7 @@
               "doc": "Resource status.\n//<!--ONLY:VELO\n One Of:\n - `\"CREATED\"` Default status.\n - `\"DELETED\"` The resource has been deleted.\n - `\"UPDATED\"` The resource has been updated.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Schedule_252114210686",
         "locations":
           [ { "lineno": 980,
@@ -3096,8 +3087,7 @@
               "doc": "A conference created for the session according to the details set in the schedule's conference provider information.\nIf the session is a recurring session, this field is inherited from the schedule." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_221562585945",
         "locations":
           [ { "lineno": 1020,
@@ -3187,8 +3177,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Session_225620643475",
         "locations":
           [ { "lineno": 1020,
@@ -3379,8 +3368,7 @@
               "doc": "An object containing the session and schedule versions." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Session_255663383937",
         "locations":
           [ { "lineno": 1096,
@@ -3534,8 +3522,7 @@
               "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Session_30367305333",
         "locations":
           [ { "lineno": 1196,

@@ -1,8 +1,7 @@
 { "name": "resources",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 41,
       "filename": "index.js" },
@@ -509,8 +508,7 @@
               "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Availability_9690361649",
         "locations":
           [ { "lineno": 1,
@@ -537,8 +535,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Availability_9875739091",
         "locations":
           [ { "lineno": 1,
@@ -563,8 +560,7 @@
               "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ListResourcesRequest_25153110744",
         "locations":
           [ { "lineno": 1,
@@ -724,8 +720,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Resource_13052683855",
         "locations":
           [ { "lineno": 19,
@@ -768,8 +763,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Schedule_11557805088",
         "locations":
           [ { "lineno": 19,
@@ -791,8 +785,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Schedule_12853662362",
         "locations":
           [ { "lineno": 10,
@@ -814,8 +807,7 @@
               "doc": "An object describing how to calculate the schedule's availability.\nAn empty object indicates that the schedule is not available for booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "UpdateScheduleResult_13037961516",
         "locations":
           [ { "lineno": 28,
@@ -837,8 +829,7 @@
               "doc": "An object describing how to calculate the schedule's availability.\nAn empty object indicates that the schedule is not available for booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Value_11948408011",
         "locations":
           [ { "lineno": 14,

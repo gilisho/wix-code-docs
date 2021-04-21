@@ -1,8 +1,7 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -14,8 +13,7 @@
   "properties": [],
   "operations":
     [ { "name": "bookExistingSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -308,8 +306,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "bookNewSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
@@ -754,8 +751,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "bookSchedule",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "scheduleId",
@@ -1508,8 +1504,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rescheduleBookingWithNewSession",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -2190,8 +2185,7 @@
                     [ "bySessionId",
                       "createSession",
                       "scheduleId" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "BookRequest_274304126086",
         "locations":
           [ { "lineno": 1,
