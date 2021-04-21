@@ -1,7 +1,8 @@
 { "name": "resources",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 41,
       "filename": "index.js" },
@@ -499,7 +500,7 @@
         "members":
           [ { "name": "start",
               "type": "Date",
-              "doc": "Date and time the schedule starts to be available for booking. For example, a schedule can become available at a future date." },
+              "doc": "Date and time the schedule starts to be available for booking." },
             { "name": "linkedSchedules",
               "type":
                 { "name": "Array",
@@ -508,7 +509,8 @@
               "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Availability_9690361649",
         "locations":
           [ { "lineno": 1,
@@ -524,7 +526,7 @@
         "members":
           [ { "name": "start",
               "type": "Date",
-              "doc": "Date and time the schedule starts to be available for booking. For example, a schedule can become available at a future date.",
+              "doc": "Date and time the schedule starts to be available for booking.",
               "optional": true },
             { "name": "linkedSchedules",
               "type":
@@ -535,7 +537,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Availability_9875739091",
         "locations":
           [ { "lineno": 1,
@@ -551,7 +554,7 @@
         "members":
           [ { "name": "start",
               "type": "Date",
-              "doc": "Date and time the schedule starts to be available for booking. For example, a schedule can become available at a future date." },
+              "doc": "Date and time the schedule starts to be available for booking." },
             { "name": "linkedSchedules",
               "type":
                 { "name": "Array",
@@ -560,7 +563,8 @@
               "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ListResourcesRequest_25153110744",
         "locations":
           [ { "lineno": 1,
@@ -709,7 +713,7 @@
                 { "name": "Array",
                   "typeParams":
                     [ "string" ] },
-              "doc": "Resource tags. Tags are used to identify, group, and filter the different type of resources. For example, 'staff' or 'room'.",
+              "doc": "Resource tags. Tags are used to identify, group, and filter the different types of resources. For example, 'staff' or 'room'.",
               "optional": true },
             { "name": "images",
               "type":
@@ -720,7 +724,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Resource_13052683855",
         "locations":
           [ { "lineno": 19,
@@ -752,7 +757,7 @@
                 { "name": "Array",
                   "typeParams":
                     [ "string" ] },
-              "doc": "Resource tags. Tags are used to identify, group, and filter the different type of resources. For example, 'staff' or 'room'.",
+              "doc": "Resource tags. Tags are used to identify, group, and filter the different types of resources. For example, 'staff' or 'room'.",
               "optional": true },
             { "name": "images",
               "type":
@@ -763,7 +768,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Schedule_11557805088",
         "locations":
           [ { "lineno": 19,
@@ -777,7 +783,7 @@
         "members":
           [ { "name": "scheduleOwnerId",
               "type": "string",
-              "doc": "ID of the schedule's owner entity. This may be a resource ID, a session ID, or a service ID.",
+              "doc": "ID of the schedule's owner entity. This may be a resource ID or a service ID.",
               "optional": true },
             { "name": "availability",
               "type": "wix-bookings-rc-v2-backend.resources.Availability_9690361649",
@@ -785,7 +791,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Schedule_12853662362",
         "locations":
           [ { "lineno": 10,
@@ -801,13 +808,14 @@
               "doc": "Schedule ID." },
             { "name": "scheduleOwnerId",
               "type": "string",
-              "doc": "ID of the schedule's owner entity. This may be a resource ID, a session ID, or a service ID." },
+              "doc": "ID of the schedule's owner entity. This may be a resource ID or a service ID." },
             { "name": "availability",
               "type": "wix-bookings-rc-v2-backend.resources.Availability_9875739091",
               "doc": "An object describing how to calculate the schedule's availability.\nAn empty object indicates that the schedule is not available for booking." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "UpdateScheduleResult_13037961516",
         "locations":
           [ { "lineno": 28,
@@ -823,13 +831,14 @@
               "doc": "Schedule ID." },
             { "name": "scheduleOwnerId",
               "type": "string",
-              "doc": "ID of the schedule's owner entity. This may be a resource ID, a session ID, or a service ID." },
+              "doc": "ID of the schedule's owner entity. This may be a resource ID or a service ID." },
             { "name": "availability",
               "type": "wix-bookings-rc-v2-backend.resources.Availability_12303707576",
               "doc": "An object describing how to calculate the schedule's availability.\nAn empty object indicates that the schedule is not available for booking." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Value_11948408011",
         "locations":
           [ { "lineno": 14,

@@ -1,7 +1,8 @@
 { "name": "sessions",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -70,7 +71,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "addParticipantToSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "addParticipantToSessionRequest",
@@ -80,7 +82,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.AddParticipantToSessionResult_259936134190" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.AddParticipantToSessionResult_255785387939" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 16,
@@ -437,11 +439,12 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
-              "type": "wix-bookings-rc-v2-backend.sessions.Session_225898709638",
+              "type": "wix-bookings-rc-v2-backend.sessions.Session_221840652108",
               "doc": "Session." },
             { "name": "options",
               "type": "wix-bookings-rc-v2-backend.Options_936495653",
@@ -450,7 +453,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Session_30367305333" ] },
+                  [ "wix-bookings-rc-v2-backend.Session_26216559082" ] },
             "doc": "Fulfilled - Session." },
         "locations":
           [ { "lineno": 78,
@@ -466,28 +469,6 @@
                       "  const sessionInfo = {",
                       "    scheduleId: \"a string\",",
                       "    originalStart: new Date(),",
-                      "    start: {",
-                      "      timestamp: new Date(),",
-                      "      localDateTime: {",
-                      "        year: 42,",
-                      "        monthOfYear: 42,",
-                      "        dayOfMonth: 42,",
-                      "        hourOfDay: 42,",
-                      "        minutesOfHour: 42",
-                      "      },",
-                      "      timeZone: \"a string\"",
-                      "    },",
-                      "    end: {",
-                      "      timestamp: new Date(),",
-                      "      localDateTime: {",
-                      "        year: 42,",
-                      "        monthOfYear: 42,",
-                      "        dayOfMonth: 42,",
-                      "        hourOfDay: 42,",
-                      "        minutesOfHour: 42",
-                      "      },",
-                      "      timeZone: \"a string\"",
-                      "    },",
                       "    affectedSchedules: [",
                       "      {",
                       "        scheduleId: \"a string\",",
@@ -612,7 +593,27 @@
                       "      conferenceType: \"UNDEFINED\",",
                       "      accountOwnerId: \"a string\"",
                       "    },",
-                      "    recurrence: \"a string\"",
+                      "    recurrence: \"a string\",",
+                      "    start: {",
+                      "      timestamp: new Date(),",
+                      "      localDateTime: {",
+                      "        year: 42,",
+                      "        monthOfYear: 42,",
+                      "        dayOfMonth: 42,",
+                      "        hourOfDay: 42,",
+                      "        minutesOfHour: 42",
+                      "      }",
+                      "    },",
+                      "    end: {",
+                      "      timestamp: new Date(),",
+                      "      localDateTime: {",
+                      "        year: 42,",
+                      "        monthOfYear: 42,",
+                      "        dayOfMonth: 42,",
+                      "        hourOfDay: 42,",
+                      "        minutesOfHour: 42",
+                      "      }",
+                      "    }",
                       "  };",
                       "  const options = {",
                       "    suppressAuth: true",
@@ -755,7 +756,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "getSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -768,7 +770,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Session_30367305333" ] },
+                  [ "wix-bookings-rc-v2-backend.Session_26216559082" ] },
             "doc": "Fulfilled - Session." },
         "locations":
           [ { "lineno": 1,
@@ -860,7 +862,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listSessions",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "listSessionsRequest",
@@ -870,7 +873,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.ListSessionsResult_260386006111" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.ListSessionsResult_256235259860" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 15,
@@ -912,7 +915,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listSlots",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "listSlotsRequest",
@@ -921,7 +925,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.ListSlotsResult_263978911646" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.ListSlotsResult_259828165395" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 14,
@@ -1117,16 +1121,17 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "sessionBatch",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionBatchRequest",
-              "type": "wix-bookings-rc-v2-backend.sessions.SessionBatchRequest_253468111100" } ],
+              "type": "wix-bookings-rc-v2-backend.sessions.SessionBatchRequest_249410053570" } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.SessionBatchResult_262834721643" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.SessionBatchResult_258683975392" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 59,
@@ -1159,8 +1164,7 @@
                       "              dayOfMonth: 42,",
                       "              hourOfDay: 42,",
                       "              minutesOfHour: 42",
-                      "            },",
-                      "            timeZone: \"a string\"",
+                      "            }",
                       "          },",
                       "          end: {",
                       "            timestamp: new Date(),",
@@ -1170,8 +1174,7 @@
                       "              dayOfMonth: 42,",
                       "              hourOfDay: 42,",
                       "              minutesOfHour: 42",
-                      "            },",
-                      "            timeZone: \"a string\"",
+                      "            }",
                       "          },",
                       "          affectedSchedules: [",
                       "            {",
@@ -1317,8 +1320,7 @@
                       "              dayOfMonth: 42,",
                       "              hourOfDay: 42,",
                       "              minutesOfHour: 42",
-                      "            },",
-                      "            timeZone: \"a string\"",
+                      "            }",
                       "          },",
                       "          end: {",
                       "            timestamp: new Date(),",
@@ -1328,8 +1330,7 @@
                       "              dayOfMonth: 42,",
                       "              hourOfDay: 42,",
                       "              minutesOfHour: 42",
-                      "            },",
-                      "            timeZone: \"a string\"",
+                      "            }",
                       "          },",
                       "          affectedSchedules: [",
                       "            {",
@@ -1497,7 +1498,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "splitRecurringSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "splitRecurringSessionRequest",
@@ -1506,7 +1508,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.SplitRecurringSessionResult_259463627938" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.SplitRecurringSessionResult_255312881687" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 14,
@@ -1865,14 +1867,15 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
               "type": "string",
               "doc": "Session ID." },
             { "name": "sessionInfo",
-              "type": "wix-bookings-rc-v2-backend.Session_225620643475",
+              "type": "wix-bookings-rc-v2-backend.Session_221562585945",
               "doc": "Session." },
             { "name": "options",
               "type": "wix-bookings-rc-v2-backend.Options_936495653",
@@ -1881,7 +1884,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Session_30367305333" ] },
+                  [ "wix-bookings-rc-v2-backend.Session_26216559082" ] },
             "doc": "Fulfilled - Session." },
         "locations":
           [ { "lineno": 1,
@@ -1919,8 +1922,7 @@
                       "        dayOfMonth: 42,",
                       "        hourOfDay: 42,",
                       "        minutesOfHour: 42",
-                      "      },",
-                      "      timeZone: \"a string\"",
+                      "      }",
                       "    },",
                       "    end: {",
                       "      timestamp: new Date(),",
@@ -1930,8 +1932,7 @@
                       "        dayOfMonth: 42,",
                       "        hourOfDay: 42,",
                       "        minutesOfHour: 42",
-                      "      },",
-                      "      timeZone: \"a string\"",
+                      "      }",
                       "    },",
                       "    affectedSchedules: [",
                       "      {",
@@ -2140,6 +2141,26 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "AddParticipantToSessionResult_255785387939",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_AddParticipantToSession_addParticipantToSession.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "participant",
+              "type": "wix-bookings-rc-v2-backend.Participant_16742085086",
+              "doc": "Participant." },
+            { "name": "session",
+              "type": "wix-bookings-rc-v2-backend.Session_251512637686",
+              "doc": "Session." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "AddParticipantToSessionResult_259936134190",
         "locations":
           [ { "lineno": 9,
@@ -2158,7 +2179,8 @@
               "doc": "Session." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Availability_161223611200",
         "locations":
           [ { "lineno": 1,
@@ -2174,7 +2196,7 @@
         "members":
           [ { "name": "start",
               "type": "Date",
-              "doc": "Date and time the schedule starts to be available for booking. For example, a schedule can become available at a future date.",
+              "doc": "Date and time the schedule starts to be available for booking.",
               "optional": true },
             { "name": "end",
               "type": "Date",
@@ -2204,7 +2226,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Availability_161316299921",
         "locations":
           [ { "lineno": 1,
@@ -2220,7 +2243,7 @@
         "members":
           [ { "name": "start",
               "type": "Date",
-              "doc": "Date and time the schedule starts to be available for booking. For example, a schedule can become available at a future date." },
+              "doc": "Date and time the schedule starts to be available for booking." },
             { "name": "end",
               "type": "Date",
               "doc": "Date and time the schedule stops being available for booking. No value indicates no end time.",
@@ -2249,7 +2272,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CancelScheduleRequest_9598834207",
         "locations":
           [ { "lineno": 1,
@@ -2327,6 +2351,29 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "CreateSessionRequest_229426948665",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_SessionBatch_sessionBatch.js" } ],
+        "docs":
+          { "summary": "Schedule's session",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "session",
+              "type": "wix-bookings-rc-v2-backend.Session_221562585945",
+              "doc": "Session.",
+              "optional": true },
+            { "name": "deleted",
+              "type": "wix-bookings-rc-v2-backend.FieldMask_4228111159",
+              "doc": "Field mask of fields to update.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CreateSessionRequest_233485006195",
         "locations":
           [ { "lineno": 1,
@@ -2348,7 +2395,25 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "CreateSessionResult_253964450151",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_SessionBatch_sessionBatch.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "session",
+              "type": "wix-bookings-rc-v2-backend.Session_251512637686",
+              "doc": "Session." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CreateSessionResult_258115196402",
         "locations":
           [ { "lineno": 9,
@@ -2364,7 +2429,8 @@
               "doc": "Session." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "CreateSessionResult_26620611375",
         "locations":
           [ { "lineno": 1,
@@ -2701,6 +2767,26 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "ListSessionsResult_256235259860",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_ListSessions_listSessions.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "sessions",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.Session_251512637686" ] },
+              "doc": "Session." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListSessionsResult_260386006111",
         "locations":
           [ { "lineno": 9,
@@ -2719,7 +2805,8 @@
               "doc": "Session." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListSlotsRequest_23531210904",
         "locations":
           [ { "lineno": 1,
@@ -2783,6 +2870,28 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "ListSlotsResult_259828165395",
+        "locations":
+          [ { "lineno": 7,
+              "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSlots_listSlots.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "slots",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.Session_251512637686" ] },
+              "doc": "Slots on the calendar." },
+            { "name": "pagingMetadata",
+              "type": "wix-bookings-rc-v2-backend.PagingMetadataV2_5481679798" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListSlotsResult_263978911646",
         "locations":
           [ { "lineno": 7,
@@ -2803,7 +2912,8 @@
               "type": "wix-bookings-rc-v2-backend.PagingMetadataV2_5481679798" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "QueryOptions_114952375",
         "locations":
           [ { "lineno": 1242,
@@ -2870,7 +2980,7 @@
               "doc": "Schedule ID." },
             { "name": "scheduleOwnerId",
               "type": "string",
-              "doc": "ID of the schedule's owner entity. This may be a resource ID, a session ID, or a service ID.",
+              "doc": "ID of the schedule's owner entity. This may be a resource ID or a service ID.",
               "optional": true },
             { "name": "timeZone",
               "type": "string",
@@ -2912,7 +3022,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Schedule_206582583816",
         "locations":
           [ { "lineno": 32,
@@ -2930,7 +3041,7 @@
               "optional": true },
             { "name": "scheduleOwnerId",
               "type": "string",
-              "doc": "ID of the schedule's owner entity. This may be a resource ID, a session ID, or a service ID." },
+              "doc": "ID of the schedule's owner entity. This may be a resource ID or a service ID." },
             { "name": "timeZone",
               "type": "string",
               "optional": true },
@@ -2971,7 +3082,40 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "SessionBatchRequest_249410053570",
+        "locations":
+          [ { "lineno": 28,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_SessionBatch_sessionBatch.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "sessionsToCreate",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.sessions.CreateSessionRequest_229426948665" ] },
+              "optional": true },
+            { "name": "sessionsToUpdate",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.sessions.UpdateSessionRequest_237418334636" ] },
+              "optional": true },
+            { "name": "sessionsToDelete",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.sessions.DeleteSessionRequest_6604909881" ] },
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "SessionBatchRequest_253468111100",
         "locations":
           [ { "lineno": 28,
@@ -3002,7 +3146,37 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "SessionBatchResult_258683975392",
+        "locations":
+          [ { "lineno": 36,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_SessionBatch_sessionBatch.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "sessionsCreated",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.sessions.CreateSessionResult_253964450151" ] } },
+            { "name": "sessionsUpdated",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.sessions.UpdateSessionResult_252792980692" ] } },
+            { "name": "sessionsDeleted",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.sessions.DeleteSessionResult_2746856964" ] } } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "SessionBatchResult_262834721643",
         "locations":
           [ { "lineno": 36,
@@ -3030,7 +3204,8 @@
                     [ "wix-bookings-rc-v2-backend.sessions.DeleteSessionResult_2746856964" ] } } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Session_13364701673",
         "locations":
           [ { "lineno": 1,
@@ -3156,6 +3331,95 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "Session_221840652108",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_CreateSession_createSession.js" } ],
+        "docs":
+          { "summary": "Session.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "scheduleId",
+              "type": "string",
+              "doc": "Schedule ID that the session belongs to." },
+            { "name": "originalStart",
+              "type": "Date",
+              "doc": "Original start date and time of the session in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format.",
+              "optional": true },
+            { "name": "affectedSchedules",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.LinkedSchedule_7939545343" ] },
+              "doc": "An object specifying a list of linked schedules and the way each schedule's availability is affected by the session. For example, the schedule of an instructor is linked to the schedule of the class that they instruct.\nIf the session is a recurring session, the value is inherited from the schedule but can still be overridden.",
+              "optional": true },
+            { "name": "title",
+              "type": "string",
+              "doc": "Session title. The default value is the schedule title.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session.",
+              "optional": true },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tags for the session. Defaults to the schedule's tags.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session.",
+              "optional": true },
+            { "name": "location",
+              "type": "wix-bookings-rc-v2-backend.Location_147848441914",
+              "doc": "An object describing the location where the session takes place.\nDefaults to the schedule location.\nFor single sessions, `session.location.businessLocation` can only be provided for locations that are defined in the schedule using `schedule.location` or `schedule.availability.locations`.",
+              "optional": true },
+            { "name": "capacity",
+              "type": "number",
+              "doc": "Maximum number of participants that can be added to the session. Defaults to the schedule capacity.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session.",
+              "optional": true },
+            { "name": "rate",
+              "type": "wix-bookings-rc-v2-backend.Rate_13652876269",
+              "doc": "The price options offered for the session.  Defaults to the schedule rate.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session.",
+              "optional": true },
+            { "name": "timeReservedAfter",
+              "type": "number",
+              "doc": "Time reserved after the session end time, derived from the schedule availability constraints and the time between slots. Read-only.\nIf the session is a recurring session, this field must be empty.",
+              "optional": true },
+            { "name": "notes",
+              "type": "string",
+              "doc": "Additional information about the session.\nIf the session is a recurring session, this field must be empty.",
+              "optional": true },
+            { "name": "participants",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.Participant_14857773285" ] },
+              "doc": "List of participants booked for the session.\nThe list includes participants who have registered for this specific session, and participants who have registered for a schedule that includes this session.\nIf the session is a recurring session, this field must be empty.",
+              "optional": true },
+            { "name": "externalCalendarOverrides",
+              "type": "wix-bookings-rc-v2-backend.ExternalCalendarOverrides_672201097",
+              "doc": "Title and description values to override session defaults when syncing to an external calendar.\nLearn more about [syncing calendars](https://support.wix.com/en/article/wix-bookings-important-information-about-syncing-google-calendars-with-wix-bookings).\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session.",
+              "optional": true },
+            { "name": "type",
+              "type": "string",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` The session creates an event on the calendar for the owner of the schedule that the session belongs to.\n - `\"WORKING_HOURS\"` The session represents a resource's available working hours.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`",
+              "optional": true },
+            { "name": "calendarConference",
+              "type": "wix-bookings-rc-v2-backend.CalendarConference_22421061789",
+              "doc": "A conference created for the session according to the details set in the schedule's conference provider information.\nIf the session is a recurring session, this field is inherited from the schedule.",
+              "optional": true },
+            { "name": "recurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Days of the week when the event should recur. Required.|`MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->",
+              "optional": true },
+            { "name": "start",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1787767738",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "end",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1787767738",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Session_225898709638",
         "locations":
           [ { "lineno": 1,
@@ -3243,7 +3507,58 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Session_22955438268",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Session ID." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "Schedule ID that the session belongs to." },
+            { "name": "scheduleOwnerId",
+              "type": "string",
+              "doc": "Owner ID of the schedule that the session belongs to." },
+            { "name": "start",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "end",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tags for the session. Defaults to the schedule's tags.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
+            { "name": "notes",
+              "type": "string",
+              "doc": "Additional information about the session.\nIf the session is a recurring session, this field must be empty." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` \n    - The session was generated from a recurring session and then deleted.\n    - The session was created as a single session and then deleted.\n    - The session is a recurring session and was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
+            { "name": "recurringSessionId",
+              "type": "string",
+              "doc": "Recurring session ID, if the session is a recurring session." },
+            { "name": "type",
+              "type": "string",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` The session creates an event on the calendar for the owner of the schedule that the session belongs to.\n - `\"WORKING_HOURS\"` The session represents a resource's available working hours.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
+            { "name": "recurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Days of the week when the event should recur. Required.|`MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Session_23504104820",
         "locations":
           [ { "lineno": 1,
@@ -3339,7 +3654,8 @@
               "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Days of the week when the event should recur. Required.|`MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Session_448208966",
         "locations":
           [ { "lineno": 1,
@@ -3380,6 +3696,26 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "SplitRecurringSessionResult_255312881687",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_SplitRecurringSession_splitRecurringSession.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "recurringSessions",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.Session_251512637686" ] },
+              "doc": "A list of recurring sessions where the first is the modified original session followed by other newly created sessions." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "SplitRecurringSessionResult_259463627938",
         "locations":
           [ { "lineno": 8,
@@ -3398,7 +3734,8 @@
               "doc": "A list of recurring sessions where the first is the modified original session followed by other newly created sessions." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "UpdateParticipantRequest_20461774022",
         "locations":
           [ { "lineno": 1,
@@ -3480,6 +3817,36 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "UpdateSessionRequest_237418334636",
+        "locations":
+          [ { "lineno": 44,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_SessionBatch_sessionBatch.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "session",
+              "type": "wix-bookings-rc-v2-backend.Session_221562585945",
+              "doc": "Session.",
+              "optional": true },
+            { "name": "updated",
+              "type": "wix-bookings-rc-v2-backend.FieldMask_4228111159",
+              "doc": "Field mask of fields to update.",
+              "optional": true },
+            { "name": "deleted",
+              "type": "wix-bookings-rc-v2-backend.FieldMask_4228111159",
+              "doc": "Field mask of fields to update.",
+              "optional": true },
+            { "name": "participantNotification",
+              "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
+              "doc": "Whether to notify participants about the change, and an optional custom message.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "UpdateSessionRequest_241476392166",
         "locations":
           [ { "lineno": 44,
@@ -3508,7 +3875,25 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "UpdateSessionResult_252792980692",
+        "locations":
+          [ { "lineno": 53,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_SessionBatch_sessionBatch.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "session",
+              "type": "wix-bookings-rc-v2-backend.Session_251512637686",
+              "doc": "Session." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "UpdateSessionResult_25449141916",
         "locations":
           [ { "lineno": 62,
@@ -3571,7 +3956,8 @@
               "doc": "Session." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "UpdateSessionResult_29051221615",
         "locations":
           [ { "lineno": 55,

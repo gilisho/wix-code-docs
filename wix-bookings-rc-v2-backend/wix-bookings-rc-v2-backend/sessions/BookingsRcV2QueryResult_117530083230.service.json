@@ -1,8 +1,8 @@
-{ "name": "BookingsRcV2QueryResult_121680829481",
+{ "name": "BookingsRcV2QueryResult_117530083230",
   "memberOf": "wix-bookings-rc-v2-backend.sessions",
   "mixes": [],
   "labels":
-    [ "removed" ],
+    [ "new" ],
   "location":
     { "lineno": 1069,
       "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" },
@@ -50,7 +50,7 @@
         "type":
           { "name": "Array",
             "typeParams":
-              [ "wix-bookings-rc-v2-backend.sessions.Session_27106184519" ] },
+              [ "wix-bookings-rc-v2-backend.sessions.Session_22955438268" ] },
         "locations":
           [ { "lineno": 1079,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
@@ -200,7 +200,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryResult_121680829481" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryResult_117530083230" ] },
             "doc": "Fulfilled - The results of a bookingsRcV2 query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-bookings-rc-v2-backend.BookingsRcV2QueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `BookingsRcV2QueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
           [ { "lineno": 1186,
@@ -231,7 +231,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryResult_121680829481" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryResult_117530083230" ] },
             "doc": "Fulfilled - The results of a bookingsRcV2 query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-bookings-rc-v2-backend.BookingsRcV2QueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `BookingsRcV2QueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
           [ { "lineno": 1207,
