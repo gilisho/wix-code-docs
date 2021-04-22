@@ -1,8 +1,7 @@
 { "name": "resources",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 41,
       "filename": "index.js" },
@@ -14,8 +13,7 @@
   "properties": [],
   "operations":
     [ { "name": "createResource",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "resourceInfo",
@@ -314,8 +312,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateResource",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "id",
@@ -880,8 +877,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Resource_8796704728",
         "locations":
           [ { "lineno": 19,
@@ -924,8 +920,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Schedule_11557805088",
         "locations":
           [ { "lineno": 19,

@@ -1,8 +1,7 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -1049,8 +1048,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -2494,8 +2492,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CancelBookingRequest_FlowControlSettings_806682439",
         "locations":
           [ { "lineno": 9,
@@ -2513,8 +2510,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CancelBookingResult_4386307776",
         "locations":
           [ { "lineno": 22,

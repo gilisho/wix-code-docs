@@ -1,7 +1,6 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -3007,8 +3006,7 @@
               "doc": "Resource images." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Resource_23420910898",
         "locations":
           [ { "lineno": 1416,
@@ -3057,8 +3055,7 @@
               "doc": "Resource status.\n//<!--ONLY:VELO\n One Of:\n - `\"CREATED\"` Default status.\n - `\"DELETED\"` The resource has been deleted.\n - `\"UPDATED\"` The resource has been updated.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Schedule_252114210686",
         "locations":
           [ { "lineno": 980,
