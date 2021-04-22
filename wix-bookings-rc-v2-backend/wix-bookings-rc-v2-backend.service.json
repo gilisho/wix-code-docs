@@ -1,7 +1,6 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -1824,10 +1823,10 @@
         "extra":
           {  },
         "labels":
-          [ "removed" ] },
+          [ "new" ] },
       { "name": "Image_7707870310",
         "locations":
-          [ { "lineno": 1689,
+          [ { "lineno": 1698,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2236,7 +2235,7 @@
         "labels": [] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
-          [ { "lineno": 1708,
+          [ { "lineno": 1717,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2264,7 +2263,7 @@
         "labels": [] },
       { "name": "Paging_1617727965",
         "locations":
-          [ { "lineno": 1700,
+          [ { "lineno": 1709,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Pointer to page of results using offset. Can not be used together with 'cursorPaging'",
@@ -2801,7 +2800,7 @@
         "labels": [] },
       { "name": "QueryV2_25356650774",
         "locations":
-          [ { "lineno": 1718,
+          [ { "lineno": 1727,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3741,7 +3740,7 @@
         "labels": [] },
       { "name": "Sorting_7874645153",
         "locations":
-          [ { "lineno": 1730,
+          [ { "lineno": 1739,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
