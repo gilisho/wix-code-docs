@@ -1,6 +1,7 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -75,7 +76,7 @@
   "messages":
     [ { "name": "AddressLocation_3558750251",
         "locations":
-          [ { "lineno": 1350,
+          [ { "lineno": 1276,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -97,7 +98,7 @@
         "labels": [] },
       { "name": "AddressLocation_3744127693",
         "locations":
-          [ { "lineno": 1342,
+          [ { "lineno": 1268,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -117,7 +118,7 @@
         "labels": [] },
       { "name": "AddressLocation_5466057688",
         "locations":
-          [ { "lineno": 1493,
+          [ { "lineno": 1419,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -139,7 +140,7 @@
         "labels": [] },
       { "name": "AddressLocation_5651435130",
         "locations":
-          [ { "lineno": 1485,
+          [ { "lineno": 1411,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -159,7 +160,7 @@
         "labels": [] },
       { "name": "Address_30702269075",
         "locations":
-          [ { "lineno": 1471,
+          [ { "lineno": 1397,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -205,7 +206,7 @@
         "labels": [] },
       { "name": "Address_31907222448",
         "locations":
-          [ { "lineno": 1457,
+          [ { "lineno": 1383,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -243,7 +244,7 @@
         "labels": [] },
       { "name": "Address_35751567552",
         "locations":
-          [ { "lineno": 1288,
+          [ { "lineno": 1214,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom [address](https://www.wix.com/velo/reference/$w/addressinput/value), used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -290,7 +291,7 @@
         "labels": [] },
       { "name": "Address_47367399060",
         "locations":
-          [ { "lineno": 1304,
+          [ { "lineno": 1230,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -359,7 +360,7 @@
         "labels": [] },
       { "name": "Address_49221173480",
         "locations":
-          [ { "lineno": 1323,
+          [ { "lineno": 1249,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -1002,7 +1003,7 @@
         "labels": [] },
       { "name": "BusinessSchedule_46474402208",
         "locations":
-          [ { "lineno": 1600,
+          [ { "lineno": 1526,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1033,7 +1034,7 @@
         "labels": [] },
       { "name": "BusinessSchedule_47401289418",
         "locations":
-          [ { "lineno": 1589,
+          [ { "lineno": 1515,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1536,7 +1537,7 @@
         "labels": [] },
       { "name": "CursorPaging_3235073023",
         "locations":
-          [ { "lineno": 1698,
+          [ { "lineno": 1624,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursor pointing to page of results. Can't be used together with 'paging'. 'cursorPaging.cursor' can not be used together with 'filter' or 'sort'",
@@ -1558,7 +1559,7 @@
         "labels": [] },
       { "name": "Cursors_3337235656",
         "locations":
-          [ { "lineno": 1706,
+          [ { "lineno": 1632,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursors to navigate through result pages. Returned if cursor paging was used",
@@ -1626,7 +1627,7 @@
         "labels": [] },
       { "name": "FieldMask_4228111159",
         "locations":
-          [ { "lineno": 1691,
+          [ { "lineno": 1617,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Field mask of fields to update.",
@@ -1826,7 +1827,7 @@
           [ "removed" ] },
       { "name": "Image_7707870310",
         "locations":
-          [ { "lineno": 1714,
+          [ { "lineno": 1640,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1992,7 +1993,7 @@
         "labels": [] },
       { "name": "Location_106510226219",
         "locations":
-          [ { "lineno": 1501,
+          [ { "lineno": 1427,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2128,7 +2129,7 @@
         "labels": [] },
       { "name": "Location_99881894064",
         "locations":
-          [ { "lineno": 1539,
+          [ { "lineno": 1465,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2217,7 +2218,7 @@
         "labels": [] },
       { "name": "Options_936495653",
         "locations":
-          [ { "lineno": 1450,
+          [ { "lineno": 1376,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Authorization options.",
@@ -2235,7 +2236,7 @@
         "labels": [] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
-          [ { "lineno": 1733,
+          [ { "lineno": 1659,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2263,7 +2264,7 @@
         "labels": [] },
       { "name": "Paging_1617727965",
         "locations":
-          [ { "lineno": 1725,
+          [ { "lineno": 1651,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Pointer to page of results using offset. Can not be used together with 'cursorPaging'",
@@ -2666,7 +2667,7 @@
             "removed" ] },
       { "name": "PaymentOptions_3423756451",
         "locations":
-          [ { "lineno": 1441,
+          [ { "lineno": 1367,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2800,7 +2801,7 @@
         "labels": [] },
       { "name": "QueryV2_25356650774",
         "locations":
-          [ { "lineno": 1743,
+          [ { "lineno": 1669,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2959,7 +2960,7 @@
         "labels": [] },
       { "name": "Resource_15083711512",
         "locations":
-          [ { "lineno": 1390,
+          [ { "lineno": 1316,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Resource details.",
@@ -3009,7 +3010,7 @@
         "labels": [] },
       { "name": "Resource_23420910898",
         "locations":
-          [ { "lineno": 1416,
+          [ { "lineno": 1342,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3180,7 +3181,7 @@
                 { "name": "Array",
                   "typeParams":
                     [ "string" ] },
-              "doc": "Tags for the session. Defaults to the schedule's tags.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session.",
+              "doc": "Tags for the session. Defaults to the schedule's tags.\nThe value is inherited from the schedule and can be overridden.",
               "optional": true },
             { "name": "location",
               "type": "wix-bookings-rc-v2-backend.Location_147848441914",
@@ -3227,7 +3228,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Session_225620643475",
         "locations":
           [ { "lineno": 1020,
@@ -3361,7 +3363,7 @@
                 { "name": "Array",
                   "typeParams":
                     [ "string" ] },
-              "doc": "Tags for the session. Defaults to the schedule's tags.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
+              "doc": "Tags for the session. Defaults to the schedule's tags.\nThe value is inherited from the schedule and can be overridden." },
             { "name": "location",
               "type": "wix-bookings-rc-v2-backend.Location_156608614652",
               "doc": "An object describing the location where the session takes place.\nDefaults to the schedule location.\nFor single sessions, `session.location.businessLocation` can only be provided for locations that are defined in the schedule using `schedule.location` or `schedule.availability.locations`." },
@@ -3418,7 +3420,8 @@
               "doc": "An object containing the session and schedule versions." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Session_255663383937",
         "locations":
           [ { "lineno": 1096,
@@ -3572,7 +3575,8 @@
               "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Session_30367305333",
         "locations":
           [ { "lineno": 1196,
@@ -3727,7 +3731,7 @@
           [ "removed" ] },
       { "name": "Session_Version_1635489576",
         "locations":
-          [ { "lineno": 1270,
+          [ { "lineno": 1196,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the session and schedule versions.",
@@ -3789,7 +3793,7 @@
         "labels": [] },
       { "name": "Sorting_7874645153",
         "locations":
-          [ { "lineno": 1755,
+          [ { "lineno": 1681,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3810,7 +3814,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8149530360",
         "locations":
-          [ { "lineno": 1621,
+          [ { "lineno": 1547,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3838,7 +3842,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8520285244",
         "locations":
-          [ { "lineno": 1611,
+          [ { "lineno": 1537,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3862,7 +3866,7 @@
         "labels": [] },
       { "name": "SplitInterval_425847646",
         "locations":
-          [ { "lineno": 1278,
+          [ { "lineno": 1204,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object defining the time between available slots' start times.  For example, a slot with slots_split_interval=5 can start every 5 minutes. The default is the slot duration.",
@@ -3882,7 +3886,7 @@
         "labels": [] },
       { "name": "StreetAddress_5109983780",
         "locations":
-          [ { "lineno": 1367,
+          [ { "lineno": 1293,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3908,7 +3912,7 @@
         "labels": [] },
       { "name": "StreetAddress_5388049943",
         "locations":
-          [ { "lineno": 1358,
+          [ { "lineno": 1284,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3931,7 +3935,7 @@
         "labels": [] },
       { "name": "StreetAddress_7212524817",
         "locations":
-          [ { "lineno": 1580,
+          [ { "lineno": 1506,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -3957,7 +3961,7 @@
         "labels": [] },
       { "name": "StreetAddress_7490590980",
         "locations":
-          [ { "lineno": 1571,
+          [ { "lineno": 1497,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -3980,7 +3984,7 @@
         "labels": [] },
       { "name": "Subdivision_4453086255",
         "locations":
-          [ { "lineno": 1376,
+          [ { "lineno": 1302,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4001,7 +4005,7 @@
         "labels": [] },
       { "name": "Subdivision_4638463697",
         "locations":
-          [ { "lineno": 1383,
+          [ { "lineno": 1309,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4020,7 +4024,7 @@
         "labels": [] },
       { "name": "TimePeriod_38785543152",
         "locations":
-          [ { "lineno": 1661,
+          [ { "lineno": 1587,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -4053,7 +4057,7 @@
         "labels": [] },
       { "name": "TimePeriod_39156298036",
         "locations":
-          [ { "lineno": 1631,
+          [ { "lineno": 1557,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
