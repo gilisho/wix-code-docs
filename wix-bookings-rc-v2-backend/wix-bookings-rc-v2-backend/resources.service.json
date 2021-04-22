@@ -1,7 +1,8 @@
 { "name": "resources",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 41,
       "filename": "index.js" },
@@ -13,11 +14,12 @@
   "properties": [],
   "operations":
     [ { "name": "createResource",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "resourceInfo",
-              "type": "wix-bookings-rc-v2-backend.resources.Resource_13052683855",
+              "type": "wix-bookings-rc-v2-backend.resources.Resource_8796704728",
               "doc": "Resource details." },
             { "name": "schedulesInfo",
               "type":
@@ -32,10 +34,10 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Resource_23420910898" ] },
+                  [ "wix-bookings-rc-v2-backend.resources.Resource_15083711512" ] },
             "doc": "Fulfilled - Resource details." },
         "locations":
-          [ { "lineno": 31,
+          [ { "lineno": 57,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
         "docs":
           { "summary": "Creates a resource.",
@@ -62,14 +64,7 @@
                       "    phone: \"a string\",",
                       "    description: \"a string\",",
                       "    tags: [\"a string\"],",
-                      "    images: [",
-                      "      {",
-                      "        _id: \"a string\",",
-                      "        url: \"a string\",",
-                      "        altText: \"a string\",",
-                      "        urlExpirationDate: new Date()",
-                      "      }",
-                      "    ]",
+                      "    images: [\"wix:image://v1/mediaId/filename.jpg#originWidth=42&originHeight=42\"]",
                       "  };",
                       "  const schedulesInfo = [",
                       "    {",
@@ -338,7 +333,7 @@
                   [ "wix-bookings-rc-v2-backend.Resource_23420910898" ] },
             "doc": "Fulfilled - Resource details." },
         "locations":
-          [ { "lineno": 13,
+          [ { "lineno": 22,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Update_updateResource.js" } ],
         "docs":
           { "summary": "Updates a resource.",
@@ -561,6 +556,36 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "Image_3626650051",
+        "locations":
+          [ { "lineno": 13,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Update_updateResource.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "WixMedia image ID.",
+              "optional": true },
+            { "name": "url",
+              "type": "string",
+              "doc": "Image URL.",
+              "optional": true },
+            { "name": "altText",
+              "type": "string",
+              "doc": "Image alt text. Optional.",
+              "optional": true },
+            { "name": "urlExpirationDate",
+              "type": "Date",
+              "doc": "Image URL expiration date (when relevant). Optional",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListResourcesRequest_25153110744",
         "locations":
           [ { "lineno": 1,
@@ -715,12 +740,13 @@
               "type":
                 { "name": "Array",
                   "typeParams":
-                    [ "wix-bookings-rc-v2-backend.Image_3626650051" ] },
+                    [ "wix-bookings-rc-v2-backend.resources.Image_3626650051" ] },
               "doc": "Resource images.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Resource_13052683855",
         "locations":
           [ { "lineno": 19,
@@ -763,7 +789,103 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Resource_15083711512",
+        "locations":
+          [ { "lineno": 31,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
+        "docs":
+          { "summary": "Resource details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Resource ID." },
+            { "name": "name",
+              "type": "string",
+              "doc": "Resource name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Resource email address." },
+            { "name": "phone",
+              "type": "string",
+              "doc": "Resource phone number." },
+            { "name": "description",
+              "type": "string",
+              "doc": "Resource description." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Resource tags. Tags are used to identify, group, and filter the different types of resources. For example, 'staff' or 'room'." },
+            { "name": "scheduleIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of the schedule IDs that are owned by this resource." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Resource status.\n//<!--ONLY:VELO\n One Of:\n - `\"CREATED\"` Default status.\n - `\"DELETED\"` The resource has been deleted.\n - `\"UPDATED\"` The resource has been updated.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" },
+            { "name": "images",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Resource images." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "Resource_8796704728",
+        "locations":
+          [ { "lineno": 19,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
+        "docs":
+          { "summary": "Resource details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "name",
+              "type": "string",
+              "doc": "Resource name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Resource email address.",
+              "optional": true },
+            { "name": "phone",
+              "type": "string",
+              "doc": "Resource phone number.",
+              "optional": true },
+            { "name": "description",
+              "type": "string",
+              "doc": "Resource description.",
+              "optional": true },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Resource tags. Tags are used to identify, group, and filter the different types of resources. For example, 'staff' or 'room'.",
+              "optional": true },
+            { "name": "images",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Resource images.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Schedule_11557805088",
         "locations":
           [ { "lineno": 19,

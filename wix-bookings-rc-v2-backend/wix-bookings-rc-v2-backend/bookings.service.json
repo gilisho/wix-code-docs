@@ -1,7 +1,8 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -1048,12 +1049,15 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
               "type": "string",
-              "doc": "The ID of the booking to be cancelled." } ],
+              "doc": "The ID of the booking to be cancelled." },
+            { "name": "options",
+              "type": "wix-bookings-rc-v2-backend.bookings.CancelBookingRequest_7528859822" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -1061,7 +1065,7 @@
                   [ "wix-bookings-rc-v2-backend.bookings.CancelBookingResult_4386307776" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 7,
+          [ { "lineno": 28,
               "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
         "docs":
           { "summary": "Cancels an existing booking.",
@@ -1094,9 +1098,19 @@
                       "",
                       "export function cancelBooking() {",
                       "  const bookingId = \"a string\";",
+                      "  const options = {",
+                      "    _id: \"a string\",",
+                      "    participantNotification: {",
+                      "      notifyParticipants: true,",
+                      "      message: \"a string\"",
+                      "    },",
+                      "    flowControlSettings: {",
+                      "      ignoreCancellationPolicy: true",
+                      "    }",
+                      "  };",
                       "",
                       "  return bookings",
-                      "    .cancelBooking(bookingId)",
+                      "    .cancelBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -1113,9 +1127,19 @@
                       "",
                       "export function cancelBooking() {",
                       "  const bookingId = \"a string\";",
+                      "  const options = {",
+                      "    _id: \"a string\",",
+                      "    participantNotification: {",
+                      "      notifyParticipants: true,",
+                      "      message: \"a string\"",
+                      "    },",
+                      "    flowControlSettings: {",
+                      "      ignoreCancellationPolicy: true",
+                      "    }",
+                      "  };",
                       "",
                       "  return bookings",
-                      "    .cancelBooking(bookingId)",
+                      "    .cancelBooking(bookingId, options)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -2447,9 +2471,34 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "CancelBookingRequest_7528859822",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The ID of the booking to be cancelled." },
+            { "name": "participantNotification",
+              "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
+              "doc": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
+              "optional": true },
+            { "name": "flowControlSettings",
+              "type": "wix-bookings-rc-v2-backend.bookings.CancelBookingRequest_FlowControlSettings_806682439",
+              "doc": "Sets the cancel booking flow behavior.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CancelBookingRequest_FlowControlSettings_806682439",
         "locations":
-          [ { "lineno": 18,
+          [ { "lineno": 9,
               "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
         "docs":
           { "summary": "Sets the cancel booking flow behavior.",
@@ -2465,10 +2514,10 @@
         "extra":
           {  },
         "labels":
-          [ "removed" ] },
+          [ "new" ] },
       { "name": "CancelBookingResult_4386307776",
         "locations":
-          [ { "lineno": 1,
+          [ { "lineno": 22,
               "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
         "docs":
           { "links": [],
