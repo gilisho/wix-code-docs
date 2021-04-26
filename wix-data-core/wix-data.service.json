@@ -2986,68 +2986,6 @@
         "extra":
           {  },
         "labels": [] },
-      { "name": "WixDataQueryReferencedOptions",
-        "locations":
-          [ { "lineno": 620,
-              "filename": "data-api.es6" } ],
-        "docs":
-          { "summary": "An object for controlling the order of returned referenced items.",
-            "description":
-              [ "Pass a `WixDataQueryReferencedOptions` object when calling the [`queryReferenced`](#queryReferenced)",
-                " function to control the order of the returned referenced items.",
-                "",
-                " The object's `order` property can have the following values:",
-                "",
-                " + `asc`: References are returned by insertion time in ascending order.",
-                " + `desc`: References are returned by insertion time in descending order." ],
-            "links": [],
-            "examples":
-              [ { "title": "Get referenced items using options",
-                  "body":
-                    [ "import wixData from 'wix-data';",
-                      "",
-                      "// ...",
-                      "",
-                      "let options = {",
-                      "  \"order\": \"asc\"",
-                      "};",
-                      "",
-                      "wixData.queryReferenced(\"movies\", \"00001\", \"actors\", options)",
-                      "  .then( (results) => {",
-                      "    if(results.items.length > 0) {",
-                      "      let firstItem = results.items[0]; //see item below",
-                      "    } else {",
-                      "      // handle case where no matching items found",
-                      "    }",
-                      "  } )",
-                      "  .catch( (err) => {",
-                      "    let errorMsg = err;",
-                      "  } );",
-                      "",
-                      "/*  firstItem is:",
-                      " *",
-                      " *  {",
-                      " *    \"_id\":          \"12345\",",
-                      " *    \"_owner\":       \"ffdkj9c2-df8g-f9ke-lk98-4kjhfr89keedb\",",
-                      " *    \"_createdDate\": \"2017-05-24T12:33:18.938Z\",",
-                      " *    \"_updatedDate\": \"2017-05-24T12:33:18.938Z\",",
-                      " *    \"first_name\":   \"John\",",
-                      " *    \"last_name\":    \"Doe\"",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } } ],
-            "extra":
-              {  } },
-        "members":
-          [ { "name": "order",
-              "type": "string",
-              "doc": "The order of the returned referenced items. Either \"asc\" or \"desc\".",
-              "optional": true } ],
-        "extra":
-          {  },
-        "labels":
-          [ "changed" ] } ],
   "extra":
     {  },
   "menuSections": "APIs",
