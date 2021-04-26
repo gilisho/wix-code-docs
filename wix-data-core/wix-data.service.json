@@ -430,8 +430,7 @@
         "extra":
           {  } },
       { "name": "bulkRemove",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "collectionId",
@@ -1409,8 +1408,7 @@
         "extra":
           {  } },
       { "name": "insertReference",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "collectionId",
@@ -3044,10 +3042,12 @@
         "members":
           [ { "name": "order",
               "type": "string",
-              "doc": "The order of the returned referenced items. Either \"asc\" or \"desc\"." } ],
+              "doc": "The order of the returned referenced items. Either \"asc\" or \"desc\".",
+              "optional": true } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     {  },
   "menuSections": "APIs",
