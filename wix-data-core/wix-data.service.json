@@ -1,7 +1,6 @@
 { "name": "wix-data",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 98,
       "filename": "data-api.es6" },
@@ -1788,7 +1787,7 @@
           {  } },
       { "name": "queryReferenced",
         "labels":
-          [ "removed" ],
+          [ "new" ],
         "nameParams": [],
         "params":
           [ { "name": "collectionId",
