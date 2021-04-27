@@ -14,11 +14,12 @@
   "properties": [],
   "operations":
     [ { "name": "createResource",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "resourceInfo",
-              "type": "wix-bookings-rc-v2-backend.resources.Resource_8796704728",
+              "type": "wix-bookings-rc-v2-backend.resources.Resource_10583635105",
               "doc": "Resource details." },
             { "name": "schedulesInfo",
               "type":
@@ -33,10 +34,10 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Resource_15083711512" ] },
+                  [ "wix-bookings-rc-v2-backend.Resource_16777953168" ] },
             "doc": "Fulfilled - Resource details." },
         "locations":
-          [ { "lineno": 31,
+          [ { "lineno": 30,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
         "docs":
           { "summary": "Creates a resource.",
@@ -62,8 +63,7 @@
                       "    email: \"a string\",",
                       "    phone: \"a string\",",
                       "    description: \"a string\",",
-                      "    tags: [\"a string\"],",
-                      "    images: [\"wix:image://v1/mediaId/filename.jpg#originWidth=42&originHeight=42\"]",
+                      "    tags: [\"a string\"]",
                       "  };",
                       "  const schedulesInfo = [",
                       "    {",
@@ -313,14 +313,15 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateResource",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "id",
               "type": "string",
               "doc": "Resource ID." },
             { "name": "resource",
-              "type": "wix-bookings-rc-v2-backend.resources.Resource_8704016007",
+              "type": "wix-bookings-rc-v2-backend.resources.Resource_10490946384",
               "doc": "Resource details." },
             { "name": "options",
               "type": "wix-bookings-rc-v2-backend.Options_936495653",
@@ -329,10 +330,10 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Resource_15083711512" ] },
+                  [ "wix-bookings-rc-v2-backend.Resource_16777953168" ] },
             "doc": "Fulfilled - Resource details." },
         "locations":
-          [ { "lineno": 13,
+          [ { "lineno": 12,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Update_updateResource.js" } ],
         "docs":
           { "summary": "Updates a resource.",
@@ -376,8 +377,7 @@
                       "    email: \"a string\",",
                       "    phone: \"a string\",",
                       "    description: \"a string\",",
-                      "    tags: [\"a string\"],",
-                      "    images: [\"wix:image://v1/mediaId/filename.jpg#originWidth=42&originHeight=42\"]",
+                      "    tags: [\"a string\"]",
                       "  };",
                       "  const options = {",
                       "    suppressAuth: true",
@@ -400,8 +400,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateResourceSchedule",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "resourceId",
@@ -695,6 +694,81 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "Resource_10490946384",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Update_updateResource.js" } ],
+        "docs":
+          { "summary": "Resource details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "name",
+              "type": "string",
+              "doc": "Resource name.",
+              "optional": true },
+            { "name": "email",
+              "type": "string",
+              "doc": "Resource email address.",
+              "optional": true },
+            { "name": "phone",
+              "type": "string",
+              "doc": "Resource phone number.",
+              "optional": true },
+            { "name": "description",
+              "type": "string",
+              "doc": "Resource description.",
+              "optional": true },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Resource tags. Tags are used to identify, group, and filter the different types of resources. For example, 'staff' or 'room'.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "Resource_10583635105",
+        "locations":
+          [ { "lineno": 19,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
+        "docs":
+          { "summary": "Resource details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "name",
+              "type": "string",
+              "doc": "Resource name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Resource email address.",
+              "optional": true },
+            { "name": "phone",
+              "type": "string",
+              "doc": "Resource phone number.",
+              "optional": true },
+            { "name": "description",
+              "type": "string",
+              "doc": "Resource description.",
+              "optional": true },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Resource tags. Tags are used to identify, group, and filter the different types of resources. For example, 'staff' or 'room'.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Resource_12959995134",
         "locations":
           [ { "lineno": 1,
@@ -879,7 +953,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Resource_8796704728",
         "locations":
           [ { "lineno": 19,
@@ -922,7 +997,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Schedule_11557805088",
         "locations":
           [ { "lineno": 19,
