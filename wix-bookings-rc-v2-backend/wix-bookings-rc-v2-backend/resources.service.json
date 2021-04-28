@@ -14,8 +14,7 @@
   "properties": [],
   "operations":
     [ { "name": "createResource",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "resourceInfo",
@@ -347,7 +346,7 @@
                 "",
                 "<!--ONLY:REST-->",
                 "+ Update the resource's schedule to remove the business's scheduleId from the `availability.likedSchedules` array.",
-                "+ Create a set of recurring sessions of type `\"WORING_HOURS\"` to define the resource's new hours.",
+                "+ Create a set of recurring sessions of type `\"WORKING_HOURS\"` to define the resource's new hours.",
                 "<!--END:ONLY:REST-->",
                 "<!--ONLY:VELO",
                 "+ Update the resource's schedule to remove the business's scheduleId from the `a1vailability.likedSchedules` array.",
@@ -730,8 +729,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Resource_10583635105",
         "locations":
           [ { "lineno": 19,
@@ -767,8 +765,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Resource_12959995134",
         "locations":
           [ { "lineno": 1,
