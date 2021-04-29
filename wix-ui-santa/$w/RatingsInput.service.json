@@ -29,7 +29,7 @@
         "locations":
           [ { "lineno": 60,
               "filename": "RatingsInput.js" },
-            { "lineno": 95,
+            { "lineno": 96,
               "filename": "RatingsInput.js" } ],
         "docs":
           { "summary": "Sets or gets the rating value.",
@@ -45,11 +45,12 @@
                 " Getting the `value` property returns the current displayed value.",
                 " > **Notes:**",
                 " > - If an element is connected to a dataset, setting the element's `value`",
-                " >   in code does not set the value of the connected field in the dataset.",
-                " >   That means if you use the dataset to perform a submit, the value changed",
-                " >   in code is not reflected in the submitted item.",
-                " >",
-                " > - To submit the new value using a dataset, set the field's value using the [`setFieldValue()`](wix-dataset.html#setFieldValue) function before performing the submit." ],
+                " in code does not set the value of the connected field in the dataset.",
+                " That means if you use the dataset to perform a submit, the value changed",
+                " in code is not reflected in the submitted item.",
+                " > - To submit the new value using a dataset, set the field's value using the",
+                " [`setFieldValue()`](wix-dataset.html#setFieldValue) function before",
+                " performing the submit." ],
             "links": [],
             "examples":
               [ { "title": "Get the rating value",
