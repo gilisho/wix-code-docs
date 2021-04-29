@@ -1,8 +1,7 @@
 { "name": "Invoices",
   "memberOf": "wix-billing-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 2,
       "filename": "invoices.js" },
@@ -263,8 +262,7 @@
         "extra":
           {  } },
       { "name": "createInvoicePreviewUrl",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "id",
