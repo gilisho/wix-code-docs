@@ -4,7 +4,7 @@
   "labels":
     [ "changed" ],
   "location":
-    { "lineno": 23,
+    { "lineno": 43,
       "filename": "index.js" },
   "docs":
     { "summary": "The Bookings API provides functionality for updating and managing bookings created in the Wix Bookings app.",
@@ -16,13 +16,13 @@
           "",
           "",
           "The Bookings API provides bookings functionality allowing you to:",
-          "+ List and [query](wix-bookings-backend/bookings/querybookings) booking information.",
-          "+ [Confirm](wix-bookings-backend/bookings/confirmbooking) pending booking requests.",
-          "+ [Decline](wix-bookings-backend/bookings/declinebooking) pending booking requests.",
-          "+ [Cancel](wix-bookings-backend/bookings/cancelbooking) a booking.",
-          "+ [Set attendance](wix-bookings-backend/bookings/setattendance) for booked sessions.",
-          "+ [Set](wix-bookings-backend/bookings/setbookingaspaid) a booking as paid.",
-          "+ Update the customer's [booking information](wix-bookings-backend/bookings/updatecustomerinfo).",
+          "+ List and [query](wix-bookings-backend.Bookings/querybookings) booking information.",
+          "+ [Confirm](wix-bookings-backend.Bookings/confirmbooking) pending booking requests.",
+          "+ [Decline](wix-bookings-backend.Bookings/declinebooking) pending booking requests.",
+          "+ [Cancel](wix-bookings-backend.Bookings/cancelbooking) a booking.",
+          "+ [Set attendance](wix-bookings-backend.Bookings/setattendance) for booked sessions.",
+          "+ [Set](wix-bookings-backend.Bookings/setbookingaspaid) a booking as paid.",
+          "+ Update the customer's [booking information](wix-bookings-backend.Bookings/updatecustomerinfo).",
           "",
           "To use the Bookings API, import `bookings` from the `wix-bookings-backend` module:",
           "",
@@ -36,7 +36,8 @@
   "properties": [],
   "operations":
     [ { "name": "cancelBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -53,7 +54,7 @@
             "doc": "" },
         "locations":
           [ { "lineno": 24,
-              "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
+              "filename": "cancelBooking.js" } ],
         "docs":
           { "summary": "Cancels an existing booking.",
             "description":
@@ -65,10 +66,10 @@
                 "- If the booking creates a session, the session that was created is deleted from the calendar.",
                 "- The participant is notified, according to the `participantNotification` properties.",
                 "",
-                "When `cancelBooking()` is invoked by a user, the cancellation is validated against the service's bookings policy.",
+                "When `cancelBooking()` is invoked, the cancellation is validated against the service's bookings policy.",
                 "If `cancelBooking()` is invoked by a Bookings Admin, the service's bookings policy can be ignored by setting `ignoreCancellationPolicy` to `true`.",
                 ">**Note:**",
-                "> Only users with the \"Bookings Admin\" [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can cancel other customers' bookings." ],
+                "> Only users with the **Bookings Admin** [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can cancel other customers' bookings." ],
             "links": [],
             "examples":
               [ { "title": "Cancel a booking.",
@@ -109,7 +110,8 @@
         "extra":
           {  } },
       { "name": "confirmBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -126,7 +128,7 @@
             "doc": "Fulfilled - ID of the confirmed booking." },
         "locations":
           [ { "lineno": 9,
-              "filename": "com_wix_bookings_api_v1_Bookings_Confirm_confirmBooking.js" } ],
+              "filename": "confirmBooking.js" } ],
         "docs":
           { "summary": "Confirms a booking request.",
             "description":
@@ -142,7 +144,7 @@
                 "- An email notification is sent to the participant according to the `participantNotification` properties.",
                 "",
                 ">**Note:**",
-                "> Only users with the \"Bookings Admin\" [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can confirm a booking." ],
+                "> Only users with the **Bookings Admin** [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can confirm a booking." ],
             "links": [],
             "examples":
               [ { "title": "Confirm a booking request",
@@ -182,7 +184,8 @@
         "extra":
           {  } },
       { "name": "declineBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -199,7 +202,7 @@
             "doc": "" },
         "locations":
           [ { "lineno": 15,
-              "filename": "com_wix_bookings_api_v1_Bookings_Decline_declineBooking.js" } ],
+              "filename": "declineBooking.js" } ],
         "docs":
           { "summary": "Declines a pending booking request.",
             "description":
@@ -214,7 +217,7 @@
                 "- An email notification is sent to the participant according to the `participantNotification` properties.",
                 "",
                 ">**Note:**",
-                "> Only users with the \"Bookings Admin\" [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can decline a booking." ],
+                "> Only users with the **Bookings Admin** [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can decline a booking." ],
             "links": [],
             "examples":
               [ { "title": "Decline a booking request",
@@ -261,44 +264,44 @@
           { "type": "wix-bookings-backend.Bookings.BookingsQueryBuilder" },
         "locations":
           [ { "lineno": 3,
-              "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
+              "filename": "queryBookings.js" } ],
         "docs":
           { "summary": "Creates a query to retrieve a list of bookings.",
             "description":
-              [ "The `queryBookings()` function builds a query to retrieve a list of bookings and returns a [BookingsQueryBuilder](wix-bookings-backend/bookings/bookingsquerybuilder) object.",
+              [ "The `queryBookings()` function builds a query to retrieve a list of bookings and returns a [BookingsQueryBuilder](wix-bookings-backend.Bookings/bookingsquerybuilder) object.",
                 "",
-                "The returned object contains the query definition which is typically used to run the query using the [`find()`](wix-bookings-backend/bookings/bookingsquerybuilder/find) function.",
+                "The returned object contains the query definition which is typically used to run the query using the [`find()`](wix-bookings-backend.Bookings/bookingsquerybuilder/find) function.",
                 "",
                 "You can refine the query by chaining `BookingsQueryBuilder` functions onto the query. `BookingsQueryBuilder` functions enable you to sort, filter, and control the results that `queryBookings()` returns.",
                 "",
-                "The query runs with the following `BookingsQueryBuilder` defaults that you can override:",
+                "The `query` runs with the following `BookingsQueryBuilder` defaults that you can override:",
                 "",
-                "+ [`eq`](wix-bookings-backend.bookings.BookingsQueryBuilder.html.#eq): `\"status\": \"CONFIRMED\"`",
-                "+ [`skip`](wix-bookings-backend.bookings.BookingsQueryBuilder.html.#skip): `0`",
-                "+ [`limit`](wix-bookings-backend.bookings.BookingsQueryBuilder.html.#limit): `50`",
-                "+ [`descending`](wix-bookings-backend.bookings.BookingsQueryBuilder.html.#descending): `_createdDate`",
+                "+ [`eq`](wix-bookings-backend.Bookings.BookingsQueryBuilder.html.#eq): `\"status\": \"CONFIRMED\"`",
+                "+ [`skip`](wix-bookings-backend.Bookings.BookingsQueryBuilder.html.#skip): `0`",
+                "+ [`limit`](wix-bookings-backend.Bookings.BookingsQueryBuilder.html.#limit): `50`",
+                "+ [`descending`](wix-bookings-backend.Bookings.BookingsQueryBuilder.html.#descending): `_createdDate`",
                 "",
                 "The functions that are chained to `queryBookings()` are applied in the order they are called. For example, if you sort on the `_createdDate` property in ascending order and then on the `status` property in descending order, the results are sorted first by the created date of the items and then, if there are multiple results with the same date, the items are sorted by status in descending order, per created date value.",
                 "",
                 "",
                 "The following `BookingsQueryBuilder` functions are supported for `queryBookings()`. ",
-                "For a full description of the Booking object, see the object returned for the [`items`](wix-bookings-backend/bookings/bookingsqueryresult/items) property in [`BookingsQueryResult`](wix-bookings-backend/bookings/bookingsqueryresult). ",
+                "For a full description of the Booking object, see the object returned for the [`items`](wix-bookings-backend.Bookings/bookingsqueryresult/items) property in [`BookingsQueryResult`](wix-bookings-backend.Bookings/bookingsqueryresult). ",
                 "",
                 "|Property|Filters|Description|",
                 "|--|--|--|",
-                "|`_id`|[`eq()`](wix-bookings-backend/bookings/bookingsquerybuilder/eq)| Query for a specific booking. <br/>  `eq(\"_id\",\"46ce4cd4-46ff-4aa7-9cc0-02fd4f0f3209\")`|",
-                "|`contactId` | [`eq()`](wix-bookings-backend/bookings/bookingsquerybuilder/eq)| Bookings made by the specified contact ID. `eq(\"contactId\",\"8711a950-74cc-4608-80fb-8f09df9cbbf4\")`|",
-                "|`sessionId`| [`eq()`](wix-bookings-backend/bookings/bookingsquerybuilder/eq), [`hasSome()`](wix-bookings-backend/bookings/bookingsquerybuilder/hassome)|Bookings made to a given session or a list of sessions. <br/> `hasSome(\"sessionId\",\"[193ZPR9ppP9emJUCLevcLf6orynNE45\", \"c8UhG9ppABemJUCLevcLf6orynNE98\"] )`|",
-                "|`startTime`| [`ge()`](wix-bookings-backend/bookings/bookingsquerybuilder/ge) , [`lt()`](wix-bookings-backend/bookings/bookingsquerybuilder/lt), [`ascending()`](wix-bookings-backend/bookings/bookingsquerybuilder/ascending), [`descending()`](wix-bookings-backend/bookings/bookingsquerybuilder/descending)|Bookings with a schedule or session start time (UTC) earlier than a given time, or at a given time or later. <br/>  `ge(\"startTime\", \"2020-04-27T10:00:00.000Z\")`|",
-                "|`endTime`|[`gt()`](wix-bookings-backend/bookings/bookingsquerybuilder/gt), [`le()`](wix-bookings-backend/bookings/bookingsquerybuilder/le)|Bookings with a schedule or session end time (UTC) later than a given time, or at a given time or earlier. <br/> `gt(\"endTime\", \"2020-04-27T10:00:00.000Z\")`|",
-                "|`status`|[`eq()`](wix-bookings-backend/bookings/bookingsquerybuilder/eq), [`hasSome()`](wix-bookings-backend/bookings/bookingsquerybuilder/hassome)|Bookings with a given status or a status that is in a given list of statuses. <br/> `hasSome(\"status\", [\"CONFIRMED\", \"PENDING_APPROVAL\",\"CANCELED\"])`|",
-                "|`_createdDate`|[`ge()`](wix-bookings-backend/bookings/bookingsquerybuilder/ge), [`lt()`](wix-bookings-backend/bookings/bookingsquerybuilder/lt), [`ascending()`](wix-bookings-backend/bookings/bookingsquerybuilder/ascending), [`descending()`](wix-bookings-backend/bookings/bookingsquerybuilder/descending)|Bookings created at a given date or later, or earlier than a given date. <br/> `lt(\"_createdDate\", \"2020-04-27T10:00:00.000Z\")`|",
+                "|`_id`|[`eq()`](wix-bookings-backend.Bookings/bookingsquerybuilder/eq)| Query for a specific booking. <br/>  `eq(\"_id\",\"46ce4cd4-46ff-4aa7-9cc0-02fd4f0f3209\")`|",
+                "|`contactId` | [`eq()`](wix-bookings-backend.Bookings/bookingsquerybuilder/eq)| Bookings made by the specified contact ID. `eq(\"contactId\",\"8711a950-74cc-4608-80fb-8f09df9cbbf4\")`|",
+                "|`sessionId`| [`eq()`](wix-bookings-backend.Bookings/bookingsquerybuilder/eq), [`hasSome()`](wix-bookings-backend.Bookings/bookingsquerybuilder/hassome)|Bookings made to a given session or a list of sessions. <br/> `hasSome(\"sessionId\",\"[193ZPR9ppP9emJUCLevcLf6orynNE45\", \"c8UhG9ppABemJUCLevcLf6orynNE98\"] )`|",
+                "|`startTime`| [`ge()`](wix-bookings-backend.Bookings/bookingsquerybuilder/ge) , [`lt()`](wix-bookings-backend.Bookings/bookingsquerybuilder/lt), [`ascending()`](wix-bookings-backend.Bookings/bookingsquerybuilder/ascending), [`descending()`](wix-bookings-backend.Bookings/bookingsquerybuilder/descending)|Bookings with a schedule or session start time (UTC) earlier than a given time, or at a given time or later. <br/>  `ge(\"startTime\", \"2020-04-27T10:00:00.000Z\")`|",
+                "|`endTime`|[`gt()`](wix-bookings-backend.Bookings/bookingsquerybuilder/gt), [`le()`](wix-bookings-backend.Bookings/bookingsquerybuilder/le)|Bookings with a schedule or session end time (UTC) later than a given time, or at a given time or earlier. <br/> `gt(\"endTime\", \"2020-04-27T10:00:00.000Z\")`|",
+                "|`status`|[`eq()`](wix-bookings-backend.Bookings/bookingsquerybuilder/eq), [`hasSome()`](wix-bookings-backend.Bookings/bookingsquerybuilder/hassome)|Bookings with a given status or a status that is in a given list of statuses. <br/> `hasSome(\"status\", [\"CONFIRMED\", \"PENDING_APPROVAL\",\"CANCELED\"])`|",
+                "|`_createdDate`|[`ge()`](wix-bookings-backend.Bookings/bookingsquerybuilder/ge), [`lt()`](wix-bookings-backend.Bookings/bookingsquerybuilder/lt), [`ascending()`](wix-bookings-backend.Bookings/bookingsquerybuilder/ascending), [`descending()`](wix-bookings-backend.Bookings/bookingsquerybuilder/descending)|Bookings created at a given date or later, or earlier than a given date. <br/> `lt(\"_createdDate\", \"2020-04-27T10:00:00.000Z\")`|",
                 "",
                 "You can only use one filter function for each property. If a property is used in more than one filter, only the first filter will work.",
                 "",
                 ">**Notes:**",
                 "> + By default, `queryBookings()` retrieves only statuses of `\"CONFIRMED\"`. To retrieve all booking statuses use a `hasSome()` filter with all of the statuses.",
-                "> + A member can only see their own bookings unless `suppressAuth` is set to `true` in the queryOptions for the [`find()`](wix-bookings-backend/bookings/bookingsquerybuilder/find) function.",
+                "> + A member can only see their own bookings unless `suppressAuth` is set to `true` in the queryOptions for the [`find()`](wix-bookings-backend.Bookings/bookingsquerybuilder/find) function.",
                 "> + When using the `queryBookings()` function immediately following a change to your bookings, the data retrieved may not contain your most recent changes. See [Wix-data and Eventual Consistency](reference/wix-data/introduction#wix-data_introduction_wix-data-and-eventual-consistency) for more information. To solve this problem, you can use the [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#setTimeout) function to delay querying for a number of seconds, following any changes to your bookings data." ],
             "links": [],
             "examples":
@@ -346,7 +349,8 @@
         "extra":
           {  } },
       { "name": "setAttendance",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -363,7 +367,7 @@
             "doc": "" },
         "locations":
           [ { "lineno": 11,
-              "filename": "com_wix_bookings_api_v1_Bookings_SetAttendance_setAttendance.js" } ],
+              "filename": "setAttendance.js" } ],
         "docs":
           { "summary": "Sets the number of people who actually attended the session for the given booking.",
             "description":
@@ -374,7 +378,7 @@
                 "  ",
                 ">**Notes:**",
                 "> + There is no validation on the number of attendees or on the relationship between `numberOfAttendees` and `attended`.",
-                "> + Only users with the \"Bookings Admin\" [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can set attendance for a booking." ],
+                "> + Only users with the **Bookings Admin** [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can set attendance for a booking." ],
             "links": [],
             "examples":
               [ { "title": "Set attendance information",
@@ -497,7 +501,8 @@
         "extra":
           {  } },
       { "name": "setBookingAsPaid",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -511,7 +516,7 @@
             "doc": "" },
         "locations":
           [ { "lineno": 3,
-              "filename": "com_wix_bookings_api_v1_Bookings_MarkAsPaid_setBookingAsPaid.js" } ],
+              "filename": "setBookingAsPaid.js" } ],
         "docs":
           { "summary": "Marks a booking as fully paid.",
             "description":
@@ -526,7 +531,7 @@
                 "You cannot mark a booking as paid if the booking `status` is `\"PENDING_APPROVAL\"`.",
                 "",
                 ">**Note:**",
-                "> Only users with the \"Bookings Admin\" [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can mark a booking as paid." ],
+                "> Only users with the **Bookings Admin** [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can mark a booking as paid." ],
             "links": [],
             "examples":
               [ { "title": "Set a booking as paid",
@@ -646,14 +651,15 @@
         "extra":
           {  } },
       { "name": "updateCustomerInfo",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
               "type": "string",
               "doc": "ID of the booking to be updated." },
             { "name": "formInfo",
-              "type": "wix-bookings-backend.FormInfo",
+              "type": "wix-bookings-backend.Bookings.FormInfo",
               "doc": "Updated form info and contact details." } ],
         "ret":
           { "type":
@@ -663,7 +669,7 @@
             "doc": "" },
         "locations":
           [ { "lineno": 4,
-              "filename": "com_wix_bookings_api_v1_Bookings_UpdateCustomerInfo_updateCustomerInfo.js" } ],
+              "filename": "updateCustomerInfo.js" } ],
         "docs":
           { "summary": "Updates the customer's information for a booking.",
             "description":
@@ -672,7 +678,7 @@
                 "> **Notes:**",
                 "> + The whole `formInfo` object is updated for each request. Values for properties that are not included in the request will therefore be deleted.",
                 "> + `updateCustomerInfo()` does not update the information for the corresponding contact or member. To update contacts or members use [`updateContact()`](wix-crm-backend/updatecontact) or [`updateUserFields()`](wix-users-backend/updateuserfields).",
-                "> + Only users with the \"Bookings Admin\" [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can update customer information for a booking." ],
+                "> + Only users with the **Bookings Admin** [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can update customer information for a booking." ],
             "links": [],
             "examples":
               [ { "title": "Update customer information",
@@ -806,7 +812,62 @@
           {  } } ],
   "callbacks": [],
   "messages":
-    [ { "name": "AddressInfo",
+    [ { "name": "Address737",
+        "locations":
+          [ { "lineno": 161,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "summary": "Contact full [address](https://www.wix.com/velo/reference/$w/addressinput/value).",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "addressLine1",
+              "type": "string",
+              "doc": "Main address line, usually street and number, as free text.",
+              "optional": true },
+            { "name": "streetAddress",
+              "type": "wix-bookings-backend.StreetAddressInfo",
+              "doc": "Street name, number and apartment number.",
+              "optional": true },
+            { "name": "formatted",
+              "type": "string",
+              "doc": "A string containing the full address of this location.",
+              "optional": true },
+            { "name": "addressLine2",
+              "type": "string",
+              "doc": "Free text providing more detailed address info. Usually contains Apt, Suite, and Floor.",
+              "optional": true },
+            { "name": "location",
+              "type": "wix-bookings-backend.AddressLocationInfo",
+              "doc": "Coordinates of the physical address.",
+              "optional": true },
+            { "name": "city",
+              "type": "string",
+              "doc": "City name.",
+              "optional": true },
+            { "name": "subdivision",
+              "type": "string",
+              "doc": "Subdivision. Usually state, region, prefecture or province code, according to [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).",
+              "optional": true },
+            { "name": "country",
+              "type": "string",
+              "doc": "Country code.",
+              "optional": true },
+            { "name": "postalCode",
+              "type": "string",
+              "doc": "Zip/postal code.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "street",
+                  "members":
+                    [ "addressLine1",
+                      "streetAddress" ] } ] },
+        "labels":
+          [ "new" ] },
+      { "name": "AddressInfo",
         "locations":
           [ { "lineno": 45,
               "filename": "address.js" } ],
@@ -859,13 +920,14 @@
                   "members":
                     [ "addressLine1",
                       "streetAddress" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "AttendanceInfo",
         "locations":
-          [ { "lineno": 3,
-              "filename": "com_wix_bookings_api_v1_Bookings_SetAttendance_setAttendance.js" } ],
+          [ { "lineno": 128,
+              "filename": "allTypeDefs.js" } ],
         "docs":
-          { "summary": "Attendance information for the booking.",
+          { "summary": "Attendance information for the booking",
             "links": [],
             "examples": [],
             "extra":
@@ -881,11 +943,170 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "BookRequest_270246068556",
+        "locations":
+          [ { "lineno": 63,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "createSession",
+              "type": "wix-bookings-backend.Session_221562585945",
+              "optional": true },
+            { "name": "scheduleId",
+              "type": "string",
+              "optional": true },
+            { "name": "bySessionId",
+              "type": "wix-bookings-backend.BySessionId_3461046880",
+              "optional": true },
+            { "name": "couponCode",
+              "type": "string",
+              "doc": "Coupon code to apply for this booking",
+              "optional": true },
+            { "name": "planSelection",
+              "type": "wix-bookings-backend.PaidPlan_11584964510",
+              "doc": "Describes the selected paid plan to use for this booking.",
+              "optional": true },
+            { "name": "notifyParticipants",
+              "type": "boolean",
+              "optional": true },
+            { "name": "sendSmsReminder",
+              "type": "boolean",
+              "doc": "When value is set to True, an SMS reminder would be sent to the phone number specified in the ContactDetails, 24 hours before the session starts.",
+              "optional": true },
+            { "name": "externalUserId",
+              "type": "string",
+              "doc": "A user identifier of an external application user that initiated the book request.\n Allows an external application to later identify its own bookings and correlate to its own internal users",
+              "optional": true },
+            { "name": "bookingSource",
+              "type": "wix-bookings-backend.BookingSource_11223060951",
+              "doc": "Identifies the source (platform, actor and app) that created this booking.\n This property of the booking can not be changed. It will be published in the BookingNotification callback for every update of this booking.\n The app_def_id and app_name will be resolved automatically.",
+              "optional": true },
+            { "name": "flowControlSettings",
+              "type": "wix-bookings-backend.BookRequest_FlowControlSettings_1821316675",
+              "doc": "Sets the book flow behavior, some behaviors required permissions.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "schedule",
+                  "members":
+                    [ "bySessionId",
+                      "createSession",
+                      "scheduleId" ] } ] },
+        "labels":
+          [ "new" ] },
+      { "name": "BookedEntity_83705225470",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "summary": "An object describing the entity that was booked.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "serviceId",
+              "type": "string",
+              "doc": "The ID of the booked service." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "The ID of the booked schedule." },
+            { "name": "singleSession",
+              "type": "wix-bookings-backend.SingleSession",
+              "doc": "Start and end time of the booked sessions.",
+              "optional": true },
+            { "name": "setOfSessions",
+              "type": "wix-bookings-backend.SetOfSessions",
+              "doc": "First start and last end time of the booked sessions.",
+              "optional": true },
+            { "name": "title",
+              "type": "string",
+              "doc": "The session title at the time of booking." },
+            { "name": "rate",
+              "type": "wix-bookings-backend.Rate",
+              "doc": "The price options offered to book this session at the time of booking." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "A list of tags for the booking." },
+            { "name": "onlineConference",
+              "type": "wix-bookings-backend.OnlineConference",
+              "doc": "Online conference information." },
+            { "name": "location",
+              "type": "wix-bookings-backend.Bookings.Location_36724221108",
+              "doc": "The location of the session." } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "type",
+                  "members":
+                    [ "setOfSessions",
+                      "singleSession" ] } ] },
+        "labels":
+          [ "new" ] },
+      { "name": "Booking_226816542711",
+        "locations":
+          [ { "lineno": 17,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The booking ID." },
+            { "name": "bookedResources",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-backend.BookedResource" ] },
+              "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Booking status.\n<!--ONLY:VELO-->\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been cancelled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->" },
+            { "name": "_createdDate",
+              "type": "Date" },
+            { "name": "attendanceInfo",
+              "type": "wix-bookings-backend.AttendanceInfo",
+              "doc": "Attendance information." },
+            { "name": "externalUserId",
+              "type": "string",
+              "doc": "External ID provided by the client app on creation." },
+            { "name": "bookingSource",
+              "type": "wix-bookings-backend.BookingSource",
+              "doc": "An object describing the platform and application that made the booking." },
+            { "name": "bookedEntity",
+              "type": "wix-bookings-backend.Bookings.BookedEntity_83705225470",
+              "doc": "An object describing the entity that was booked." },
+            { "name": "paymentDetails",
+              "type": "wix-bookings-backend.PaymentDetails",
+              "doc": "Payment Details.",
+              "optional": true },
+            { "name": "formInfo",
+              "type": "wix-bookings-backend.Form",
+              "doc": "Form information submitted when booking. FormInfo contains contact details, participants, and other form fields, set up by the owner for the service.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CancelBookingOptions",
         "locations":
-          [ { "lineno": 3,
-              "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
+          [ { "lineno": 83,
+              "filename": "allTypeDefs.js" } ],
         "docs":
           { "links": [],
             "examples": [],
@@ -899,14 +1120,18 @@
             { "name": "flowControlSettings",
               "type": "wix-bookings-backend.Bookings.FlowControlSettingsInfo",
               "doc": "Sets the cancel booking flow behavior.",
-              "optional": true } ],
+              "optional": true },
+            { "name": "_id",
+              "type": "string",
+              "doc": "The ID of the booking to be cancelled." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CancelBookingResult",
         "locations":
-          [ { "lineno": 18,
-              "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
+          [ { "lineno": 104,
+              "filename": "allTypeDefs.js" } ],
         "docs":
           { "links": [],
             "examples": [],
@@ -915,14 +1140,15 @@
         "members":
           [ { "name": "bookingId",
               "type": "string",
-              "doc": "ID of the canceled booking." } ],
+              "doc": "The ID of the cancelled booking." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ConfirmBookingOptions",
         "locations":
-          [ { "lineno": 3,
-              "filename": "com_wix_bookings_api_v1_Bookings_Confirm_confirmBooking.js" } ],
+          [ { "lineno": 110,
+              "filename": "allTypeDefs.js" } ],
         "docs":
           { "links": [],
             "examples": [],
@@ -936,10 +1162,57 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "ContactDetails",
+        "locations":
+          [ { "lineno": 136,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "summary": "The contact details of the user making the booking.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID.",
+              "optional": true },
+            { "name": "firstName",
+              "type": "string",
+              "doc": "Contact first name.",
+              "optional": true },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Contact last name.",
+              "optional": true },
+            { "name": "email",
+              "type": "string",
+              "doc": "Contact email, used to create a new contact or get existing one from Contacts Service.",
+              "optional": true },
+            { "name": "phone",
+              "type": "string",
+              "doc": "Contact phone number.",
+              "optional": true },
+            { "name": "timeZone",
+              "type": "string",
+              "doc": "Contact time zone.",
+              "optional": true },
+            { "name": "countryCode",
+              "type": "string",
+              "doc": "Contact country in [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) format.",
+              "optional": true },
+            { "name": "address",
+              "type": "wix-bookings-backend.Bookings.Address737",
+              "doc": "Contact full [address](https://www.wix.com/velo/reference/$w/addressinput/value).",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "DeclineBookingOptions",
         "locations":
-          [ { "lineno": 3,
-              "filename": "com_wix_bookings_api_v1_Bookings_Decline_declineBooking.js" } ],
+          [ { "lineno": 116,
+              "filename": "allTypeDefs.js" } ],
         "docs":
           { "links": [],
             "examples": [],
@@ -955,8 +1228,8 @@
         "labels": [] },
       { "name": "DeclineBookingResult",
         "locations":
-          [ { "lineno": 9,
-              "filename": "com_wix_bookings_api_v1_Bookings_Decline_declineBooking.js" } ],
+          [ { "lineno": 122,
+              "filename": "allTypeDefs.js" } ],
         "docs":
           { "links": [],
             "examples": [],
@@ -971,8 +1244,8 @@
         "labels": [] },
       { "name": "FlowControlSettingsInfo",
         "locations":
-          [ { "lineno": 10,
-              "filename": "com_wix_bookings_api_v1_Bookings_Cancel_cancelBooking.js" } ],
+          [ { "lineno": 91,
+              "filename": "allTypeDefs.js" } ],
         "docs":
           { "summary": "Sets the cancel booking flow behavior.",
             "links": [],
@@ -982,10 +1255,92 @@
         "members":
           [ { "name": "ignoreCancellationPolicy",
               "type": "boolean",
-              "doc": "Whether to ignore the service's cancelation policy.\n Requires \"Manage Wix Bookings App\" and \"Manage Bookings' Calendar\" [roles](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin).",
+              "doc": "Whether to ignore the service's cancellation policy.\n<!--ONLY:REST\n Requires BOOKINGS.IGNORE_BOOKING_POLICY permission.\n<!--END:ONLY:REST-->       \n<!--ONLY:VELO-->\n Requires \"Manage Wix Bookings App\" and \"Manage Bookings' Calendar\" [roles](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin).\n<!--END:ONLY:VELO-->",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] },
+      { "name": "FormInfo",
+        "locations":
+          [ { "lineno": 150,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "summary": "Updated form info and contact details",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "paymentSelection",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-backend.PaymentSelectionInfo" ] },
+              "doc": "A list of rates and the number of participants for each rate.",
+              "optional": true },
+            { "name": "customFormFields",
+              "type": "Object",
+              "doc": "Set of key-value pairs. Other custom field values that were specified by the user. In the form of field_id to value mapping.\n Deprecated. Is being replaced with additional_fields.",
+              "optional": true },
+            { "name": "additionalFields",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-backend.FormInfo_CustomFormField_7366759000:updateCustomerInfo" ] },
+              "doc": "Additional custom fields submitted with the form.",
+              "optional": true },
+            { "name": "contactDetails",
+              "type": "wix-bookings-backend.Bookings.ContactDetails",
+              "doc": "The contact details of the user making the booking.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "Location_36724221108",
+        "locations":
+          [ { "lineno": 41,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "summary": "The location of the session.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "customAddress",
+              "type": "wix-bookings-backend.Address1",
+              "doc": "Custom [address](https://www.wix.com/velo/reference/$w/addressinput/value), used when location_type is `\"OWNER_CUSTOM\"`." },
+            { "name": "locationType",
+              "type": "string",
+              "doc": "Location type.\n<!--ONLY:VELO-->\n One of:\n - `\"OWNER_BUSINESS\"` The business address as set in the site’s general settings.\n - `\"OWNER_CUSTOM\"` The address as set when creating the service.\n - `\"CUSTOM\"` The address set for the individual session.\n<!--END:ONLY:VELO-->" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "QueryOptions_583539044:find",
+        "locations":
+          [ { "lineno": 55,
+              "filename": "allTypeDefs.js" } ],
+        "docs":
+          { "summary": "The `options` parameter is an optional parameter that can be used when calling the query [`find()`](#find) function.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "withBookingAllowedActions",
+              "type": "boolean",
+              "doc": "If true will return the allowed actions for each booking calculated using the business booking policy.",
+              "optional": true },
+            { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] } ],
   "extra":
     {  } }
