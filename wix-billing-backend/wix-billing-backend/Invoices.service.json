@@ -37,7 +37,7 @@
                   [ "wix-billing-backend.Invoices.Response" ] },
             "doc": "Fulfilled - When the payment is added to the invoice." },
         "locations":
-          [ { "lineno": 254,
+          [ { "lineno": 243,
               "filename": "invoices.js" } ],
         "docs":
           { "summary": "Adds a payment to the invoice and reports the payment to the payment provider.",
@@ -269,11 +269,7 @@
         "params":
           [ { "name": "id",
               "type": "wix-billing-backend.Invoices.IdAndVersion",
-              "doc": "Object containing the ID and version of the invoice." },
-            { "name": "options",
-              "type": "wix-billing-backend.Invoices.AuthOptions",
-              "doc": "An object with the following boolean property: suppressAuth.",
-              "optional": true } ],
+              "doc": "ID and version of the invoice." } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -281,93 +277,39 @@
                   [ "string" ] },
             "doc": "Fulfilled - URL of the invoice preview." },
         "locations":
-          [ { "lineno": 227,
+          [ { "lineno": 228,
               "filename": "invoices.js" } ],
         "docs":
           { "summary": "Creates a link that can be used by a customer to preview the invoice.",
             "description":
               [ "The `createInvoicePreviewUrl()` function returns a Promise that resolves",
-                " to a temporary link to a preview of the invoice with the specified ID.",
-                "",
-                "You can get a list of invoices by querying your site's",
-                "[\"Billing/Invoices\"](https://support.wix.com/en/article/velo-wix-billing-invoices-collection-fields)",
-                "collection.",
-                "Each invoice in the query result contains the `_id` and `version` fields,",
-                "which must be used when calling `createInvoicePreviewUrl()`.",
-                "",
-                "By default, `createInvoicePreviewUrl()` can be called by site contributors only.",
-                "To allow customers to generate the invoice preview link,",
-                "set `suppressAuth` in the `options` argument to `true`." ],
+                " to a temporary link to a preview of the invoice with the specified ID." ],
             "links": [],
             "examples":
               [ { "title": "Create invoice preview link",
                   "body":
-                    [ "import { invoices } from 'wix-billing-backend';",
+                    [ "import {invoices} from 'wix-billing-backend';",
                       "",
-                      "export async function myCreateInvoicePreviewUrlFunction(myInvoiceId, myInvoiceVersion) {",
-                      "  const id = {",
-                      "    id: myInvoiceId,",
-                      "    version: myInvoiceVersion",
+                      "export function createInvoicePreviewUrl(id, version) {",
+                      "  const idAndVersion = {",
+                      "    \"id\": id,",
+                      "    \"version\": version",
                       "  };",
                       "",
-                      "  const options = {",
-                      "    suppressAuth: false",
-                      "  };",
-                      "",
-                      "  return await invoices.createInvoicePreviewUrl(id, options);",
-                      "}",
-                      "",
-                      "/* Promise resolves to:",
-                      " *",
-                      " * \"https://invoices.wix.com/invoice/4ffbe78f-d789-5f3b-9a01-e892987ee43e:a5af37a4-753d-4701-8518-be23920ac3a0/view?token=628fa483-a473-4408-bac7-7501e81b32e3\"",
-                      " */" ],
+                      "  return invoices.createInvoicePreviewUrl(idAndVersion);",
+                      "}" ],
                   "extra":
                     {  } },
                 { "title": "Get the invoice version and create the invoice preview link",
                   "body":
-                    [ "import { invoices } from 'wix-billing-backend';",
+                    [ "import {invoices} from 'wix-billing-backend';",
                       "",
-                      "export async function myCreateInvoicePreviewUrlFunction(myInvoiceId) {",
-                      "  const retrievedInvoice = await invoices.getInvoice(myInvoiceId);",
-                      "  const options = {",
-                      "    suppressAuth: false",
-                      "  };",
-                      "",
-                      "  return await invoices.createInvoicePreviewUrl(retrievedInvoice.id, options);",
-                      "}",
-                      "",
-                      "/* Promise resolves to:",
-                      " *",
-                      " * \"https://invoices.wix.com/invoice/4ffbe78f-d789-5f3b-9a01-e892987ee43e:a5af37a4-753d-4701-8518-be23920ac3a0/view?token=628fa483-a473-4408-bac7-7501e81b32e3\"",
-                      "*/" ],
-                  "extra":
-                    {  } },
-                { "title": "Query invoices and create the invoice preview link for the first result",
-                  "body":
-                    [ "import { invoices } from 'wix-billing-backend';",
-                      "import wixData from 'wix-data';",
-                      "",
-                      "export async function myCreateInvoicePreviewUrlFunction() {",
-                      "",
-                      "\tconst returnedInvoices = await wixData.query('Billing/Invoices').find();",
-                      "\tconst firstInvoice = returnedInvoices.items[0];",
-                      "",
-                      "\tconst id = {",
-                      "\t\tid: firstInvoice._id,",
-                      "\t\tversion: firstInvoice.version",
-                      "\t};",
-                      "",
-                      "  const options = {",
-                      "    suppressAuth: false",
-                      "  };",
-                      "",
-                      "\treturn await invoices.createInvoicePreviewUrl(id, options);",
-                      "}",
-                      "",
-                      "/* Promise resolves to:",
-                      " *",
-                      " * \"https://invoices.wix.com/invoice/4ffbe78f-d789-5f3b-9a01-e892987ee43e:a5af37a4-753d-4701-8518-be23920ac3a0/view?token=628fa483-a473-4408-bac7-7501e81b32e3\"",
-                      " */" ],
+                      "export function createInvoicePreviewUrl(id) {",
+                      "  return invoices.getInvoice(id)",
+                      "    .then( (result) => {",
+                      "      return invoices.createInvoicePreviewUrl(result.id);",
+                      "    } );",
+                      "}" ],
                   "extra":
                     {  } } ],
             "extra":
@@ -790,7 +732,7 @@
   "messages":
     [ { "name": "Address",
         "locations":
-          [ { "lineno": 39,
+          [ { "lineno": 34,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains address information.",
@@ -1117,10 +1059,10 @@
         "extra":
           {  },
         "labels":
-          [ "new" ] },
+          [ "removed" ] },
       { "name": "CalculatedTax",
         "locations":
-          [ { "lineno": 251,
+          [ { "lineno": 246,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains calculated tax information.",
@@ -1295,7 +1237,7 @@
         "labels": [] },
       { "name": "Customer",
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 70,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains customer information.",
@@ -1629,7 +1571,7 @@
         "labels": [] },
       { "name": "Discount",
         "locations":
-          [ { "lineno": 226,
+          [ { "lineno": 221,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains discount information.",
@@ -1814,7 +1756,7 @@
         "labels": [] },
       { "name": "EmailInfo",
         "locations":
-          [ { "lineno": 312,
+          [ { "lineno": 307,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains information used to send an invoice to a customer.",
@@ -2971,7 +2913,7 @@
         "labels": [] },
       { "name": "ItemizedFee",
         "locations":
-          [ { "lineno": 204,
+          [ { "lineno": 199,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains itemized fee information.",
@@ -3137,7 +3079,7 @@
         "labels": [] },
       { "name": "LineItem",
         "locations":
-          [ { "lineno": 109,
+          [ { "lineno": 104,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains line item information.",
@@ -3448,7 +3390,7 @@
         "labels": [] },
       { "name": "LineItemTax",
         "locations":
-          [ { "lineno": 132,
+          [ { "lineno": 127,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains tax information for a line item.",
@@ -3746,7 +3688,7 @@
         "labels": [] },
       { "name": "Locale",
         "locations":
-          [ { "lineno": 158,
+          [ { "lineno": 153,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains locale information.",
@@ -3909,7 +3851,7 @@
         "labels": [] },
       { "name": "MetaData",
         "locations":
-          [ { "lineno": 274,
+          [ { "lineno": 269,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains metadata information.",
@@ -4390,7 +4332,7 @@
         "labels": [] },
       { "name": "Response",
         "locations":
-          [ { "lineno": 294,
+          [ { "lineno": 289,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains response information.",
@@ -4572,7 +4514,7 @@
         "labels": [] },
       { "name": "StreetAddress",
         "locations":
-          [ { "lineno": 331,
+          [ { "lineno": 326,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains street address information.",
@@ -4859,7 +4801,7 @@
         "labels": [] },
       { "name": "TotalPrice",
         "locations":
-          [ { "lineno": 185,
+          [ { "lineno": 180,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains price totals.",

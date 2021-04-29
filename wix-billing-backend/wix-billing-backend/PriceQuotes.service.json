@@ -521,7 +521,7 @@
   "messages":
     [ { "name": "Address",
         "locations":
-          [ { "lineno": 24,
+          [ { "lineno": 19,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains address information.",
@@ -826,7 +826,7 @@
         "labels": [] },
       { "name": "CalculatedTax",
         "locations":
-          [ { "lineno": 240,
+          [ { "lineno": 235,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains calculated tax information.",
@@ -995,7 +995,7 @@
         "labels": [] },
       { "name": "Customer",
         "locations":
-          [ { "lineno": 54,
+          [ { "lineno": 49,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains customer information.",
@@ -1321,7 +1321,7 @@
         "labels": [] },
       { "name": "Discount",
         "locations":
-          [ { "lineno": 212,
+          [ { "lineno": 207,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains discount information.",
@@ -1493,7 +1493,7 @@
         "labels": [] },
       { "name": "EmailInfo",
         "locations":
-          [ { "lineno": 302,
+          [ { "lineno": 297,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains information used to send a price quote to a customer.",
@@ -1734,7 +1734,7 @@
         "labels": [] },
       { "name": "ItemizedFee",
         "locations":
-          [ { "lineno": 196,
+          [ { "lineno": 191,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains itemized fee information.",
@@ -1894,7 +1894,7 @@
         "labels": [] },
       { "name": "LineItem",
         "locations":
-          [ { "lineno": 96,
+          [ { "lineno": 91,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains line item information.",
@@ -2197,7 +2197,7 @@
         "labels": [] },
       { "name": "LineItemTax",
         "locations":
-          [ { "lineno": 122,
+          [ { "lineno": 117,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains tax information for a line item.",
@@ -2487,7 +2487,7 @@
         "labels": [] },
       { "name": "Locale",
         "locations":
-          [ { "lineno": 142,
+          [ { "lineno": 137,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains locale information.",
@@ -2644,7 +2644,7 @@
         "labels": [] },
       { "name": "MetaData",
         "locations":
-          [ { "lineno": 262,
+          [ { "lineno": 257,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains metadata information.",
@@ -3939,7 +3939,7 @@
         "labels": [] },
       { "name": "Response",
         "locations":
-          [ { "lineno": 286,
+          [ { "lineno": 281,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains response information.",
@@ -4108,7 +4108,7 @@
         "labels": [] },
       { "name": "StreetAddress",
         "locations":
-          [ { "lineno": 322,
+          [ { "lineno": 317,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains street address information.",
@@ -4395,7 +4395,7 @@
         "labels": [] },
       { "name": "TotalPrice",
         "locations":
-          [ { "lineno": 174,
+          [ { "lineno": 169,
               "filename": "quotes-common-types.js" } ],
         "docs":
           { "summary": "An object that contains price totals.",
