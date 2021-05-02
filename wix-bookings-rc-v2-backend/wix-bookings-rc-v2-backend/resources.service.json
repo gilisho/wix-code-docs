@@ -14,11 +14,12 @@
   "properties": [],
   "operations":
     [ { "name": "createResource",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "resourceInfo",
-              "type": "wix-bookings-rc-v2-backend.resources.Resource_10583635105",
+              "type": "wix-bookings-rc-v2-backend.resources.Resource_8796704728",
               "doc": "Resource details." },
             { "name": "schedulesInfo",
               "type":
@@ -36,7 +37,7 @@
                   [ "wix-bookings-rc-v2-backend.Resource_16777953168" ] },
             "doc": "Fulfilled - Resource details." },
         "locations":
-          [ { "lineno": 30,
+          [ { "lineno": 31,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
         "docs":
           { "summary": "Creates a resource.",
@@ -62,7 +63,8 @@
                       "    email: \"a string\",",
                       "    phone: \"a string\",",
                       "    description: \"a string\",",
-                      "    tags: [\"a string\"]",
+                      "    tags: [\"a string\"],",
+                      "    images: [\"wix:image://v1/mediaId/filename.jpg#originWidth=42&originHeight=42\"]",
                       "  };",
                       "  const schedulesInfo = [",
                       "    {",
@@ -312,8 +314,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateResource",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "id",
@@ -765,7 +766,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Resource_12959995134",
         "locations":
           [ { "lineno": 1,
@@ -995,7 +997,7 @@
         "extra":
           {  },
         "labels":
-          [ "removed" ] },
+          [ "new" ] },
       { "name": "Schedule_11557805088",
         "locations":
           [ { "lineno": 19,

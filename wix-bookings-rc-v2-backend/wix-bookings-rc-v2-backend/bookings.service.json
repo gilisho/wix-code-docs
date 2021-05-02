@@ -1,7 +1,8 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -1048,12 +1049,13 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelBooking",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
               "type": "string",
-              "doc": "The ID of the booking to be cancelled." },
+              "doc": "The ID of the booking to be canceled." },
             { "name": "options",
               "type": "wix-bookings-rc-v2-backend.bookings.CancelBookingRequest_7528859822" } ],
         "ret":
@@ -2338,7 +2340,7 @@
               "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
             { "name": "status",
               "type": "string",
-              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been cancelled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been canceled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
             { "name": "_createdDate",
               "type": "Date" },
             { "name": "attendanceInfo",
@@ -2363,7 +2365,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Booking_241733789927",
         "locations":
           [ { "lineno": 17,
@@ -2481,7 +2484,7 @@
         "members":
           [ { "name": "_id",
               "type": "string",
-              "doc": "The ID of the booking to be cancelled." },
+              "doc": "The ID of the booking to be canceled." },
             { "name": "participantNotification",
               "type": "wix-bookings-rc-v2-backend.ParticipantNotification_2585812620",
               "doc": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
@@ -2492,7 +2495,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CancelBookingRequest_FlowControlSettings_806682439",
         "locations":
           [ { "lineno": 9,
@@ -2523,10 +2527,11 @@
         "members":
           [ { "name": "bookingId",
               "type": "string",
-              "doc": "The ID of the cancelled booking." } ],
+              "doc": "The ID of the canceled booking." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ConfirmBookingRequest_6204158203",
         "locations":
           [ { "lineno": 1,

@@ -76,7 +76,7 @@
   "messages":
     [ { "name": "AddressLocation_3558750251",
         "locations":
-          [ { "lineno": 1284,
+          [ { "lineno": 1281,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -98,7 +98,7 @@
         "labels": [] },
       { "name": "AddressLocation_3744127693",
         "locations":
-          [ { "lineno": 1276,
+          [ { "lineno": 1273,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -118,7 +118,7 @@
         "labels": [] },
       { "name": "AddressLocation_5466057688",
         "locations":
-          [ { "lineno": 1426,
+          [ { "lineno": 1423,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -140,7 +140,7 @@
         "labels": [] },
       { "name": "AddressLocation_5651435130",
         "locations":
-          [ { "lineno": 1418,
+          [ { "lineno": 1415,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -160,7 +160,7 @@
         "labels": [] },
       { "name": "Address_30702269075",
         "locations":
-          [ { "lineno": 1404,
+          [ { "lineno": 1401,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -206,7 +206,7 @@
         "labels": [] },
       { "name": "Address_31907222448",
         "locations":
-          [ { "lineno": 1390,
+          [ { "lineno": 1387,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -244,7 +244,7 @@
         "labels": [] },
       { "name": "Address_35751567552",
         "locations":
-          [ { "lineno": 1222,
+          [ { "lineno": 1219,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom [address](https://www.wix.com/velo/reference/$w/addressinput/value), used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -291,7 +291,7 @@
         "labels": [] },
       { "name": "Address_47367399060",
         "locations":
-          [ { "lineno": 1238,
+          [ { "lineno": 1235,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -360,7 +360,7 @@
         "labels": [] },
       { "name": "Address_49221173480",
         "locations":
-          [ { "lineno": 1257,
+          [ { "lineno": 1254,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -881,7 +881,7 @@
               "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
             { "name": "status",
               "type": "string",
-              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been cancelled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been canceled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
             { "name": "_createdDate",
               "type": "Date" },
             { "name": "attendanceInfo",
@@ -906,7 +906,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Booking_348148577543",
         "locations":
           [ { "lineno": 90,
@@ -986,7 +987,7 @@
               "doc": "Payment Details." },
             { "name": "status",
               "type": "string",
-              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been cancelled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been canceled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
             { "name": "_createdDate",
               "type": "Date" },
             { "name": "attendanceInfo",
@@ -1000,10 +1001,11 @@
               "doc": "An object describing the platform and application that made the booking." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "BusinessSchedule_46474402208",
         "locations":
-          [ { "lineno": 1533,
+          [ { "lineno": 1530,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1034,7 +1036,7 @@
         "labels": [] },
       { "name": "BusinessSchedule_47401289418",
         "locations":
-          [ { "lineno": 1522,
+          [ { "lineno": 1519,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1537,7 +1539,7 @@
         "labels": [] },
       { "name": "CursorPaging_3235073023",
         "locations":
-          [ { "lineno": 1631,
+          [ { "lineno": 1628,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursor pointing to page of results. Can't be used together with 'paging'. 'cursorPaging.cursor' can not be used together with 'filter' or 'sort'",
@@ -1559,7 +1561,7 @@
         "labels": [] },
       { "name": "Cursors_3337235656",
         "locations":
-          [ { "lineno": 1639,
+          [ { "lineno": 1636,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursors to navigate through result pages. Returned if cursor paging was used",
@@ -1627,7 +1629,7 @@
         "labels": [] },
       { "name": "FieldMask_4228111159",
         "locations":
-          [ { "lineno": 1624,
+          [ { "lineno": 1621,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Field mask of fields to update.",
@@ -1827,7 +1829,7 @@
           [ "removed" ] },
       { "name": "Image_7707870310",
         "locations":
-          [ { "lineno": 1647,
+          [ { "lineno": 1644,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1906,8 +1908,7 @@
               "doc": "Owner ID, of the linked schedule." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LinkedSchedule_7939545343",
         "locations":
           [ { "lineno": 841,
@@ -1928,8 +1929,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LocalDateTime_493702712",
         "locations":
           [ { "lineno": 895,
@@ -1995,7 +1995,7 @@
         "labels": [] },
       { "name": "Location_106510226219",
         "locations":
-          [ { "lineno": 1434,
+          [ { "lineno": 1431,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2131,7 +2131,7 @@
         "labels": [] },
       { "name": "Location_99881894064",
         "locations":
-          [ { "lineno": 1472,
+          [ { "lineno": 1469,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2220,7 +2220,7 @@
         "labels": [] },
       { "name": "Options_936495653",
         "locations":
-          [ { "lineno": 1383,
+          [ { "lineno": 1380,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Authorization options.",
@@ -2238,7 +2238,7 @@
         "labels": [] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
-          [ { "lineno": 1666,
+          [ { "lineno": 1663,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2266,7 +2266,7 @@
         "labels": [] },
       { "name": "Paging_1617727965",
         "locations":
-          [ { "lineno": 1658,
+          [ { "lineno": 1655,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Pointer to page of results using offset. Can not be used together with 'cursorPaging'",
@@ -2570,7 +2570,7 @@
               "doc": "Coupon details, if a coupon was used to pay for the booking." },
             { "name": "state",
               "type": "string",
-              "doc": "Checkout current state.\n<!--ONLY:VELO\n One of:\n - `\"COMPLETE\"` Amount paid in full.\n - `\"PENDING_CASHIER\"` An online payment is in progress and awaiting a response.\n - `\"REJECTED\"` The checkout request was rejected by the online payment process. \n - `\"READY\"` All online checkout requirements were met. For example, when the service uses pay in person, or a partial or down payment was paid online.\n - `\"CANCELED\"`  Checkout cancelled.\n - `\"REFUNDED\"` When using Pricing Plans, if the booking was cancelled, it will be automatically refunded.\n - `\"PENDING_MERCHANT\"` An online payment was made, but the owner has not set up the necessary details.\n - `\"WIX_PAY_FAILURE\"` Online payment failure.\n - `\"PENDING_MARK_AS_PAID\"` Offline transaction. The transaction will be complete when explicitly marked as paid.\n - `\"PENDING_BUYER\"`  The transaction started, but is waiting for confirmation on the buyer's side. This can be due to credit or fraud checking on the provider's side, a long bank transfer, or similar processes.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"COMPLETE\"`\n + `\"PENDING_CASHIER\"`\n + `\"REJECTED\"`\n + `\"READY\"`\n + `\"CANCELED\"`\n + `\"REFUNDED\"`\n + `\"PENDING_MERCHANT\"`\n + `\"WIX_PAY_FAILURE\"`\n + `\"PENDING_MARK_AS_PAID\"`\n + `\"PENDING_BUYER\"`" },
+              "doc": "Checkout current state.\n<!--ONLY:VELO\n One of:\n - `\"COMPLETE\"` Amount paid in full.\n - `\"PENDING_CASHIER\"` An online payment is in progress and awaiting a response.\n - `\"REJECTED\"` The checkout request was rejected by the online payment process. \n - `\"READY\"` All online checkout requirements were met. For example, when the service uses pay in person, or a partial or down payment was paid online.\n - `\"CANCELED\"`  Checkout canceled.\n - `\"REFUNDED\"` When using Pricing Plans, if the booking was canceled, it will be automatically refunded.\n - `\"PENDING_MERCHANT\"` An online payment was made, but the owner has not set up the necessary details.\n - `\"WIX_PAY_FAILURE\"` Online payment failure.\n - `\"PENDING_MARK_AS_PAID\"` Offline transaction. The transaction will be complete when explicitly marked as paid.\n - `\"PENDING_BUYER\"`  The transaction started, but is waiting for confirmation on the buyer's side. This can be due to credit or fraud checking on the provider's side, a long bank transfer, or similar processes.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"COMPLETE\"`\n + `\"PENDING_CASHIER\"`\n + `\"REJECTED\"`\n + `\"READY\"`\n + `\"CANCELED\"`\n + `\"REFUNDED\"`\n + `\"PENDING_MERCHANT\"`\n + `\"WIX_PAY_FAILURE\"`\n + `\"PENDING_MARK_AS_PAID\"`\n + `\"PENDING_BUYER\"`" },
             { "name": "wixPayMultipleDetails",
               "type":
                 { "name": "Array",
@@ -2582,7 +2582,8 @@
               "doc": "Pricing plan details, if a pricing plan was used to pay for the booking." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "PaymentDetails_93106850965",
         "locations":
           [ { "lineno": 412,
@@ -2608,7 +2609,7 @@
               "doc": "Coupon details, if a coupon was used to pay for the booking." },
             { "name": "state",
               "type": "string",
-              "doc": "Checkout current state.\n<!--ONLY:VELO\n One of:\n - `\"COMPLETE\"` Amount paid in full.\n - `\"PENDING_CASHIER\"` An online payment is in progress and awaiting a response.\n - `\"REJECTED\"` The checkout request was rejected by the online payment process. \n - `\"READY\"` All online checkout requirements were met. For example, when the service uses pay in person, or a partial or down payment was paid online.\n - `\"CANCELED\"`  Checkout cancelled.\n - `\"REFUNDED\"` When using Pricing Plans, if the booking was cancelled, it will be automatically refunded.\n - `\"PENDING_MERCHANT\"` An online payment was made, but the owner has not set up the necessary details.\n - `\"WIX_PAY_FAILURE\"` Online payment failure.\n - `\"PENDING_MARK_AS_PAID\"` Offline transaction. The transaction will be complete when explicitly marked as paid.\n - `\"PENDING_BUYER\"`  The transaction started, but is waiting for confirmation on the buyer's side. This can be due to credit or fraud checking on the provider's side, a long bank transfer, or similar processes.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"COMPLETE\"`\n + `\"PENDING_CASHIER\"`\n + `\"REJECTED\"`\n + `\"READY\"`\n + `\"CANCELED\"`\n + `\"REFUNDED\"`\n + `\"PENDING_MERCHANT\"`\n + `\"WIX_PAY_FAILURE\"`\n + `\"PENDING_MARK_AS_PAID\"`\n + `\"PENDING_BUYER\"`" },
+              "doc": "Checkout current state.\n<!--ONLY:VELO\n One of:\n - `\"COMPLETE\"` Amount paid in full.\n - `\"PENDING_CASHIER\"` An online payment is in progress and awaiting a response.\n - `\"REJECTED\"` The checkout request was rejected by the online payment process. \n - `\"READY\"` All online checkout requirements were met. For example, when the service uses pay in person, or a partial or down payment was paid online.\n - `\"CANCELED\"`  Checkout canceled.\n - `\"REFUNDED\"` When using Pricing Plans, if the booking was canceled, it will be automatically refunded.\n - `\"PENDING_MERCHANT\"` An online payment was made, but the owner has not set up the necessary details.\n - `\"WIX_PAY_FAILURE\"` Online payment failure.\n - `\"PENDING_MARK_AS_PAID\"` Offline transaction. The transaction will be complete when explicitly marked as paid.\n - `\"PENDING_BUYER\"`  The transaction started, but is waiting for confirmation on the buyer's side. This can be due to credit or fraud checking on the provider's side, a long bank transfer, or similar processes.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"COMPLETE\"`\n + `\"PENDING_CASHIER\"`\n + `\"REJECTED\"`\n + `\"READY\"`\n + `\"CANCELED\"`\n + `\"REFUNDED\"`\n + `\"PENDING_MERCHANT\"`\n + `\"WIX_PAY_FAILURE\"`\n + `\"PENDING_MARK_AS_PAID\"`\n + `\"PENDING_BUYER\"`" },
             { "name": "wixPayMultipleDetails",
               "type":
                 { "name": "Array",
@@ -2623,7 +2624,8 @@
               "doc": "The invoice details of the booking. Not supported yet." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "PaymentDetails_93427079082",
         "locations":
           [ { "lineno": 373,
@@ -2669,7 +2671,7 @@
             "removed" ] },
       { "name": "PaymentOptions_3423756451",
         "locations":
-          [ { "lineno": 1374,
+          [ { "lineno": 1371,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2803,7 +2805,7 @@
         "labels": [] },
       { "name": "QueryV2_25356650774",
         "locations":
-          [ { "lineno": 1676,
+          [ { "lineno": 1673,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3013,7 +3015,7 @@
           [ "removed" ] },
       { "name": "Resource_16777953168",
         "locations":
-          [ { "lineno": 1324,
+          [ { "lineno": 1321,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Resource details.",
@@ -3054,11 +3056,10 @@
               "doc": "Resource status.\n<!--ONLY:VELO\n One Of:\n - `\"CREATED\"` Default status.\n - `\"DELETED\"` The resource has been deleted.\n - `\"UPDATED\"` The resource has been updated.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Resource_23420910898",
         "locations":
-          [ { "lineno": 1349,
+          [ { "lineno": 1346,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3104,8 +3105,7 @@
               "doc": "Resource status.\n<!--ONLY:VELO\n One Of:\n - `\"CREATED\"` Default status.\n - `\"DELETED\"` The resource has been deleted.\n - `\"UPDATED\"` The resource has been updated.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"DELETED\"`\n + `\"UPDATED\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Schedule_252114210686",
         "locations":
           [ { "lineno": 988,
@@ -3219,7 +3219,7 @@
                 { "name": "Array",
                   "typeParams":
                     [ "wix-bookings-rc-v2-backend.LinkedSchedule_7939545343" ] },
-              "doc": "An object specifying a list of schedules and the way each schedule's availability is affected by the session. For example, the schedule of an instructor is a affected by sessions of the class that they instruct.\nIf the session is a recurring session, the affectedSchedules are inherited from the schedule but can still be overridden.",
+              "doc": "An object specifying a list of schedules and the way each schedule's availability is affected by the session. For example, the schedule of an instructor is a affected by sessions of the class that they instruct.\nThe array is inherited from the schedule and can be overridden even if the session is a recurring session.",
               "optional": true },
             { "name": "title",
               "type": "string",
@@ -3250,7 +3250,7 @@
               "optional": true },
             { "name": "notes",
               "type": "string",
-              "doc": "Additional information about the session.\nIf the session is a recurring session, this field must be empty.",
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions.",
               "optional": true },
             { "name": "participants",
               "type":
@@ -3265,7 +3265,7 @@
               "optional": true },
             { "name": "type",
               "type": "string",
-              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course or blocked time. Events are visible in the Dashboard in the Bookings app's Booking Calendar page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`",
               "optional": true },
             { "name": "calendarConference",
               "type": "wix-bookings-rc-v2-backend.CalendarConference_22421061789",
@@ -3388,7 +3388,7 @@
               "doc": "ID of the schedule that the session belongs to." },
             { "name": "scheduleOwnerId",
               "type": "string",
-              "doc": "ID of the resource or service that session's schedule belongs to." },
+              "doc": "ID of the resource or service that the session's schedule belongs to." },
             { "name": "originalStart",
               "type": "Date",
               "doc": "Original start date and time of the session in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format." },
@@ -3403,7 +3403,7 @@
                 { "name": "Array",
                   "typeParams":
                     [ "wix-bookings-rc-v2-backend.LinkedSchedule_10367513828" ] },
-              "doc": "An object specifying a list of schedules and the way each schedule's availability is affected by the session. For example, the schedule of an instructor is a affected by sessions of the class that they instruct.\nIf the session is a recurring session, the affectedSchedules are inherited from the schedule but can still be overridden." },
+              "doc": "An object specifying a list of schedules and the way each schedule's availability is affected by the session. For example, the schedule of an instructor is a affected by sessions of the class that they instruct.\nThe array is inherited from the schedule and can be overridden even if the session is a recurring session." },
             { "name": "title",
               "type": "string",
               "doc": "Session title.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
@@ -3427,7 +3427,7 @@
               "doc": "Time reserved after the session end time, derived from the schedule availability constraints and the time between slots. Read-only.\nIf the session is a recurring session, this field must be empty." },
             { "name": "notes",
               "type": "string",
-              "doc": "Additional information about the session.\nIf the session is a recurring session, this field must be empty." },
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions." },
             { "name": "totalNumberOfParticipants",
               "type": "number",
               "doc": "The number of participants booked for the session. Read-only.\nCalculated as the sum of the party sizes." },
@@ -3448,13 +3448,13 @@
               "doc": "Title and description values to override session defaults when syncing to an external calendar.\nLearn more about [syncing calendars](https://support.wix.com/en/article/wix-bookings-important-information-about-syncing-google-calendars-with-wix-bookings).\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
             { "name": "status",
               "type": "string",
-              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` \n    - The session was generated from a recurring session and then deleted.\n    - The session was created as a single session and then deleted.\n    - The session is a recurring session and was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
+              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` The session was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
             { "name": "recurringSessionId",
               "type": "string",
-              "doc": "Recurring session ID, if the session is a recurring session." },
+              "doc": "The ID of the recurring session if this session is an instance of a recurrence. Use this ID to update the recurrence and all of the instances." },
             { "name": "type",
               "type": "string",
-              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course or blocked time. Events are visible in the Dashboard in the Bookings app's Booking Calendar page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
             { "name": "calendarConference",
               "type": "wix-bookings-rc-v2-backend.CalendarConference_23255260278",
               "doc": "A conference created for the session according to the details set in the schedule's conference provider information.\nIf the session is a recurring session, this field is inherited from the schedule." },
@@ -3780,7 +3780,7 @@
           [ "removed" ] },
       { "name": "Session_Version_1635489576",
         "locations":
-          [ { "lineno": 1204,
+          [ { "lineno": 1201,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the session and schedule versions.",
@@ -3842,7 +3842,7 @@
         "labels": [] },
       { "name": "Sorting_7874645153",
         "locations":
-          [ { "lineno": 1688,
+          [ { "lineno": 1685,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3863,7 +3863,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8149530360",
         "locations":
-          [ { "lineno": 1554,
+          [ { "lineno": 1551,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3891,7 +3891,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8520285244",
         "locations":
-          [ { "lineno": 1544,
+          [ { "lineno": 1541,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3915,7 +3915,7 @@
         "labels": [] },
       { "name": "SplitInterval_425847646",
         "locations":
-          [ { "lineno": 1212,
+          [ { "lineno": 1209,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object defining the time between available slots' start times.  For example, a slot with slots_split_interval=5 can start every 5 minutes. The default is the slot duration.",
@@ -3935,7 +3935,7 @@
         "labels": [] },
       { "name": "StreetAddress_5109983780",
         "locations":
-          [ { "lineno": 1301,
+          [ { "lineno": 1298,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3961,7 +3961,7 @@
         "labels": [] },
       { "name": "StreetAddress_5388049943",
         "locations":
-          [ { "lineno": 1292,
+          [ { "lineno": 1289,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3984,7 +3984,7 @@
         "labels": [] },
       { "name": "StreetAddress_7212524817",
         "locations":
-          [ { "lineno": 1513,
+          [ { "lineno": 1510,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -4010,7 +4010,7 @@
         "labels": [] },
       { "name": "StreetAddress_7490590980",
         "locations":
-          [ { "lineno": 1504,
+          [ { "lineno": 1501,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -4033,7 +4033,7 @@
         "labels": [] },
       { "name": "Subdivision_4453086255",
         "locations":
-          [ { "lineno": 1310,
+          [ { "lineno": 1307,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4054,7 +4054,7 @@
         "labels": [] },
       { "name": "Subdivision_4638463697",
         "locations":
-          [ { "lineno": 1317,
+          [ { "lineno": 1314,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4073,7 +4073,7 @@
         "labels": [] },
       { "name": "TimePeriod_38785543152",
         "locations":
-          [ { "lineno": 1594,
+          [ { "lineno": 1591,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -4106,7 +4106,7 @@
         "labels": [] },
       { "name": "TimePeriod_39156298036",
         "locations":
-          [ { "lineno": 1564,
+          [ { "lineno": 1561,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -4154,7 +4154,7 @@
               "doc": "The order amount we issued to Cashier." },
             { "name": "orderStatus",
               "type": "string",
-              "doc": "Transaction status\n<!--ONLY:VELO\n One of:\n - `\"CREATED\"`  The transaction has been started.\n - `\"PENDING_MERCHANT\"` An online payment was made, but the owner has not set up the necessary details.\n - `\"COMPLETE\"`  The current part of the payment was completed.\n - `\"FAILED\"`  The Wix online payment system is unavailable or failed processing.\n - `\"DECLINED\"` The payment was declined.\n - `\"PENDING_MARK_AS_PAID\"` Offline transaction. The transaction will be complete when explicitly marked as paid.\n - `\"CANCELED\"` The transaction was cancelled.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"PENDING_MERCHANT\"`\n + `\"COMPLETE\"`\n + `\"FAILED\"`\n + `\"DECLINED\"`\n + `\"PENDING_MARK_AS_PAID\"`\n + `\"CANCELED\"`" },
+              "doc": "Transaction status\n<!--ONLY:VELO\n One of:\n - `\"CREATED\"`  The transaction has been started.\n - `\"PENDING_MERCHANT\"` An online payment was made, but the owner has not set up the necessary details.\n - `\"COMPLETE\"`  The current part of the payment was completed.\n - `\"FAILED\"`  The Wix online payment system is unavailable or failed processing.\n - `\"DECLINED\"` The payment was declined.\n - `\"PENDING_MARK_AS_PAID\"` Offline transaction. The transaction will be complete when explicitly marked as paid.\n - `\"CANCELED\"` The transaction was canceled.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CREATED\"`\n + `\"PENDING_MERCHANT\"`\n + `\"COMPLETE\"`\n + `\"FAILED\"`\n + `\"DECLINED\"`\n + `\"PENDING_MARK_AS_PAID\"`\n + `\"CANCELED\"`" },
             { "name": "orderApprovalTime",
               "type": "Date",
               "doc": "The date and time that the order was approved." },
@@ -4163,6 +4163,7 @@
               "doc": "Payment vendor name." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     {  } }

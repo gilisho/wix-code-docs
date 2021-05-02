@@ -438,7 +438,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
@@ -451,7 +452,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.CreateSessionResult_26071944823" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.CreateSessionResult_29333065637" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 126,
@@ -632,7 +633,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "getSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -645,7 +647,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.GetSessionResult_23350677813" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.GetSessionResult_26611798627" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 71,
@@ -1738,7 +1740,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -1754,7 +1757,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.sessions.UpdateSessionResult_24900475364" ] },
+                  [ "wix-bookings-rc-v2-backend.sessions.UpdateSessionResult_28161596178" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 125,
@@ -2222,7 +2225,8 @@
         "extra":
           {  },
         "labels":
-          [ "changed" ] },
+          [ "changed",
+            "removed" ] },
       { "name": "CreateSessionResult_26620611375",
         "locations":
           [ { "lineno": 1,
@@ -2270,6 +2274,59 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "CreateSessionResult_29333065637",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_CreateSession_createSession.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Session ID." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "ID of the schedule that the session belongs to." },
+            { "name": "scheduleOwnerId",
+              "type": "string",
+              "doc": "ID of the resource or service that the session's schedule belongs to." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tags for the session.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
+            { "name": "notes",
+              "type": "string",
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` The session was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
+            { "name": "recurringSessionId",
+              "type": "string",
+              "doc": "The ID of the recurring session if this session is an instance of a recurrence. Use this ID to update the recurrence and all of the instances." },
+            { "name": "type",
+              "type": "string",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
+            { "name": "recurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" },
+            { "name": "instanceOfRecurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nIs empty when the session defines the recurrence pattern (in which case, `recurrence` field is non-empty) and if the session is not part of any recurrence pattern.\nIf the session is a recurring session, the recurrence property will be contain the recurrence rule and this property will be empty." },
+            { "name": "start",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "end",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CreateSessionResult_30222691074",
         "locations":
           [ { "lineno": 1,
@@ -2533,7 +2590,61 @@
         "extra":
           {  },
         "labels":
-          [ "changed" ] },
+          [ "changed",
+            "removed" ] },
+      { "name": "GetSessionResult_26611798627",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_GetSession_getSession.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Session ID." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "ID of the schedule that the session belongs to." },
+            { "name": "scheduleOwnerId",
+              "type": "string",
+              "doc": "ID of the resource or service that the session's schedule belongs to." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tags for the session.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
+            { "name": "notes",
+              "type": "string",
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` The session was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
+            { "name": "recurringSessionId",
+              "type": "string",
+              "doc": "The ID of the recurring session if this session is an instance of a recurrence. Use this ID to update the recurrence and all of the instances." },
+            { "name": "type",
+              "type": "string",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
+            { "name": "recurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" },
+            { "name": "instanceOfRecurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nIs empty when the session defines the recurrence pattern (in which case, `recurrence` field is non-empty) and if the session is not part of any recurrence pattern.\nIf the session is a recurring session, the recurrence property will be contain the recurrence rule and this property will be empty." },
+            { "name": "start",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "end",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListSchedulesRequest_7169811266",
         "locations":
           [ { "lineno": 1,
@@ -3071,11 +3182,11 @@
               "optional": true },
             { "name": "notes",
               "type": "string",
-              "doc": "Additional information about the session.\nIf the session is a recurring session, this field must be empty.",
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions.",
               "optional": true },
             { "name": "type",
               "type": "string",
-              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course or blocked time. Events are visible in the Dashboard in the Bookings app's Booking Calendar page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`",
               "optional": true },
             { "name": "recurrence",
               "type": "string",
@@ -3437,7 +3548,8 @@
         "extra":
           {  },
         "labels":
-          [ "changed" ] },
+          [ "changed",
+            "removed" ] },
       { "name": "Session_23504104820",
         "locations":
           [ { "lineno": 1,
@@ -3485,6 +3597,59 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "Session_26216559082",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Session ID." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "ID of the schedule that the session belongs to." },
+            { "name": "scheduleOwnerId",
+              "type": "string",
+              "doc": "ID of the resource or service that the session's schedule belongs to." },
+            { "name": "start",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "end",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tags for the session.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
+            { "name": "notes",
+              "type": "string",
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` The session was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
+            { "name": "recurringSessionId",
+              "type": "string",
+              "doc": "The ID of the recurring session if this session is an instance of a recurrence. Use this ID to update the recurrence and all of the instances." },
+            { "name": "type",
+              "type": "string",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
+            { "name": "recurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" },
+            { "name": "instanceOfRecurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nIs empty when the session defines the recurrence pattern (in which case, `recurrence` field is non-empty) and if the session is not part of any recurrence pattern.\nIf the session is a recurring session, the recurrence property will be contain the recurrence rule and this property will be empty." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Session_27106184519",
         "locations":
           [ { "lineno": 1,
@@ -3581,11 +3746,11 @@
               "optional": true },
             { "name": "notes",
               "type": "string",
-              "doc": "Additional information about the session.\nIf the session is a recurring session, this field must be empty.",
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions.",
               "optional": true },
             { "name": "type",
               "type": "string",
-              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course or blocked time. Events are visible in the Dashboard in the Bookings app's Booking Calendar page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`",
               "optional": true },
             { "name": "recurrence",
               "type": "string",
@@ -3845,7 +4010,8 @@
         "extra":
           {  },
         "labels":
-          [ "changed" ] },
+          [ "changed",
+            "removed" ] },
       { "name": "UpdateSessionResult_252792980692",
         "locations":
           [ { "lineno": 53,
@@ -3926,6 +4092,59 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "UpdateSessionResult_28161596178",
+        "locations":
+          [ { "lineno": 55,
+              "filename": "com_wix_bookings_schedules_api_v1_Schedules_UpdateSession_updateSession.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Session ID." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "ID of the schedule that the session belongs to." },
+            { "name": "scheduleOwnerId",
+              "type": "string",
+              "doc": "ID of the resource or service that the session's schedule belongs to." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tags for the session.\nThe value is inherited from the schedule and can be overridden unless the session is a recurring session." },
+            { "name": "notes",
+              "type": "string",
+              "doc": "Additional information about the session.\nNotes are not supported for recurring sessions." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Session status.\n<!--ONLY:VELO\n One of:\n - `\"CONFIRMED\"` Default value.\n - `\"CANCELLED\"` The session was deleted.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"CONFIRMED\"`\n + `\"CANCELLED\"`" },
+            { "name": "recurringSessionId",
+              "type": "string",
+              "doc": "The ID of the recurring session if this session is an instance of a recurrence. Use this ID to update the recurrence and all of the instances." },
+            { "name": "type",
+              "type": "string",
+              "doc": "Session type.\n<!--ONLY:VELO\n One of:\n - `\"EVENT\"` Reserved period of time on the schedule. For example, an appointment, class, course, or blocked time. Events are visible in the Dashboard in the Bookings app's [Booking Calendar](https://wix.wixanswers.com/app/kb/article/cad924b5-f586-49fa-b338-a6dea9cbe012/en) page.\n - `\"WORKING_HOURS\"` Placeholder for available time on a resource’s schedule.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"EVENT\"`\n + `\"WORKING_HOURS\"`\n + `\"TIME_AVAILABILITY\"`\n + `\"AVAILABILITY\"`" },
+            { "name": "recurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" },
+            { "name": "instanceOfRecurrence",
+              "type": "string",
+              "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nIs empty when the session defines the recurrence pattern (in which case, `recurrence` field is non-empty) and if the session is not part of any recurrence pattern.\nIf the session is a recurring session, the recurrence property will be contain the recurrence rule and this property will be empty." },
+            { "name": "start",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." },
+            { "name": "end",
+              "type": "wix-bookings-rc-v2-backend.CalendarDateTime_1138946691",
+              "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "UpdateSessionResult_29051221615",
         "locations":
           [ { "lineno": 55,
