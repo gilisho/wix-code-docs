@@ -2013,7 +2013,7 @@
               "doc": "Registration settings for the Wix event.",
               "optional": true },
             { "name": "guestList",
-              "type": "wix-events-backend.WixEvents.EventData_3180189016",
+              "type": "wix-events-backend.WixEvents.GuestListConfig_2458672447",
               "doc": "Guest list settings for the Wix event.",
               "optional": true },
             { "name": "about",
@@ -2061,7 +2061,7 @@
               "doc": "Registration settings for the Wix event.",
               "optional": true },
             { "name": "guestList",
-              "type": "wix-events-backend.WixEvents.EventData_3180189016",
+              "type": "wix-events-backend.WixEvents.GuestListConfig_2458672447",
               "doc": "Guest list settings for the Wix event." },
             { "name": "about",
               "type": "string",
@@ -2217,7 +2217,7 @@
               "type": "wix-events-backend.WixEvents.Dashboard_8525121059",
               "doc": "Event dashboard summary of RSVP / ticket sales." },
             { "name": "guestList",
-              "type": "wix-events-backend.WixEvents.Event_3635141956",
+              "type": "wix-events-backend.WixEvents.GuestListConfig_2551361168",
               "doc": "Guest list configuration settings for the Wix event." },
             { "name": "createdBy",
               "type": "string",
@@ -2230,7 +2230,8 @@
               "doc": "Assigned contacts label key." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "GuestListConfig_2458672447",
         "locations":
           [ { "lineno": 168,
@@ -3206,7 +3207,7 @@
               "type": "wix-events-backend.WixEvents.Dashboard_8525121059",
               "doc": "Event dashboard summary of RSVP / ticket sales." },
             { "name": "guestList",
-              "type": "wix-events-backend.WixEvents.Event_3635141956",
+              "type": "wix-events-backend.WixEvents.GuestListConfig_2551361168",
               "doc": "Guest list configuration settings for the Wix event." },
             { "name": "createdBy",
               "type": "string",
@@ -3219,7 +3220,8 @@
               "doc": "Assigned contacts label key." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "todo_102657886837",
         "locations":
           [ { "lineno": 69,
@@ -3287,8 +3289,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "todo_29205647166",
         "locations":
           [ { "lineno": 1,
@@ -3314,8 +3315,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "todo_9898903254",
         "locations":
           [ { "lineno": 84,
