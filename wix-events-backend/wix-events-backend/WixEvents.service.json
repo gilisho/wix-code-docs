@@ -1795,7 +1795,7 @@
         "labels": [] },
       { "name": "CheckoutFormMessages_6864249470",
         "locations":
-          [ { "lineno": 436,
+          [ { "lineno": 451,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Checkout form messages.",
@@ -2026,8 +2026,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "EventData_78315588998",
         "locations":
           [ { "lineno": 50,
@@ -2073,8 +2072,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Event_1_3282155730",
         "locations":
           [ { "lineno": 804,
@@ -2134,7 +2132,7 @@
         "labels": [] },
       { "name": "FormMessages_51883945026",
         "locations":
-          [ { "lineno": 444,
+          [ { "lineno": 459,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of configured form messages.",
@@ -2230,8 +2228,7 @@
               "doc": "Assigned contacts label key." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "GuestListConfig_2458672447",
         "locations":
           [ { "lineno": 168,
@@ -2269,7 +2266,7 @@
         "labels": [] },
       { "name": "InputControl_49544649039",
         "locations":
-          [ { "lineno": 475,
+          [ { "lineno": 490,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A block of fields that tend to be grouped together on a form.",
@@ -2304,7 +2301,7 @@
         "labels": [] },
       { "name": "Input_30071196484",
         "locations":
-          [ { "lineno": 453,
+          [ { "lineno": 468,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An input of one or multiple text values",
@@ -2348,7 +2345,7 @@
         "labels": [] },
       { "name": "Label_4247800419",
         "locations":
-          [ { "lineno": 499,
+          [ { "lineno": 514,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2436,7 +2433,7 @@
         "labels": [] },
       { "name": "OnlineConferencingConfig_7398822732",
         "locations":
-          [ { "lineno": 240,
+          [ { "lineno": 246,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Online conferencing settings for a Wix event.",
@@ -2482,10 +2479,11 @@
               "doc": "Online conference type.\nOne of:\n + `\"MEETING\"`\n + `\"WEBINAR\"`" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "OnlineConferencingSession_12526595925",
         "locations":
-          [ { "lineno": 253,
+          [ { "lineno": 259,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2516,15 +2514,22 @@
             "extra":
               {  } },
         "members":
-          [ { "name": "settings",
-              "type": "wix-events-backend.WixEvents.OnlineConferencingConfig_7676888895",
-              "doc": "Online conferencing settings for the Wix event." },
-            { "name": "session",
+          [ { "name": "session",
               "type": "wix-events-backend.WixEvents.OnlineConferencingSession_12526595925",
-              "doc": "Session details for the Wix event." } ],
+              "doc": "Session details for the Wix event." },
+            { "name": "enabled",
+              "type": "boolean",
+              "doc": "Whether online conferencing is enabled (not supported for TBD schedules).\n When enabled, links to join conference are generated and provided to guests. **XXX When? Where? How? Link to Session?**" },
+            { "name": "providerId",
+              "type": "string",
+              "doc": "ID of the online conferencing provider." },
+            { "name": "conferenceType",
+              "type": "string",
+              "doc": "Online conference type.\nOne of:\n + `\"MEETING\"`\n + `\"WEBINAR\"`" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "QueryOptions",
         "locations":
           [ { "lineno": 762,
@@ -2555,7 +2560,7 @@
         "labels": [] },
       { "name": "RegistrationClosedMessages_10342547173",
         "locations":
-          [ { "lineno": 506,
+          [ { "lineno": 521,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Messages shown when event registration is closed.",
@@ -2639,7 +2644,7 @@
         "labels": [] },
       { "name": "RegistrationConfig_9202340013",
         "locations":
-          [ { "lineno": 293,
+          [ { "lineno": 299,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Ticketing registration configuration.",
@@ -2657,7 +2662,7 @@
         "labels": [] },
       { "name": "Registration_57655929751",
         "locations":
-          [ { "lineno": 261,
+          [ { "lineno": 267,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Registration details for the Wix event.",
@@ -2692,7 +2697,7 @@
         "labels": [] },
       { "name": "RsvpCollectionConfig_11559945607",
         "locations":
-          [ { "lineno": 320,
+          [ { "lineno": 326,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "RSVP registration status options. Can be used to set limits.",
@@ -2718,7 +2723,7 @@
         "labels": [] },
       { "name": "RsvpCollectionConfig_11838011770",
         "locations":
-          [ { "lineno": 307,
+          [ { "lineno": 313,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "RSVP registration status options.",
@@ -2741,7 +2746,7 @@
         "labels": [] },
       { "name": "RsvpCollection_12857091925",
         "locations":
-          [ { "lineno": 300,
+          [ { "lineno": 306,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "RSVP registration configuration.",
@@ -2758,7 +2763,7 @@
         "labels": [] },
       { "name": "RsvpFormMessages_33952434787",
         "locations":
-          [ { "lineno": 514,
+          [ { "lineno": 529,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "RSVP form messages.",
@@ -2790,7 +2795,7 @@
         "labels": [] },
       { "name": "RsvpFormMessages_Negative_7937566166",
         "locations":
-          [ { "lineno": 526,
+          [ { "lineno": 541,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Messages shown for RSVP = `NO`.",
@@ -2813,7 +2818,7 @@
         "labels": [] },
       { "name": "RsvpFormMessages_Positive_16352639389",
         "locations":
-          [ { "lineno": 535,
+          [ { "lineno": 550,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Messages shown for RSVP = `YES`.",
@@ -2842,7 +2847,7 @@
         "labels": [] },
       { "name": "ScheduleConfig_15581128943",
         "locations":
-          [ { "lineno": 348,
+          [ { "lineno": 354,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Event schedule configuration",
@@ -2916,10 +2921,11 @@
               "doc": "Whether time zone is displayed in formatted schedule." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Scheduling_22467857484",
         "locations":
-          [ { "lineno": 363,
+          [ { "lineno": 369,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Event scheduling.",
@@ -2928,10 +2934,7 @@
             "extra":
               {  } },
         "members":
-          [ { "name": "settings",
-              "type": "wix-events-backend.WixEvents.ScheduleConfig_16229949990",
-              "doc": "Schedule configuration." },
-            { "name": "formatted",
+          [ { "name": "formatted",
               "type": "string",
               "doc": "Formatted schedule representation." },
             { "name": "startDateFormatted",
@@ -2939,13 +2942,35 @@
               "doc": "Formatted start date of the event (empty for TBD schedules)." },
             { "name": "startTimeFormatted",
               "type": "string",
-              "doc": "Formatted start time of the event (empty for TBD schedules)." } ],
+              "doc": "Formatted start time of the event (empty for TBD schedules)." },
+            { "name": "tbd",
+              "type": "boolean",
+              "doc": "Defines event as TBD (To Be Determined) schedule.\n When event time is not yet defined, TBD message is displayed instead of event start and end times.\n `startDate`, `endDate` and `timeZoneId` are not required when schedule is TBD." },
+            { "name": "tbdMessage",
+              "type": "string",
+              "doc": "TBD message." },
+            { "name": "startDate",
+              "type": "Date",
+              "doc": "Event start timestamp." },
+            { "name": "endDate",
+              "type": "Date",
+              "doc": "Event end timestamp." },
+            { "name": "timeZoneId",
+              "type": "string",
+              "doc": "Event time zone ID in TZ database format, e.g., `EST`, `America/Los_Angeles`." },
+            { "name": "endDateHidden",
+              "type": "boolean",
+              "doc": "Whether end date is hidden in the formatted schedule." },
+            { "name": "showTimeZone",
+              "type": "boolean",
+              "doc": "Whether time zone is displayed in formatted schedule." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "SiteUrl_2853714657",
         "locations":
-          [ { "lineno": 373,
+          [ { "lineno": 387,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Event page URL components.",
@@ -3007,7 +3032,7 @@
         "labels": [] },
       { "name": "TaxConfig_4925741970",
         "locations":
-          [ { "lineno": 395,
+          [ { "lineno": 409,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Tax configuration.",
@@ -3033,7 +3058,7 @@
         "labels": [] },
       { "name": "TaxConfig_5203808133",
         "locations":
-          [ { "lineno": 382,
+          [ { "lineno": 396,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Tax configuration.",
@@ -3056,7 +3081,7 @@
         "labels": [] },
       { "name": "TicketingConfig_5878243653",
         "locations":
-          [ { "lineno": 428,
+          [ { "lineno": 443,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Ticketing configuration.",
@@ -3095,10 +3120,11 @@
               "doc": "Tax configuration." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Ticketing_15045486817",
         "locations":
-          [ { "lineno": 408,
+          [ { "lineno": 422,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Ticketing details.",
@@ -3110,9 +3136,6 @@
           [ { "name": "currency",
               "type": "string",
               "doc": "Currency used in event transactions." },
-            { "name": "settings",
-              "type": "wix-events-backend.WixEvents.TicketingConfig_6341687258",
-              "doc": "Ticketing configuration." },
             { "name": "lowestTicketPrice",
               "type": "wix-events-backend.WixEvents.Money_2432563994",
               "doc": "Price of lowest priced ticket." },
@@ -3124,10 +3147,17 @@
               "doc": "Formatted price of lowest priced ticket." },
             { "name": "highestTicketPriceFormatted",
               "type": "string",
-              "doc": "Formatted price of highest priced ticket." } ],
+              "doc": "Formatted price of highest priced ticket." },
+            { "name": "formAssignedPerTicket",
+              "type": "boolean",
+              "doc": "Whether the form must be filled out separately for each ticket." },
+            { "name": "tax",
+              "type": "wix-events-backend.WixEvents.TaxConfig_5203808133",
+              "doc": "Tax configuration." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "UpdateEventRequest_2842136330",
         "locations":
           [ { "lineno": 49,
@@ -3147,7 +3177,7 @@
         "labels": [] },
       { "name": "WixEvent",
         "locations":
-          [ { "lineno": 547,
+          [ { "lineno": 562,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3220,8 +3250,7 @@
               "doc": "Assigned contacts label key." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "todo_102657886837",
         "locations":
           [ { "lineno": 69,
