@@ -36,7 +36,7 @@
                   [ "wix-bookings-rc-v2-backend.Resource_16777953168" ] },
             "doc": "Fulfilled - Resource details." },
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 29,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
         "docs":
           { "summary": "Creates a resource.",
@@ -407,7 +407,7 @@
               "type": "string",
               "doc": "Schedule ID." },
             { "name": "scheduleInfo",
-              "type": "wix-bookings-rc-v2-backend.resources.Schedule_2414051789",
+              "type": "wix-bookings-rc-v2-backend.resources.Schedule_5334131871",
               "doc": "The schedule to update" },
             { "name": "options",
               "type": "wix-bookings-rc-v2-backend.Options_936495653",
@@ -419,7 +419,7 @@
                   [ "wix-bookings-rc-v2-backend.resources.UpdateScheduleResult_8871501900" ] },
             "doc": "" },
         "locations":
-          [ { "lineno": 42,
+          [ { "lineno": 43,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
         "docs":
           { "summary": "Updates a resource's schedule",
@@ -436,7 +436,12 @@
                       "  const scheduleId = \"a string\";",
                       "  const scheduleInfo = {",
                       "    availability: {",
-                      "      start: new Date()",
+                      "      start: new Date(),",
+                      "      linkedSchedules: [",
+                      "        {",
+                      "          scheduleId: \"a string\"",
+                      "        }",
+                      "      ]",
                       "    }",
                       "  };",
                       "  const options = {",
@@ -506,7 +511,36 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Availability_5616590754",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
+        "docs":
+          { "summary": "An object describing how to calculate the schedule's availability.",
+            "description":
+              [ "An empty object indicates that the schedule is not available for booking." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "start",
+              "type": "Date",
+              "doc": "Date and time the schedule starts to be available for booking.",
+              "optional": true },
+            { "name": "linkedSchedules",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.LinkedSchedule_3865774448" ] },
+              "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Availability_5801968196",
         "locations":
           [ { "lineno": 1,
@@ -527,14 +561,15 @@
               "type":
                 { "name": "Array",
                   "typeParams":
-                    [ "wix-bookings-rc-v2-backend.resources.LinkedSchedule_3865774448" ] },
+                    [ "wix-bookings-rc-v2-backend.LinkedSchedule_3865774448" ] },
               "doc": "Other schedules that impact the availability calculation. Relevant only when there are availability constraints." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Availability_8137247960",
         "locations":
-          [ { "lineno": 9,
+          [ { "lineno": 10,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
         "docs":
           { "summary": "An object describing how to calculate the schedule's availability.",
@@ -684,10 +719,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "LinkedSchedule_6201054212",
         "locations":
-          [ { "lineno": 18,
+          [ { "lineno": 19,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
         "docs":
           { "links": [],
@@ -859,7 +895,7 @@
         "labels": [] },
       { "name": "Resource_10583635105",
         "locations":
-          [ { "lineno": 24,
+          [ { "lineno": 18,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
         "docs":
           { "summary": "Resource details.",
@@ -1213,7 +1249,7 @@
         "extra":
           {  },
         "labels":
-          [ "new" ] },
+          [ "removed" ] },
       { "name": "Schedule_4563954111",
         "locations":
           [ { "lineno": 25,
@@ -1237,9 +1273,28 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "Schedule_5334131871",
+        "locations":
+          [ { "lineno": 26,
+              "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
+        "docs":
+          { "summary": "The schedule to update",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "availability",
+              "type": "wix-bookings-rc-v2-backend.resources.Availability_5616590754",
+              "doc": "An object describing how to calculate the schedule's availability.\nAn empty object indicates that the schedule is not available for booking.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Schedule_6351922982",
         "locations":
-          [ { "lineno": 16,
+          [ { "lineno": 10,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_Create_createResource.js" } ],
         "docs":
           { "links": [],
@@ -1283,7 +1338,7 @@
           [ "removed" ] },
       { "name": "UpdateScheduleResult_8871501900",
         "locations":
-          [ { "lineno": 33,
+          [ { "lineno": 34,
               "filename": "com_wixpress_bookings_resources_core_api_v1_resource_ResourcesService_UpdateSchedule_updateResourceSchedule.js" } ],
         "docs":
           { "links": [],

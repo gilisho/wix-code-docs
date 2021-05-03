@@ -1,7 +1,8 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -13,7 +14,8 @@
   "properties": [],
   "operations":
     [ { "name": "bookExistingSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionId",
@@ -28,7 +30,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_371474855211" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_375805639592" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 21,
@@ -306,7 +308,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "bookNewSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "sessionInfo",
@@ -323,7 +326,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_371474855211" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_375805639592" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 1,
@@ -751,7 +754,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "bookSchedule",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "scheduleId",
@@ -768,7 +772,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_371474855211" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_375805639592" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 1,
@@ -1461,7 +1465,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rescheduleBookingWithExistingSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1476,7 +1481,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_371474855211" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_375805639592" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 1,
@@ -1526,7 +1531,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rescheduleBookingWithNewSession",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1540,7 +1546,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_371474855211" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_375805639592" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 1,
@@ -1738,7 +1744,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "setAttendance",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1751,7 +1758,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_333231330327" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_337562114708" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 9,
@@ -1825,7 +1832,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "setBookingAsPaid",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1835,7 +1843,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_333231330327" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_337562114708" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 1,
@@ -1906,7 +1914,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateCustomerInfo",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -1922,7 +1931,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-rc-v2-backend.Booking_333231330327" ] },
+                  [ "wix-bookings-rc-v2-backend.Booking_337562114708" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 42,
@@ -2316,7 +2325,59 @@
                   "members":
                     [ "setOfSessions",
                       "singleSession" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "BookedEntity_88036009851",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
+        "docs":
+          { "summary": "An object describing the entity that was booked.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "serviceId",
+              "type": "string",
+              "doc": "The ID of the booked service." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "The ID of the booked schedule." },
+            { "name": "singleSession",
+              "type": "wix-bookings-rc-v2-backend.SingleSession_8226704276",
+              "doc": "Start and end time of the booked sessions.",
+              "optional": true },
+            { "name": "setOfSessions",
+              "type": "wix-bookings-rc-v2-backend.SetOfSessions_1086680262",
+              "doc": "First start and last end time of the booked sessions.",
+              "optional": true },
+            { "name": "title",
+              "type": "string",
+              "doc": "The session title at the time of booking." },
+            { "name": "rate",
+              "type": "wix-bookings-rc-v2-backend.Rate_14116319874",
+              "doc": "The price options offered to book this session at the time of booking." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "A list of tags for the booking." },
+            { "name": "onlineConference",
+              "type": "wix-bookings-rc-v2-backend.OnlineConference_15773774498",
+              "doc": "Online conference information." },
+            { "name": "location",
+              "type": "wix-bookings-rc-v2-backend.bookings.Location_36724221108",
+              "doc": "The location of the session." } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "type",
+                  "members":
+                    [ "setOfSessions",
+                      "singleSession" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "Booking_226816542711",
         "locations":
           [ { "lineno": 17,
@@ -2363,7 +2424,56 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Booking_231147327092",
+        "locations":
+          [ { "lineno": 17,
+              "filename": "com_wix_bookings_api_v1_BookingsReader_Query_queryBookings.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The booking ID." },
+            { "name": "bookedResources",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.BookedResource_4406140954" ] },
+              "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been canceled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+            { "name": "_createdDate",
+              "type": "Date" },
+            { "name": "attendanceInfo",
+              "type": "wix-bookings-rc-v2-backend.AttendanceInfo_1947544006",
+              "doc": "Attendance information." },
+            { "name": "externalUserId",
+              "type": "string",
+              "doc": "External ID provided by the client app on creation." },
+            { "name": "bookingSource",
+              "type": "wix-bookings-rc-v2-backend.BookingSource_16669276013",
+              "doc": "An object describing the platform and application that made the booking." },
+            { "name": "bookedEntity",
+              "type": "wix-bookings-rc-v2-backend.bookings.BookedEntity_88036009851",
+              "doc": "An object describing the entity that was booked." },
+            { "name": "paymentDetails",
+              "type": "wix-bookings-rc-v2-backend.PaymentDetails_78509831866",
+              "doc": "Payment Details.",
+              "optional": true },
+            { "name": "formInfo",
+              "type": "wix-bookings-rc-v2-backend.FormInfo_71193244452",
+              "doc": "Form information submitted when booking. FormInfo contains contact details, participants, and other form fields, set up by the owner for the service.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Booking_241733789927",
         "locations":
           [ { "lineno": 17,

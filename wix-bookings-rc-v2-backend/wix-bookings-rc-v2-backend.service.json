@@ -1,6 +1,7 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -75,7 +76,7 @@
   "messages":
     [ { "name": "AddressLocation_3558750251",
         "locations":
-          [ { "lineno": 1276,
+          [ { "lineno": 1287,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -97,7 +98,7 @@
         "labels": [] },
       { "name": "AddressLocation_3744127693",
         "locations":
-          [ { "lineno": 1268,
+          [ { "lineno": 1279,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -117,7 +118,7 @@
         "labels": [] },
       { "name": "AddressLocation_5466057688",
         "locations":
-          [ { "lineno": 1418,
+          [ { "lineno": 1429,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -139,7 +140,7 @@
         "labels": [] },
       { "name": "AddressLocation_5651435130",
         "locations":
-          [ { "lineno": 1410,
+          [ { "lineno": 1421,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -159,7 +160,7 @@
         "labels": [] },
       { "name": "Address_30702269075",
         "locations":
-          [ { "lineno": 1396,
+          [ { "lineno": 1407,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -205,7 +206,7 @@
         "labels": [] },
       { "name": "Address_31907222448",
         "locations":
-          [ { "lineno": 1382,
+          [ { "lineno": 1393,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -243,7 +244,7 @@
         "labels": [] },
       { "name": "Address_35751567552",
         "locations":
-          [ { "lineno": 1214,
+          [ { "lineno": 1225,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom [address](https://www.wix.com/velo/reference/$w/addressinput/value), used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -290,7 +291,7 @@
         "labels": [] },
       { "name": "Address_47367399060",
         "locations":
-          [ { "lineno": 1230,
+          [ { "lineno": 1241,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -359,7 +360,7 @@
         "labels": [] },
       { "name": "Address_49221173480",
         "locations":
-          [ { "lineno": 1249,
+          [ { "lineno": 1260,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -438,7 +439,7 @@
         "labels": [] },
       { "name": "AvailabilityConstraints_1966120690",
         "locations":
-          [ { "lineno": 735,
+          [ { "lineno": 740,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Constraints for calculating the schedule's availability.",
@@ -463,7 +464,7 @@
         "labels": [] },
       { "name": "AvailabilityConstraints_2998985814",
         "locations":
-          [ { "lineno": 724,
+          [ { "lineno": 729,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Constraints for calculating the schedule's availability.",
@@ -489,7 +490,7 @@
         "labels": [] },
       { "name": "Availability_174000749873",
         "locations":
-          [ { "lineno": 706,
+          [ { "lineno": 711,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object describing how to calculate the schedule's availability.",
@@ -735,7 +736,59 @@
                   "members":
                     [ "setOfSessions",
                       "singleSession" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "BookedEntity_194450797467",
+        "locations":
+          [ { "lineno": 50,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "An object describing the entity that was booked.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "serviceId",
+              "type": "string",
+              "doc": "The ID of the booked service." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "The ID of the booked schedule." },
+            { "name": "singleSession",
+              "type": "wix-bookings-rc-v2-backend.SingleSession_8226704276",
+              "doc": "Start and end time of the booked sessions.",
+              "optional": true },
+            { "name": "setOfSessions",
+              "type": "wix-bookings-rc-v2-backend.SetOfSessions_1086680262",
+              "doc": "First start and last end time of the booked sessions.",
+              "optional": true },
+            { "name": "title",
+              "type": "string",
+              "doc": "The session title at the time of booking." },
+            { "name": "rate",
+              "type": "wix-bookings-rc-v2-backend.Rate_14116319874",
+              "doc": "The price options offered to book this session at the time of booking." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "A list of tags for the booking." },
+            { "name": "onlineConference",
+              "type": "wix-bookings-rc-v2-backend.OnlineConference_15773774498",
+              "doc": "Online conference information." },
+            { "name": "location",
+              "type": "wix-bookings-rc-v2-backend.Location_143139008724",
+              "doc": "The location of the session." } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "type",
+                  "members":
+                    [ "setOfSessions",
+                      "singleSession" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "BookedEntity_203589619014",
         "locations":
           [ { "lineno": 66,
@@ -785,7 +838,59 @@
                   "members":
                     [ "setOfSessions",
                       "singleSession" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "BookedEntity_207920403395",
+        "locations":
+          [ { "lineno": 66,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "An object describing the entity that was booked.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "serviceId",
+              "type": "string",
+              "doc": "The ID of the booked service." },
+            { "name": "scheduleId",
+              "type": "string",
+              "doc": "The ID of the booked schedule." },
+            { "name": "singleSession",
+              "type": "wix-bookings-rc-v2-backend.SingleSession_8226704276",
+              "doc": "Start and end time of the booked sessions.",
+              "optional": true },
+            { "name": "setOfSessions",
+              "type": "wix-bookings-rc-v2-backend.SetOfSessions_1086680262",
+              "doc": "First start and last end time of the booked sessions.",
+              "optional": true },
+            { "name": "title",
+              "type": "string",
+              "doc": "The session title at the time of booking." },
+            { "name": "location",
+              "type": "wix-bookings-rc-v2-backend.Location_156608614652",
+              "doc": "The location of the session." },
+            { "name": "rate",
+              "type": "wix-bookings-rc-v2-backend.Rate_14116319874",
+              "doc": "The price options offered to book this session at the time of booking." },
+            { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "A list of tags for the booking." },
+            { "name": "onlineConference",
+              "type": "wix-bookings-rc-v2-backend.OnlineConference_15773774498",
+              "doc": "Online conference information." } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "type",
+                  "members":
+                    [ "setOfSessions",
+                      "singleSession" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "BookedResource_4406140954",
         "locations":
           [ { "lineno": 82,
@@ -905,7 +1010,56 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Booking_337562114708",
+        "locations":
+          [ { "lineno": 90,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The booking ID." },
+            { "name": "bookedResources",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.BookedResource_4406140954" ] },
+              "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been canceled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+            { "name": "_createdDate",
+              "type": "Date" },
+            { "name": "attendanceInfo",
+              "type": "wix-bookings-rc-v2-backend.AttendanceInfo_1947544006",
+              "doc": "Attendance information." },
+            { "name": "externalUserId",
+              "type": "string",
+              "doc": "External ID provided by the client app on creation." },
+            { "name": "bookingSource",
+              "type": "wix-bookings-rc-v2-backend.BookingSource_16669276013",
+              "doc": "An object describing the platform and application that made the booking." },
+            { "name": "bookedEntity",
+              "type": "wix-bookings-rc-v2-backend.BookedEntity_194450797467",
+              "doc": "An object describing the entity that was booked." },
+            { "name": "paymentDetails",
+              "type": "wix-bookings-rc-v2-backend.PaymentDetails_78509831866",
+              "doc": "Payment Details.",
+              "optional": true },
+            { "name": "formInfo",
+              "type": "wix-bookings-rc-v2-backend.FormInfo_71193244452",
+              "doc": "Form information submitted when booking. FormInfo contains contact details, participants, and other form fields, set up by the owner for the service.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Booking_348148577543",
         "locations":
           [ { "lineno": 90,
@@ -999,10 +1153,57 @@
               "doc": "An object describing the platform and application that made the booking." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Booking_375805639592",
+        "locations":
+          [ { "lineno": 122,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The booking ID." },
+            { "name": "bookedEntity",
+              "type": "wix-bookings-rc-v2-backend.BookedEntity_207920403395",
+              "doc": "An object describing the entity that was booked." },
+            { "name": "bookedResources",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-bookings-rc-v2-backend.BookedResource_4406140954" ] },
+              "doc": "A list of booked resources. Currently, only one is supported. The booked resource would be the staff-member giving the session." },
+            { "name": "formInfo",
+              "type": "wix-bookings-rc-v2-backend.FormInfo_94654372795",
+              "doc": "Form information submitted when booking. FormInfo contains contact details, participants, and other form fields, set up by the owner for the service." },
+            { "name": "paymentDetails",
+              "type": "wix-bookings-rc-v2-backend.PaymentDetails_93106850965",
+              "doc": "Payment Details." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Booking status.\n<!--ONLY:VELO\n One of:\n - `\"PENDING_CHECKOUT\"` The booking is waiting to be checked out.\n - `\"CONFIRMED\"` The booking has beed approved by the owner.\n - `\"CANCELED\"` The booking has been canceled.\n - `\"PENDING\"` The booking has been created.\n - `\"PENDING_APPROVAL\"` The booking is waiting for the owner to approve or decline.\n - `\"DECLINED\"` The booking was declined by the owner.\n<!--END:ONLY:VELO-->\nOne of:\n + `\"UNDEFINED\"`\n + `\"PENDING_CHECKOUT\"`\n + `\"CONFIRMED\"`\n + `\"CANCELED\"`\n + `\"PENDING\"`\n + `\"PENDING_APPROVAL\"`\n + `\"DECLINED\"`" },
+            { "name": "_createdDate",
+              "type": "Date" },
+            { "name": "attendanceInfo",
+              "type": "wix-bookings-rc-v2-backend.AttendanceInfo_1947544006",
+              "doc": "Attendance information." },
+            { "name": "externalUserId",
+              "type": "string",
+              "doc": "External ID provided by the client app on creation." },
+            { "name": "bookingSource",
+              "type": "wix-bookings-rc-v2-backend.BookingSource_16669276013",
+              "doc": "An object describing the platform and application that made the booking." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "BusinessSchedule_46474402208",
         "locations":
-          [ { "lineno": 1525,
+          [ { "lineno": 1536,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1033,7 +1234,7 @@
         "labels": [] },
       { "name": "BusinessSchedule_47401289418",
         "locations":
-          [ { "lineno": 1514,
+          [ { "lineno": 1525,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1087,7 +1288,7 @@
         "labels": [] },
       { "name": "CalendarConference_22421061789",
         "locations":
-          [ { "lineno": 745,
+          [ { "lineno": 750,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A conference created for the session according to the details set in the schedule's conference provider information.",
@@ -1139,7 +1340,7 @@
         "labels": [] },
       { "name": "CalendarConference_23255260278",
         "locations":
-          [ { "lineno": 770,
+          [ { "lineno": 775,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A conference created for the session according to the details set in the schedule's conference provider information.",
@@ -1182,7 +1383,7 @@
         "labels": [] },
       { "name": "CalendarDateTime_1138946691",
         "locations":
-          [ { "lineno": 806,
+          [ { "lineno": 811,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object specifying the start date and time of the session.",
@@ -1204,7 +1405,7 @@
         "labels": [] },
       { "name": "CalendarDateTime_1787767738",
         "locations":
-          [ { "lineno": 795,
+          [ { "lineno": 800,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object specifying the start date and time of the session.",
@@ -1283,7 +1484,7 @@
           [ "removed" ] },
       { "name": "CheckoutOptionsRequest_242688194075",
         "locations":
-          [ { "lineno": 536,
+          [ { "lineno": 541,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1368,7 +1569,7 @@
           [ "removed" ] },
       { "name": "CheckoutOptions_56278073057",
         "locations":
-          [ { "lineno": 528,
+          [ { "lineno": 533,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Checkout options.",
@@ -1536,7 +1737,7 @@
         "labels": [] },
       { "name": "CursorPaging_3235073023",
         "locations":
-          [ { "lineno": 1623,
+          [ { "lineno": 1634,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursor pointing to page of results. Can't be used together with 'paging'. 'cursorPaging.cursor' can not be used together with 'filter' or 'sort'",
@@ -1558,7 +1759,7 @@
         "labels": [] },
       { "name": "Cursors_3337235656",
         "locations":
-          [ { "lineno": 1631,
+          [ { "lineno": 1642,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursors to navigate through result pages. Returned if cursor paging was used",
@@ -1578,7 +1779,7 @@
         "labels": [] },
       { "name": "ExternalCalendarOverrides_672201097",
         "locations":
-          [ { "lineno": 817,
+          [ { "lineno": 822,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Title and description values to override session defaults when syncing to an external calendar.",
@@ -1603,7 +1804,7 @@
         "labels": [] },
       { "name": "ExternalCalendarOverrides_857578539",
         "locations":
-          [ { "lineno": 827,
+          [ { "lineno": 832,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Title and description values to override session defaults when syncing to an external calendar.",
@@ -1626,7 +1827,7 @@
         "labels": [] },
       { "name": "FieldMask_4228111159",
         "locations":
-          [ { "lineno": 1616,
+          [ { "lineno": 1627,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Field mask of fields to update.",
@@ -1826,7 +2027,7 @@
           [ "removed" ] },
       { "name": "Image_7707870310",
         "locations":
-          [ { "lineno": 1639,
+          [ { "lineno": 1650,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1886,7 +2087,7 @@
         "labels": [] },
       { "name": "LinkedSchedule_10367513828",
         "locations":
-          [ { "lineno": 858,
+          [ { "lineno": 863,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1906,9 +2107,27 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "LinkedSchedule_3865774448",
+        "locations":
+          [ { "lineno": 885,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "scheduleId",
+              "type": "string",
+              "doc": "Schedule ID.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "LinkedSchedule_7939545343",
         "locations":
-          [ { "lineno": 837,
+          [ { "lineno": 842,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1929,7 +2148,7 @@
         "labels": [] },
       { "name": "LocalDateTime_493702712",
         "locations":
-          [ { "lineno": 891,
+          [ { "lineno": 902,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the local date and time for the business's timezone.",
@@ -1958,7 +2177,7 @@
         "labels": [] },
       { "name": "LocalDateTime_957146317",
         "locations":
-          [ { "lineno": 880,
+          [ { "lineno": 891,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the local date and time for the business's timezone.",
@@ -1992,7 +2211,7 @@
         "labels": [] },
       { "name": "Location_106510226219",
         "locations":
-          [ { "lineno": 1426,
+          [ { "lineno": 1437,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2053,7 +2272,7 @@
         "labels": [] },
       { "name": "Location_143139008724",
         "locations":
-          [ { "lineno": 579,
+          [ { "lineno": 584,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "The location of the session.",
@@ -2076,7 +2295,7 @@
         "labels": [] },
       { "name": "Location_147848441914",
         "locations":
-          [ { "lineno": 603,
+          [ { "lineno": 608,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object describing the location where the session takes place.",
@@ -2105,7 +2324,7 @@
         "labels": [] },
       { "name": "Location_156608614652",
         "locations":
-          [ { "lineno": 629,
+          [ { "lineno": 634,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "The location of the session.",
@@ -2128,7 +2347,7 @@
         "labels": [] },
       { "name": "Location_99881894064",
         "locations":
-          [ { "lineno": 1464,
+          [ { "lineno": 1475,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2214,10 +2433,41 @@
               "doc": "Online conference description." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "OnlineConference_15773774498",
+        "locations":
+          [ { "lineno": 356,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Online conference information.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "guestUrl",
+              "type": "string",
+              "doc": "Participant url." },
+            { "name": "providerId",
+              "type": "string",
+              "doc": "Online conference provider identifier." },
+            { "name": "password",
+              "type": "string",
+              "doc": "Online conference password." },
+            { "name": "description",
+              "type": "string",
+              "doc": "Online conference description." },
+            { "name": "conferenceType",
+              "type": "string",
+              "doc": "Conference type.\nOne of:\n + `\"UNDEFINED\"`\n + `\"ONLINE_MEETING_PROVIDER\"`\n + `\"CUSTOM\"`" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Options_936495653",
         "locations":
-          [ { "lineno": 1375,
+          [ { "lineno": 1386,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Authorization options.",
@@ -2235,7 +2485,7 @@
         "labels": [] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
-          [ { "lineno": 1658,
+          [ { "lineno": 1669,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2263,7 +2513,7 @@
         "labels": [] },
       { "name": "Paging_1617727965",
         "locations":
-          [ { "lineno": 1650,
+          [ { "lineno": 1661,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Pointer to page of results using offset. Can not be used together with 'cursorPaging'",
@@ -2285,7 +2535,7 @@
         "labels": [] },
       { "name": "PaidPlanDetails_18408105508",
         "locations":
-          [ { "lineno": 366,
+          [ { "lineno": 371,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Pricing plan details, if a pricing plan was used to pay for the booking.",
@@ -2308,7 +2558,7 @@
         "labels": [] },
       { "name": "PaidPlan_11584964510",
         "locations":
-          [ { "lineno": 662,
+          [ { "lineno": 667,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Describes the selected paid plan to use for this booking.",
@@ -2334,7 +2584,7 @@
         "labels": [] },
       { "name": "PaidPlan_11863030673",
         "locations":
-          [ { "lineno": 653,
+          [ { "lineno": 658,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Plan details.",
@@ -2357,7 +2607,7 @@
         "labels": [] },
       { "name": "PaidPlans_22068549729",
         "locations":
-          [ { "lineno": 550,
+          [ { "lineno": 555,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Paid plans available for checkout.",
@@ -2380,7 +2630,7 @@
         "labels": [] },
       { "name": "PaidPlans_Plan_19703544209",
         "locations":
-          [ { "lineno": 558,
+          [ { "lineno": 563,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "The plan that should be used for checkout by default. calculated according to internal heuristic.",
@@ -2406,7 +2656,7 @@
         "labels": [] },
       { "name": "ParticipantNotification_2585812620",
         "locations":
-          [ { "lineno": 976,
+          [ { "lineno": 987,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
@@ -2428,7 +2678,7 @@
         "labels": [] },
       { "name": "Participant_14857773285",
         "locations":
-          [ { "lineno": 902,
+          [ { "lineno": 913,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2469,7 +2719,7 @@
         "labels": [] },
       { "name": "Participant_14950462006",
         "locations":
-          [ { "lineno": 951,
+          [ { "lineno": 962,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Participant.",
@@ -2510,7 +2760,7 @@
         "labels": [] },
       { "name": "Participant_16742085086",
         "locations":
-          [ { "lineno": 926,
+          [ { "lineno": 937,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2547,7 +2797,7 @@
         "labels": [] },
       { "name": "PaymentDetails_78509831866",
         "locations":
-          [ { "lineno": 375,
+          [ { "lineno": 380,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Payment Details.",
@@ -2582,7 +2832,7 @@
         "labels": [] },
       { "name": "PaymentDetails_93106850965",
         "locations":
-          [ { "lineno": 412,
+          [ { "lineno": 417,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Payment Details.",
@@ -2666,7 +2916,7 @@
             "removed" ] },
       { "name": "PaymentOptions_3423756451",
         "locations":
-          [ { "lineno": 1366,
+          [ { "lineno": 1377,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2691,7 +2941,7 @@
         "labels": [] },
       { "name": "PaymentSelection_2566290311",
         "locations":
-          [ { "lineno": 458,
+          [ { "lineno": 463,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2712,7 +2962,7 @@
         "labels": [] },
       { "name": "PaymentSelection_2751667753",
         "locations":
-          [ { "lineno": 451,
+          [ { "lineno": 456,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2731,7 +2981,7 @@
         "labels": [] },
       { "name": "Payments_29838105767",
         "locations":
-          [ { "lineno": 570,
+          [ { "lineno": 575,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Transaction details.",
@@ -2751,7 +3001,7 @@
         "labels": [] },
       { "name": "Price_7237915081",
         "locations":
-          [ { "lineno": 680,
+          [ { "lineno": 685,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "`key` of type string, `value` of type object",
@@ -2777,7 +3027,7 @@
         "labels": [] },
       { "name": "Price_7515981244",
         "locations":
-          [ { "lineno": 671,
+          [ { "lineno": 676,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "`key` of type string, `value` of type object",
@@ -2800,7 +3050,7 @@
         "labels": [] },
       { "name": "QueryV2_25356650774",
         "locations":
-          [ { "lineno": 1668,
+          [ { "lineno": 1679,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2850,7 +3100,7 @@
         "labels": [] },
       { "name": "Rate_13652876269",
         "locations":
-          [ { "lineno": 697,
+          [ { "lineno": 702,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "The price options offered for the session.  Defaults to the schedule rate.",
@@ -2874,7 +3124,7 @@
         "labels": [] },
       { "name": "Rate_14116319874",
         "locations":
-          [ { "lineno": 689,
+          [ { "lineno": 694,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "The price options offered to book this session at the time of booking.",
@@ -2894,7 +3144,7 @@
         "labels": [] },
       { "name": "RescheduleRequest_6436115904",
         "locations":
-          [ { "lineno": 465,
+          [ { "lineno": 470,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2941,7 +3191,7 @@
           [ "removed" ] },
       { "name": "RescheduleRequest_FlowControlSettings_1362659582",
         "locations":
-          [ { "lineno": 473,
+          [ { "lineno": 478,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Sets the reschedule flow behavior, some behaviors required permissions.",
@@ -3010,7 +3260,7 @@
           [ "removed" ] },
       { "name": "Resource_16777953168",
         "locations":
-          [ { "lineno": 1316,
+          [ { "lineno": 1327,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Resource details.",
@@ -3054,7 +3304,7 @@
         "labels": [] },
       { "name": "Resource_23420910898",
         "locations":
-          [ { "lineno": 1341,
+          [ { "lineno": 1352,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3103,7 +3353,7 @@
         "labels": [] },
       { "name": "Schedule_252114210686",
         "locations":
-          [ { "lineno": 984,
+          [ { "lineno": 995,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Schedule.",
@@ -3185,7 +3435,7 @@
         "labels": [] },
       { "name": "Session_221562585945",
         "locations":
-          [ { "lineno": 1024,
+          [ { "lineno": 1035,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3366,7 +3616,7 @@
           [ "removed" ] },
       { "name": "Session_251512637686",
         "locations":
-          [ { "lineno": 1100,
+          [ { "lineno": 1111,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3773,7 +4023,7 @@
           [ "removed" ] },
       { "name": "Session_Version_1635489576",
         "locations":
-          [ { "lineno": 1196,
+          [ { "lineno": 1207,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the session and schedule versions.",
@@ -3793,7 +4043,7 @@
         "labels": [] },
       { "name": "SetOfSessions_1086680262",
         "locations":
-          [ { "lineno": 481,
+          [ { "lineno": 486,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "First start and last end time of the booked sessions.",
@@ -3813,7 +4063,7 @@
         "labels": [] },
       { "name": "SingleSession_8226704276",
         "locations":
-          [ { "lineno": 489,
+          [ { "lineno": 494,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Start and end time of the booked sessions.",
@@ -3835,7 +4085,7 @@
         "labels": [] },
       { "name": "Sorting_7874645153",
         "locations":
-          [ { "lineno": 1680,
+          [ { "lineno": 1691,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3845,18 +4095,19 @@
         "members":
           [ { "name": "fieldName",
               "type": "string",
-              "doc": "Name of the field to sort by",
+              "doc": "Name of the field to sort by.",
               "optional": true },
             { "name": "order",
               "type": "string",
-              "doc": "Sort order (ASC/DESC). Defaults to ASC\nOne of:\n + `\"ASC\"`\n + `\"DESC\"`",
+              "doc": "Sort order.\n\n Defaults to `ASC`.\nOne of:\n + `\"ASC\"`\n + `\"DESC\"`",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "SpecialHourPeriod_8149530360",
         "locations":
-          [ { "lineno": 1546,
+          [ { "lineno": 1557,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3884,7 +4135,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8520285244",
         "locations":
-          [ { "lineno": 1536,
+          [ { "lineno": 1547,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3908,7 +4159,7 @@
         "labels": [] },
       { "name": "SplitInterval_425847646",
         "locations":
-          [ { "lineno": 1204,
+          [ { "lineno": 1215,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object defining the time between available slots' start times.  For example, a slot with slots_split_interval=5 can start every 5 minutes. The default is the slot duration.",
@@ -3928,7 +4179,7 @@
         "labels": [] },
       { "name": "StreetAddress_5109983780",
         "locations":
-          [ { "lineno": 1293,
+          [ { "lineno": 1304,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3954,7 +4205,7 @@
         "labels": [] },
       { "name": "StreetAddress_5388049943",
         "locations":
-          [ { "lineno": 1284,
+          [ { "lineno": 1295,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3977,7 +4228,7 @@
         "labels": [] },
       { "name": "StreetAddress_7212524817",
         "locations":
-          [ { "lineno": 1505,
+          [ { "lineno": 1516,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -4003,7 +4254,7 @@
         "labels": [] },
       { "name": "StreetAddress_7490590980",
         "locations":
-          [ { "lineno": 1496,
+          [ { "lineno": 1507,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -4026,7 +4277,7 @@
         "labels": [] },
       { "name": "Subdivision_4453086255",
         "locations":
-          [ { "lineno": 1302,
+          [ { "lineno": 1313,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4047,7 +4298,7 @@
         "labels": [] },
       { "name": "Subdivision_4638463697",
         "locations":
-          [ { "lineno": 1309,
+          [ { "lineno": 1320,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4066,7 +4317,7 @@
         "labels": [] },
       { "name": "TimePeriod_38785543152",
         "locations":
-          [ { "lineno": 1586,
+          [ { "lineno": 1597,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -4099,7 +4350,7 @@
         "labels": [] },
       { "name": "TimePeriod_39156298036",
         "locations":
-          [ { "lineno": 1556,
+          [ { "lineno": 1567,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -4128,7 +4379,7 @@
         "labels": [] },
       { "name": "WixPayDetails_17951508165",
         "locations":
-          [ { "lineno": 498,
+          [ { "lineno": 503,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
