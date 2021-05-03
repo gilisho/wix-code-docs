@@ -76,7 +76,7 @@
   "messages":
     [ { "name": "AddressLocation_3558750251",
         "locations":
-          [ { "lineno": 1281,
+          [ { "lineno": 1276,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -98,7 +98,7 @@
         "labels": [] },
       { "name": "AddressLocation_3744127693",
         "locations":
-          [ { "lineno": 1273,
+          [ { "lineno": 1268,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Coordinates of the physical address.",
@@ -118,7 +118,7 @@
         "labels": [] },
       { "name": "AddressLocation_5466057688",
         "locations":
-          [ { "lineno": 1423,
+          [ { "lineno": 1418,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -140,7 +140,7 @@
         "labels": [] },
       { "name": "AddressLocation_5651435130",
         "locations":
-          [ { "lineno": 1415,
+          [ { "lineno": 1410,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "coordinates of the physical address",
@@ -160,7 +160,7 @@
         "labels": [] },
       { "name": "Address_30702269075",
         "locations":
-          [ { "lineno": 1401,
+          [ { "lineno": 1396,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -206,7 +206,7 @@
         "labels": [] },
       { "name": "Address_31907222448",
         "locations":
-          [ { "lineno": 1387,
+          [ { "lineno": 1382,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Address",
@@ -244,7 +244,7 @@
         "labels": [] },
       { "name": "Address_35751567552",
         "locations":
-          [ { "lineno": 1219,
+          [ { "lineno": 1214,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom [address](https://www.wix.com/velo/reference/$w/addressinput/value), used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -291,7 +291,7 @@
         "labels": [] },
       { "name": "Address_47367399060",
         "locations":
-          [ { "lineno": 1235,
+          [ { "lineno": 1230,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -360,7 +360,7 @@
         "labels": [] },
       { "name": "Address_49221173480",
         "locations":
-          [ { "lineno": 1254,
+          [ { "lineno": 1249,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Custom address, used when location_type is `\"OWNER_CUSTOM\"`.",
@@ -906,8 +906,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Booking_348148577543",
         "locations":
           [ { "lineno": 90,
@@ -1001,11 +1000,10 @@
               "doc": "An object describing the platform and application that made the booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "BusinessSchedule_46474402208",
         "locations":
-          [ { "lineno": 1530,
+          [ { "lineno": 1525,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1036,7 +1034,7 @@
         "labels": [] },
       { "name": "BusinessSchedule_47401289418",
         "locations":
-          [ { "lineno": 1519,
+          [ { "lineno": 1514,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents the time periods that this location is open for business. Holds a collection of TimePeriod instances.",
@@ -1185,7 +1183,7 @@
         "labels": [] },
       { "name": "CalendarDateTime_1138946691",
         "locations":
-          [ { "lineno": 808,
+          [ { "lineno": 806,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object specifying the start date and time of the session.",
@@ -1198,13 +1196,14 @@
         "members":
           [ { "name": "timestamp",
               "type": "Date",
-              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format.\nRequired if `localDateTime` is not specified.\nIf `localDateTime` is specified, `timestamp` is calculated \nas `localDateTime` for the business's timezone in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format.\nIf a timezone offset is specified, the time is converted to UTC." },
+              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format. If a timezone offset is specified, the time is converted to UTC.\n  \nRequired if `localDateTime` is not specified." },
             { "name": "localDateTime",
               "type": "wix-bookings-rc-v2-backend.LocalDateTime_493702712",
               "doc": "An object containing the local date and time, with no time zone." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CalendarDateTime_1787767738",
         "locations":
           [ { "lineno": 795,
@@ -1220,7 +1219,7 @@
         "members":
           [ { "name": "timestamp",
               "type": "Date",
-              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format.\nRequired if `localDateTime` is not specified.\nIf `localDateTime` is specified, `timestamp` is calculated \nas `localDateTime` for the business's timezone in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format.\nIf a timezone offset is specified, the time is converted to UTC.",
+              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format. If a timezone offset is specified, the time is converted to UTC.\n  \nRequired if `localDateTime` is not specified.",
               "optional": true },
             { "name": "localDateTime",
               "type": "wix-bookings-rc-v2-backend.LocalDateTime_957146317",
@@ -1228,7 +1227,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CalendarDateTime_2270289792",
         "locations":
           [ { "lineno": 795,
@@ -1539,7 +1539,7 @@
         "labels": [] },
       { "name": "CursorPaging_3235073023",
         "locations":
-          [ { "lineno": 1628,
+          [ { "lineno": 1623,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursor pointing to page of results. Can't be used together with 'paging'. 'cursorPaging.cursor' can not be used together with 'filter' or 'sort'",
@@ -1561,7 +1561,7 @@
         "labels": [] },
       { "name": "Cursors_3337235656",
         "locations":
-          [ { "lineno": 1636,
+          [ { "lineno": 1631,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursors to navigate through result pages. Returned if cursor paging was used",
@@ -1581,7 +1581,7 @@
         "labels": [] },
       { "name": "ExternalCalendarOverrides_672201097",
         "locations":
-          [ { "lineno": 821,
+          [ { "lineno": 817,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Title and description values to override session defaults when syncing to an external calendar.",
@@ -1606,7 +1606,7 @@
         "labels": [] },
       { "name": "ExternalCalendarOverrides_857578539",
         "locations":
-          [ { "lineno": 831,
+          [ { "lineno": 827,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Title and description values to override session defaults when syncing to an external calendar.",
@@ -1629,7 +1629,7 @@
         "labels": [] },
       { "name": "FieldMask_4228111159",
         "locations":
-          [ { "lineno": 1621,
+          [ { "lineno": 1616,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Field mask of fields to update.",
@@ -1829,7 +1829,7 @@
           [ "removed" ] },
       { "name": "Image_7707870310",
         "locations":
-          [ { "lineno": 1644,
+          [ { "lineno": 1639,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1889,7 +1889,7 @@
         "labels": [] },
       { "name": "LinkedSchedule_10367513828",
         "locations":
-          [ { "lineno": 862,
+          [ { "lineno": 858,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1911,7 +1911,7 @@
         "labels": [] },
       { "name": "LinkedSchedule_7939545343",
         "locations":
-          [ { "lineno": 841,
+          [ { "lineno": 837,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1932,7 +1932,7 @@
         "labels": [] },
       { "name": "LocalDateTime_493702712",
         "locations":
-          [ { "lineno": 895,
+          [ { "lineno": 891,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the local date and time, with no time zone.",
@@ -1949,19 +1949,20 @@
               "doc": "Month number, from 1-12." },
             { "name": "dayOfMonth",
               "type": "number",
-              "doc": "Day in the month, from 1-31." },
+              "doc": "Day of the month, from 1-31." },
             { "name": "hourOfDay",
               "type": "number",
-              "doc": "Hour of the day, in 24-hour format, from 0-23." },
+              "doc": "Hour of the day in 24-hour format, from 0-23." },
             { "name": "minutesOfHour",
               "type": "number",
               "doc": "Minute, from 0-59." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "LocalDateTime_957146317",
         "locations":
-          [ { "lineno": 884,
+          [ { "lineno": 880,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the local date and time, with no time zone.",
@@ -1980,11 +1981,11 @@
               "optional": true },
             { "name": "dayOfMonth",
               "type": "number",
-              "doc": "Day in the month, from 1-31.",
+              "doc": "Day of the month, from 1-31.",
               "optional": true },
             { "name": "hourOfDay",
               "type": "number",
-              "doc": "Hour of the day, in 24-hour format, from 0-23.",
+              "doc": "Hour of the day in 24-hour format, from 0-23.",
               "optional": true },
             { "name": "minutesOfHour",
               "type": "number",
@@ -1992,10 +1993,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Location_106510226219",
         "locations":
-          [ { "lineno": 1431,
+          [ { "lineno": 1426,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2131,7 +2133,7 @@
         "labels": [] },
       { "name": "Location_99881894064",
         "locations":
-          [ { "lineno": 1469,
+          [ { "lineno": 1464,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Not supported yet.",
@@ -2220,7 +2222,7 @@
         "labels": [] },
       { "name": "Options_936495653",
         "locations":
-          [ { "lineno": 1380,
+          [ { "lineno": 1375,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Authorization options.",
@@ -2238,7 +2240,7 @@
         "labels": [] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
-          [ { "lineno": 1663,
+          [ { "lineno": 1658,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2266,7 +2268,7 @@
         "labels": [] },
       { "name": "Paging_1617727965",
         "locations":
-          [ { "lineno": 1655,
+          [ { "lineno": 1650,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Pointer to page of results using offset. Can not be used together with 'cursorPaging'",
@@ -2409,7 +2411,7 @@
         "labels": [] },
       { "name": "ParticipantNotification_2585812620",
         "locations":
-          [ { "lineno": 980,
+          [ { "lineno": 976,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
@@ -2431,7 +2433,7 @@
         "labels": [] },
       { "name": "Participant_14857773285",
         "locations":
-          [ { "lineno": 906,
+          [ { "lineno": 902,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2472,7 +2474,7 @@
         "labels": [] },
       { "name": "Participant_14950462006",
         "locations":
-          [ { "lineno": 955,
+          [ { "lineno": 951,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Participant.",
@@ -2513,7 +2515,7 @@
         "labels": [] },
       { "name": "Participant_16742085086",
         "locations":
-          [ { "lineno": 930,
+          [ { "lineno": 926,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2582,8 +2584,7 @@
               "doc": "Pricing plan details, if a pricing plan was used to pay for the booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PaymentDetails_93106850965",
         "locations":
           [ { "lineno": 412,
@@ -2624,8 +2625,7 @@
               "doc": "The invoice details of the booking. Not supported yet." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PaymentDetails_93427079082",
         "locations":
           [ { "lineno": 373,
@@ -2671,7 +2671,7 @@
             "removed" ] },
       { "name": "PaymentOptions_3423756451",
         "locations":
-          [ { "lineno": 1371,
+          [ { "lineno": 1366,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2805,7 +2805,7 @@
         "labels": [] },
       { "name": "QueryV2_25356650774",
         "locations":
-          [ { "lineno": 1673,
+          [ { "lineno": 1668,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3015,7 +3015,7 @@
           [ "removed" ] },
       { "name": "Resource_16777953168",
         "locations":
-          [ { "lineno": 1321,
+          [ { "lineno": 1316,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Resource details.",
@@ -3059,7 +3059,7 @@
         "labels": [] },
       { "name": "Resource_23420910898",
         "locations":
-          [ { "lineno": 1346,
+          [ { "lineno": 1341,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3108,7 +3108,7 @@
         "labels": [] },
       { "name": "Schedule_252114210686",
         "locations":
-          [ { "lineno": 988,
+          [ { "lineno": 984,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Schedule.",
@@ -3190,7 +3190,7 @@
         "labels": [] },
       { "name": "Session_221562585945",
         "locations":
-          [ { "lineno": 1028,
+          [ { "lineno": 1024,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3273,7 +3273,7 @@
               "optional": true },
             { "name": "recurrence",
               "type": "string",
-              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->",
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the `instanceOfRecurrence` property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, a session that repeats every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->",
               "optional": true } ],
         "extra":
           {  },
@@ -3372,7 +3372,7 @@
           [ "removed" ] },
       { "name": "Session_251512637686",
         "locations":
-          [ { "lineno": 1104,
+          [ { "lineno": 1100,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3460,10 +3460,10 @@
               "doc": "A conference created for the session according to the details set in the schedule's conference provider information.\nIf the session is a recurring session, this field is inherited from the schedule." },
             { "name": "recurrence",
               "type": "string",
-              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the instanceOfRecurrence property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, repeat every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" },
+              "doc": "A string representing a recurrence rule (RRULE) for a recurring session, as defined in [RFC5545](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).\nIf the session is an instance of a recurrence pattern, the `instanceOfRecurrence` property will be contain the recurrence rule and this property will be empty.\nThe RRULE defines a rule for repeating a session.\nSupported parameters are:\n\n|Keyword|Description|Supported values|\n|--|--|---|\n|`FREQ`|The frequency at which the session is recurs. Required.|`WEEKLY`|\n|`INTERVAL`|How often, in terms of `FREQ`, the session recurs. Default is 1. Optional.|\n|`UNTIL`|The UTC end date and time of the recurrence. Optional.|\n|`BYDAY`|Day of the week when the event should recur. Required.|One of: `MO`, `TU`, `WE`, `TH`, `FR`, `SA`, `SU`|\n\n\n For example, a session that repeats every second week on a Monday until January 7, 2022 at 8 a.m.:\n`\"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20220107T080000Z\"`\n\n <!--ORIGINAL COMMENTS:\n  `FREQ` — The frequency with which the session should be repeated (such as DAILY or WEEKLY).  \n Supported `WEEKLY` value is supported.\n  INTERVAL — Works together with FREQ to specify how often the session should be repeated. For example, FREQ=WEEKLY;INTERVAL=2 means once every two weeks. Optional. Default value is 1.\n  COUNT — The number of times this event should be repeated. Not yet supported.\n  UNTIL — The UTC date & time until which the session should be repeated. This parameter is optional. When it is not specified, the event repeats forever.\n          The format is a short ISO date, followed by 'T' and a short time with seconds and without milliseconds, terminated by the UTC designator 'Z'. For example, until Jan. 19th 2018 at 7:00 AM: 'UNTIL=20180119T070000Z'.\n  BYDAY - The days of the week when the event should be repeated. Currently, only a single day is supported. This parameter is mandatory.\n       Possible values are: MO, TU, WE, TH, FR, SA, SU\n       Note that DTSTART and DTEND lines are not allowed in this field; session start and end times are specified in the start and end fields.\n       **Example**: FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;UNTIL=20200427T070000Z\nORIGINAL COMMENTS-->" },
             { "name": "instanceOfRecurrence",
               "type": "string",
-              "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nIs empty when the session defines the recurrence pattern (in which case, `recurrence` field is non-empty) and if the session is not part of any recurrence pattern.\nIf the session is a recurring session, the recurrence property will be contain the recurrence rule and this property will be empty." },
+              "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nEmpty when the session is not an instance of a recurrence rule, or if the session defines a recurrence pattern, and `recurrence` is not empty." },
             { "name": "version",
               "type": "wix-bookings-rc-v2-backend.Session_Version_1635489576",
               "doc": "An object containing the session and schedule versions." } ],
@@ -3780,7 +3780,7 @@
           [ "removed" ] },
       { "name": "Session_Version_1635489576",
         "locations":
-          [ { "lineno": 1201,
+          [ { "lineno": 1196,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object containing the session and schedule versions.",
@@ -3842,7 +3842,7 @@
         "labels": [] },
       { "name": "Sorting_7874645153",
         "locations":
-          [ { "lineno": 1685,
+          [ { "lineno": 1680,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3863,7 +3863,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8149530360",
         "locations":
-          [ { "lineno": 1551,
+          [ { "lineno": 1546,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3891,7 +3891,7 @@
         "labels": [] },
       { "name": "SpecialHourPeriod_8520285244",
         "locations":
-          [ { "lineno": 1541,
+          [ { "lineno": 1536,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Set of time periods when a location's operational hours differ from its normal business hours.",
@@ -3915,7 +3915,7 @@
         "labels": [] },
       { "name": "SplitInterval_425847646",
         "locations":
-          [ { "lineno": 1209,
+          [ { "lineno": 1204,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "An object defining the time between available slots' start times.  For example, a slot with slots_split_interval=5 can start every 5 minutes. The default is the slot duration.",
@@ -3935,7 +3935,7 @@
         "labels": [] },
       { "name": "StreetAddress_5109983780",
         "locations":
-          [ { "lineno": 1298,
+          [ { "lineno": 1293,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3961,7 +3961,7 @@
         "labels": [] },
       { "name": "StreetAddress_5388049943",
         "locations":
-          [ { "lineno": 1289,
+          [ { "lineno": 1284,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Street name, number and apartment number.",
@@ -3984,7 +3984,7 @@
         "labels": [] },
       { "name": "StreetAddress_7212524817",
         "locations":
-          [ { "lineno": 1510,
+          [ { "lineno": 1505,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -4010,7 +4010,7 @@
         "labels": [] },
       { "name": "StreetAddress_7490590980",
         "locations":
-          [ { "lineno": 1501,
+          [ { "lineno": 1496,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A break down of the street to number and street name",
@@ -4033,7 +4033,7 @@
         "labels": [] },
       { "name": "Subdivision_4453086255",
         "locations":
-          [ { "lineno": 1307,
+          [ { "lineno": 1302,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4054,7 +4054,7 @@
         "labels": [] },
       { "name": "Subdivision_4638463697",
         "locations":
-          [ { "lineno": 1314,
+          [ { "lineno": 1309,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4073,7 +4073,7 @@
         "labels": [] },
       { "name": "TimePeriod_38785543152",
         "locations":
-          [ { "lineno": 1591,
+          [ { "lineno": 1586,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -4106,7 +4106,7 @@
         "labels": [] },
       { "name": "TimePeriod_39156298036",
         "locations":
-          [ { "lineno": 1561,
+          [ { "lineno": 1556,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "A span of time that the business is open,",
@@ -4163,7 +4163,6 @@
               "doc": "Payment vendor name." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }

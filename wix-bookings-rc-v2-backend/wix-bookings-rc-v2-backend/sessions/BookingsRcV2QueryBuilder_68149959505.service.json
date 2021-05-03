@@ -1,10 +1,9 @@
 { "name": "BookingsRcV2QueryBuilder_68149959505",
   "memberOf": "wix-bookings-rc-v2-backend.sessions",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
-    { "lineno": 71,
+    { "lineno": 70,
       "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" },
   "docs":
     { "summary": "Contains functionality for refining a bookingsRcV2 query.",
@@ -47,7 +46,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 689,
+          [ { "lineno": 688,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Adds an `and` condition to the query.",
@@ -110,7 +109,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 892,
+          [ { "lineno": 891,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Adds a sort to a query, sorting by the specified properties in ascending order.",
@@ -158,7 +157,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 362,
+          [ { "lineno": 361,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value is within a specified range.",
@@ -201,7 +200,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 549,
+          [ { "lineno": 548,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value contains a specified string.",
@@ -229,7 +228,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 935,
+          [ { "lineno": 934,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Adds a sort to a query, sorting by the specified properties in descending order.",
@@ -268,7 +267,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 514,
+          [ { "lineno": 513,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value ends with a specified string.",
@@ -298,7 +297,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 98,
+          [ { "lineno": 97,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value equals the specified value.",
@@ -320,8 +319,7 @@
         "extra":
           {  } },
       { "name": "find",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "options",
@@ -334,7 +332,7 @@
                   [ "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryResult_120791204044" ] },
             "doc": "Fulfilled - The results of a bookingsRcV2 query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-bookings-rc-v2-backend.BookingsRcV2QueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `BookingsRcV2QueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
-          [ { "lineno": 1052,
+          [ { "lineno": 1051,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Returns the items that match the query.",
@@ -366,7 +364,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 223,
+          [ { "lineno": 222,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value is greater than or equal to the specified value.",
@@ -411,7 +409,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 178,
+          [ { "lineno": 177,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value is greater than the specified value.",
@@ -454,7 +452,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 619,
+          [ { "lineno": 618,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value contains all of the specified values.",
@@ -487,7 +485,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 584,
+          [ { "lineno": 583,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value contains any of the specified values.",
@@ -523,7 +521,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 654,
+          [ { "lineno": 653,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value equals any of the specified values.",
@@ -550,7 +548,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 411,
+          [ { "lineno": 410,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property does not exist or does not have any value.",
@@ -577,7 +575,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 445,
+          [ { "lineno": 444,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property has any value.",
@@ -610,7 +608,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 315,
+          [ { "lineno": 314,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value is less than or equal to the specified value.",
@@ -649,7 +647,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 978,
+          [ { "lineno": 977,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Limits the number of items the query returns.",
@@ -685,7 +683,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 270,
+          [ { "lineno": 269,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value is less than the specified value.",
@@ -725,7 +723,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 138,
+          [ { "lineno": 137,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value does not equal the specified value.",
@@ -757,7 +755,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 836,
+          [ { "lineno": 835,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Adds an `not` condition to the query.",
@@ -785,7 +783,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 779,
+          [ { "lineno": 778,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Adds an `or` condition to the query.",
@@ -814,7 +812,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 1015,
+          [ { "lineno": 1014,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Sets the number of items to skip before returning query results.",
@@ -847,7 +845,7 @@
           { "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
             "doc": "Contains functionality for refining a bookingsRcV2 query.\nThe `BookingsRcV2QueryBuilder` functions enable you to run, sort, filter, and control\nwhich results a query returns.\n\nTypically, you build a query using any of the bookingsRcV2 query functions,\nrefine the query by chaining `BookingsRcV2QueryBuilder` functions, and then execute the\nquery by chaining the [`find()`](#find) function.\n\nFor example, the following code queries...:\n\n```javascript\nimport wixBookingsRcV2Backend from 'wix-bookingsRcV2-backend';\n\nwixBookingsRcV2Backend.queryBookingsRcV2()\n  .eq(\"<property1>\", \"<value1>\")\n  .ascending(\"<property2>\")\n  .limit(5)\n  .find()\n  .then( (results) => {\n    console.log(results.items);\n  } );\n```" },
         "locations":
-          [ { "lineno": 479,
+          [ { "lineno": 478,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Refines a query to match items whose specified property value starts with a specified string.",

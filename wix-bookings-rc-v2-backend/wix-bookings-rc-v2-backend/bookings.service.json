@@ -1,8 +1,7 @@
 { "name": "bookings",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -1049,8 +1048,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelBooking",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "bookingId",
@@ -2365,8 +2363,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Booking_241733789927",
         "locations":
           [ { "lineno": 17,
@@ -2495,8 +2492,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CancelBookingRequest_FlowControlSettings_806682439",
         "locations":
           [ { "lineno": 9,
@@ -2530,8 +2526,7 @@
               "doc": "The ID of the canceled booking." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ConfirmBookingRequest_6204158203",
         "locations":
           [ { "lineno": 1,

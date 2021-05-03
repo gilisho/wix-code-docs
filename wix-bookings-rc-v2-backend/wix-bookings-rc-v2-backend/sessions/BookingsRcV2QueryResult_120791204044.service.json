@@ -1,10 +1,9 @@
 { "name": "BookingsRcV2QueryResult_120791204044",
   "memberOf": "wix-bookings-rc-v2-backend.sessions",
   "mixes": [],
-  "labels":
-    [ "new" ],
+  "labels": [],
   "location":
-    { "lineno": 1069,
+    { "lineno": 1068,
       "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" },
   "docs":
     { "summary": "The results of a bookingsRcV2 query, containing the retrieved items.",
@@ -24,7 +23,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1170,
+          [ { "lineno": 1169,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Returns the index of the current results page number.",
@@ -52,7 +51,7 @@
             "typeParams":
               [ "wix-bookings-rc-v2-backend.sessions.Session_26216559082" ] },
         "locations":
-          [ { "lineno": 1079,
+          [ { "lineno": 1078,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Returns the items that match the query.",
@@ -77,7 +76,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1095,
+          [ { "lineno": 1094,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Returns the number of items in the current results page.",
@@ -98,7 +97,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1146,
+          [ { "lineno": 1145,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Returns the query page size.",
@@ -119,7 +118,7 @@
         "set": false,
         "type": "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryBuilder_68149959505",
         "locations":
-          [ { "lineno": 1117,
+          [ { "lineno": 1116,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Contains functionality for refining a bookingsRcV2 query.",
@@ -157,7 +156,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1107,
+          [ { "lineno": 1106,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Returns the total number of items that match the query.",
@@ -176,7 +175,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 1158,
+          [ { "lineno": 1157,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Returns the total number of pages the query produced.",
@@ -203,7 +202,7 @@
                   [ "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryResult_120791204044" ] },
             "doc": "Fulfilled - The results of a bookingsRcV2 query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-bookings-rc-v2-backend.BookingsRcV2QueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `BookingsRcV2QueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
-          [ { "lineno": 1186,
+          [ { "lineno": 1185,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Retrieves the next page of query results.",
@@ -234,7 +233,7 @@
                   [ "wix-bookings-rc-v2-backend.sessions.BookingsRcV2QueryResult_120791204044" ] },
             "doc": "Fulfilled - The results of a bookingsRcV2 query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-bookings-rc-v2-backend.BookingsRcV2QueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `BookingsRcV2QueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
-          [ { "lineno": 1207,
+          [ { "lineno": 1206,
               "filename": "com_wix_bookings_calendar_api_v1_CalendarService_ListSessions_querySessions.js" } ],
         "docs":
           { "summary": "Retrieves the previous page of query results.",
