@@ -1,7 +1,6 @@
 { "name": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -1085,8 +1084,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CalendarConference_22421061789",
         "locations":
           [ { "lineno": 745,
@@ -1203,8 +1201,7 @@
               "doc": "An object containing the local date and time for the business's timezone." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CalendarDateTime_1787767738",
         "locations":
           [ { "lineno": 795,
@@ -1228,8 +1225,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CalendarDateTime_2270289792",
         "locations":
           [ { "lineno": 795,
@@ -1959,8 +1955,7 @@
               "doc": "Minute, from 0-59." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LocalDateTime_957146317",
         "locations":
           [ { "lineno": 880,
@@ -1994,8 +1989,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location_106510226219",
         "locations":
           [ { "lineno": 1426,
