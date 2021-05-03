@@ -2010,23 +2010,24 @@
               "optional": true },
             { "name": "registration",
               "type": "wix-events-backend.WixEvents.todo_19705840109",
-              "doc": "todo",
+              "doc": "Registration settings for the Wix event.",
               "optional": true },
             { "name": "guestList",
               "type": "wix-events-backend.WixEvents.EventData_3180189016",
-              "doc": "Event data.",
+              "doc": "Guest list settings for the Wix event.",
               "optional": true },
             { "name": "about",
               "type": "string",
-              "doc": "Rich-text content for About Event section (HTML).",
+              "doc": "Rich-text content for the About Event section (HTML).",
               "optional": true },
             { "name": "videoConferencing",
-              "type": "wix-events-backend.WixEvents.todo_9898903254",
-              "doc": "todo",
+              "type": "wix-events-backend.WixEvents.OnlineConferencingConfig_7398822732",
+              "doc": "Online conferencing settings for the Wix event.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "EventData_78315588998",
         "locations":
           [ { "lineno": 50,
@@ -2057,22 +2058,23 @@
               "optional": true },
             { "name": "registration",
               "type": "wix-events-backend.WixEvents.todo_29205647166",
-              "doc": "todo",
+              "doc": "Registration settings for the Wix event.",
               "optional": true },
             { "name": "guestList",
               "type": "wix-events-backend.WixEvents.EventData_3180189016",
-              "doc": "Event data." },
+              "doc": "Guest list settings for the Wix event." },
             { "name": "about",
               "type": "string",
-              "doc": "Rich-text content for About Event section (HTML).",
+              "doc": "Rich-text content for the About Event section (HTML).",
               "optional": true },
             { "name": "videoConferencing",
-              "type": "wix-events-backend.WixEvents.todo_9898903254",
-              "doc": "todo",
+              "type": "wix-events-backend.WixEvents.OnlineConferencingConfig_7398822732",
+              "doc": "Online conferencing settings for the Wix event.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Event_1_3282155730",
         "locations":
           [ { "lineno": 804,
@@ -2129,8 +2131,7 @@
               "doc": "Initial event type, set when creating the Wix event.\nOne of:\n + `\"RSVP\"`\n + `\"TICKETS\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FormMessages_51883945026",
         "locations":
           [ { "lineno": 444,
@@ -2687,8 +2688,7 @@
               "doc": "Initial event type, set when creating the Wix event.\nOne of:\n + `\"RSVP\"`\n + `\"TICKETS\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "RsvpCollectionConfig_11559945607",
         "locations":
           [ { "lineno": 320,
@@ -3274,20 +3274,21 @@
               {  } },
         "members":
           [ { "name": "rsvp",
-              "type": "wix-events-backend.WixEvents.todo_14060026129",
-              "doc": "todo",
+              "type": "wix-events-backend.WixEvents.RsvpCollectionConfig_11559945607",
+              "doc": "Registration settings for the RSVP Wix event.",
               "optional": true },
             { "name": "settings",
               "type": "wix-events-backend.WixEvents.RegistrationConfig_17001461846",
-              "doc": "Registration configuration",
+              "doc": "External registration settings for the Wix event.",
               "optional": true },
             { "name": "ticketing",
               "type": "wix-events-backend.WixEvents.RegistrationConfig_9202340013",
-              "doc": "Registration configuration",
+              "doc": "Registration settings for the ticketed Wix event.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "todo_29205647166",
         "locations":
           [ { "lineno": 1,
@@ -3300,8 +3301,8 @@
               {  } },
         "members":
           [ { "name": "rsvp",
-              "type": "wix-events-backend.WixEvents.todo_14060026129",
-              "doc": "RSVP registration settings for the Wix event.",
+              "type": "wix-events-backend.WixEvents.RsvpCollectionConfig_11559945607",
+              "doc": "Registration settings for the RSVP Wix event.",
               "optional": true },
             { "name": "settings",
               "type": "wix-events-backend.WixEvents.RegistrationConfig_26501268903",
@@ -3309,11 +3310,12 @@
               "optional": true },
             { "name": "ticketing",
               "type": "wix-events-backend.WixEvents.RegistrationConfig_9202340013",
-              "doc": "Ticketing registration settings for the Wix event.",
+              "doc": "Registration settings for the ticketed Wix event.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "todo_9898903254",
         "locations":
           [ { "lineno": 84,
