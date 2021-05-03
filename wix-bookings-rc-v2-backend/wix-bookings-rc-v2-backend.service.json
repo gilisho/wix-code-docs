@@ -1077,15 +1077,16 @@
               "optional": true },
             { "name": "start",
               "type": "wix-bookings-rc-v2-backend.LocalDateTime_957146317",
-              "doc": "An object containing the local date and time, with no time zone.",
+              "doc": "An object containing the local date and time for the business's timezone.",
               "optional": true },
             { "name": "end",
               "type": "wix-bookings-rc-v2-backend.LocalDateTime_957146317",
-              "doc": "An object containing the local date and time, with no time zone.",
+              "doc": "An object containing the local date and time for the business's timezone.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CalendarConference_22421061789",
         "locations":
           [ { "lineno": 745,
@@ -1196,10 +1197,10 @@
         "members":
           [ { "name": "timestamp",
               "type": "Date",
-              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format. If a timezone offset is specified, the time is converted to UTC.\n  \nRequired if `localDateTime` is not specified." },
+              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format. If a timezone offset is specified, the time is converted to UTC.\nRequired if `localDateTime` is not specified.\nIf `localDateTime` is specified, `timestamp` is calculated as `localDateTime`, using the business's timezone." },
             { "name": "localDateTime",
               "type": "wix-bookings-rc-v2-backend.LocalDateTime_493702712",
-              "doc": "An object containing the local date and time, with no time zone." } ],
+              "doc": "An object containing the local date and time for the business's timezone." } ],
         "extra":
           {  },
         "labels":
@@ -1219,11 +1220,11 @@
         "members":
           [ { "name": "timestamp",
               "type": "Date",
-              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format. If a timezone offset is specified, the time is converted to UTC.\n  \nRequired if `localDateTime` is not specified.",
+              "doc": "UTC date-time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Coordinated_Universal_Time_(UTC)) format. If a timezone offset is specified, the time is converted to UTC.\nRequired if `localDateTime` is not specified.\nIf `localDateTime` is specified, `timestamp` is calculated as `localDateTime`, using the business's timezone.",
               "optional": true },
             { "name": "localDateTime",
               "type": "wix-bookings-rc-v2-backend.LocalDateTime_957146317",
-              "doc": "An object containing the local date and time, with no time zone.",
+              "doc": "An object containing the local date and time for the business's timezone.",
               "optional": true } ],
         "extra":
           {  },
@@ -1935,7 +1936,7 @@
           [ { "lineno": 891,
               "filename": "shared.js" } ],
         "docs":
-          { "summary": "An object containing the local date and time, with no time zone.",
+          { "summary": "An object containing the local date and time for the business's timezone.",
             "links": [],
             "examples": [],
             "extra":
@@ -1965,7 +1966,7 @@
           [ { "lineno": 880,
               "filename": "shared.js" } ],
         "docs":
-          { "summary": "An object containing the local date and time, with no time zone.",
+          { "summary": "An object containing the local date and time for the business's timezone.",
             "links": [],
             "examples": [],
             "extra":
@@ -3277,8 +3278,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_225620643475",
         "locations":
           [ { "lineno": 1020,
@@ -3469,8 +3469,7 @@
               "doc": "An object containing the session and schedule versions." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_255663383937",
         "locations":
           [ { "lineno": 1096,

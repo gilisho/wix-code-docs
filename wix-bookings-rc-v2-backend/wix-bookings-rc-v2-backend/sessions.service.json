@@ -1,8 +1,7 @@
 { "name": "sessions",
   "memberOf": "wix-bookings-rc-v2-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -2322,8 +2321,7 @@
               "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CreateSessionResult_30222691074",
         "locations":
           [ { "lineno": 1,
@@ -2640,8 +2638,7 @@
               "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ListSchedulesRequest_7169811266",
         "locations":
           [ { "lineno": 1,
@@ -3191,8 +3188,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_13364701673",
         "locations":
           [ { "lineno": 1,
@@ -3645,8 +3641,7 @@
               "doc": "A string representing a recurrence rule (RRULE) if the session is an instance of a recurrence pattern.\nEmpty when the session is not an instance of a recurrence rule, or if the session defines a recurrence pattern, and `recurrence` is not empty." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Session_27106184519",
         "locations":
           [ { "lineno": 1,
@@ -3755,8 +3750,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "SplitRecurringSessionRequest_3004348263",
         "locations":
           [ { "lineno": 1,
@@ -4140,8 +4134,7 @@
               "doc": "An object specifying the start date and time of the session.\nIf the session is a recurring session, `start` must contain a `localDateTime`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "UpdateSessionResult_29051221615",
         "locations":
           [ { "lineno": 55,
